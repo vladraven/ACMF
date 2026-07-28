@@ -1,0 +1,10 @@
+{
+  "status": "PASS_WITH_FINDINGS",
+  "findings": [
+    "Aging operator coefficients did not change from fixed 20%; empirical calibration selected the same coefficients.",
+    "Stage trace shows no difference at any stage between fixed and empirical transition outputs.",
+    "Root cause: v2.4 transition matrix variant was effectively equivalent to fixed20; identical RMSE was a real pipeline finding, not independent evidence of improvement."
+  ],
+  "alpha_operator_changed": false,
+  "stage_predictions_changed": false
+}

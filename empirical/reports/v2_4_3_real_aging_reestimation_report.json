@@ -1,0 +1,241 @@
+{
+  "status": "PASS_WITH_FINDINGS",
+  "input_hashes": {
+    "1310042901-eng.csv": "e62d563cc5197bfd7d8c70736fac19503f908eedc11473730c94afcf64f8fc4c",
+    "1710000501-eng (1).csv": "72c0fd3a6f5ae59a885987a39538df17a2cd88a11cb26c4ec6920e5f7f8db890",
+    "1710000501-eng.csv": "0bfbc829ae98ddb4ca9f7b51c65c7e109e8ffc2a8b4cbcef717e36514c6e9358",
+    "1710000601-eng.csv": "b1bf2eb2654eabef684d4b760c2e370798e6edd08b0e82ca70afcae2e4eedda4",
+    "1710000801-eng.csv": "18767909bee87778c895f3a646364c56dec6b0f5bc88285aded6f90fa6dc3d26",
+    "1710001401-eng.csv": "adb4f2d7cd82b270b2ecda4a2e32f37c64d9a31c1a9d0ba0be808fd0d0779d11",
+    "1710001501-eng (1).csv": "5561565da8e726554267b98c9ddad7b1ff286be3892558c1667982a04d473747",
+    "1710001501-eng (2).csv": "852e06d699a833e0cbad3102bf40a0e1fc3eaa3392189c29fe2960bb2f370fbf",
+    "1710001501-eng.csv": "31a571be55c4013b8b22a1f15ab84d7b0256108b15e016925e9626bba4b03353",
+    "17100020.csv": "6d3dc92cdb20176ef0ffb7e196b1e66350cf1c14559b67f4ec7bf979552952c5",
+    "1710002001-eng.csv": "a40e12083a81c6bc4ff321feecf1fa4f0c718b28714d29dfcdceeb6a249728c1",
+    "1710004001-eng.csv": "86838df9d0a580e59c27a0c7caa630a06cd549c407673706d1ef2bd750e078a9",
+    "1710015101-eng (1).csv": "0462b559aa632dfb823d93d7c8a12f8af2d2b80694c4a7c391f6a5e0b08269e9",
+    "1710015101-eng.csv": "1d24248b392dae8b00a93f4397dd148e8192785e8677baea7c8fb9e25fc34bcc",
+    "9810002301-eng.csv": "ea11336e21437b668bcc6e87d9900bca7a4a396db72f9b07d7243c0074b61d11",
+    "population_cohorts_2000_2024.csv": "bc6e97ee4a7b6af0d60be62dd435171defd7eee6c016fea9e87817e20c6b3614"
+  },
+  "transition_matrix_diff_vs_fixed20": {
+    "max_abs_diff": 0.11309114830787224,
+    "frobenius_norm": 0.21348176066183128,
+    "nonzero_entries": 40
+  },
+  "matrix_diff_ok": true,
+  "output_diff_ok": true,
+  "stage_after_aging_diff_ok": true,
+  "prediction_diff_summary": [
+    {
+      "target": "P1_0_14",
+      "max_abs_diff": 3609.8896793322638,
+      "mean_abs_diff": 852.1242633775894,
+      "allclose": false
+    },
+    {
+      "target": "P2_15_64",
+      "max_abs_diff": 5448.2707809992135,
+      "mean_abs_diff": 1241.9425234348105,
+      "allclose": false
+    },
+    {
+      "target": "P3_65plus",
+      "max_abs_diff": 9058.160460332409,
+      "mean_abs_diff": 2094.066786812664,
+      "allclose": false
+    },
+    {
+      "target": "P_tot",
+      "max_abs_diff": 1.862645149230957e-09,
+      "mean_abs_diff": 1.9799424053141564e-10,
+      "allclose": true
+    }
+  ],
+  "stage_diff_summary": [
+    {
+      "target": "P1_0_14",
+      "max_abs_diff": 3609.8896793322638,
+      "mean_abs_diff": 852.1242633775806,
+      "allclose": false,
+      "stage": "after_aging"
+    },
+    {
+      "target": "P2_15_64",
+      "max_abs_diff": 5448.2707809992135,
+      "mean_abs_diff": 1241.9425234347805,
+      "allclose": false,
+      "stage": "after_aging"
+    },
+    {
+      "target": "P3_65plus",
+      "max_abs_diff": 9058.160460332874,
+      "mean_abs_diff": 2094.0667868126734,
+      "allclose": false,
+      "stage": "after_aging"
+    },
+    {
+      "target": "P_tot",
+      "max_abs_diff": 1.862645149230957e-09,
+      "mean_abs_diff": 2.7957315923589647e-10,
+      "allclose": true,
+      "stage": "after_aging"
+    },
+    {
+      "target": "P1_0_14",
+      "max_abs_diff": 3609.8896793322638,
+      "mean_abs_diff": 852.124263377587,
+      "allclose": false,
+      "stage": "after_births"
+    },
+    {
+      "target": "P2_15_64",
+      "max_abs_diff": 5448.2707809992135,
+      "mean_abs_diff": 1241.9425234347805,
+      "allclose": false,
+      "stage": "after_births"
+    },
+    {
+      "target": "P3_65plus",
+      "max_abs_diff": 9058.160460332874,
+      "mean_abs_diff": 2094.0667868126734,
+      "allclose": false,
+      "stage": "after_births"
+    },
+    {
+      "target": "P_tot",
+      "max_abs_diff": 1.862645149230957e-09,
+      "mean_abs_diff": 2.725176851857792e-10,
+      "allclose": true,
+      "stage": "after_births"
+    },
+    {
+      "target": "P1_0_14",
+      "max_abs_diff": 3609.8896793322638,
+      "mean_abs_diff": 852.124263377587,
+      "allclose": false,
+      "stage": "after_deaths"
+    },
+    {
+      "target": "P2_15_64",
+      "max_abs_diff": 5448.2707809992135,
+      "mean_abs_diff": 1241.9425234347805,
+      "allclose": false,
+      "stage": "after_deaths"
+    },
+    {
+      "target": "P3_65plus",
+      "max_abs_diff": 9058.160460332874,
+      "mean_abs_diff": 2094.0667868126757,
+      "allclose": false,
+      "stage": "after_deaths"
+    },
+    {
+      "target": "P_tot",
+      "max_abs_diff": 1.862645149230957e-09,
+      "mean_abs_diff": 2.725176851857792e-10,
+      "allclose": true,
+      "stage": "after_deaths"
+    },
+    {
+      "target": "P1_0_14",
+      "max_abs_diff": 3609.8896793322638,
+      "mean_abs_diff": 852.124263377589,
+      "allclose": false,
+      "stage": "after_international"
+    },
+    {
+      "target": "P2_15_64",
+      "max_abs_diff": 5448.2707809992135,
+      "mean_abs_diff": 1241.9425234347805,
+      "allclose": false,
+      "stage": "after_international"
+    },
+    {
+      "target": "P3_65plus",
+      "max_abs_diff": 9058.160460332874,
+      "mean_abs_diff": 2094.0667868126757,
+      "allclose": false,
+      "stage": "after_international"
+    },
+    {
+      "target": "P_tot",
+      "max_abs_diff": 1.862645149230957e-09,
+      "mean_abs_diff": 2.725176851857792e-10,
+      "allclose": true,
+      "stage": "after_international"
+    },
+    {
+      "target": "P1_0_14",
+      "max_abs_diff": 3609.8896793322638,
+      "mean_abs_diff": 852.1242633775797,
+      "allclose": false,
+      "stage": "after_interprovincial"
+    },
+    {
+      "target": "P2_15_64",
+      "max_abs_diff": 5448.2707809992135,
+      "mean_abs_diff": 1241.9425234348105,
+      "allclose": false,
+      "stage": "after_interprovincial"
+    },
+    {
+      "target": "P3_65plus",
+      "max_abs_diff": 9058.160460332409,
+      "mean_abs_diff": 2094.066786812664,
+      "allclose": false,
+      "stage": "after_interprovincial"
+    },
+    {
+      "target": "P_tot",
+      "max_abs_diff": 1.862645149230957e-09,
+      "mean_abs_diff": 7.408247752623124e-11,
+      "allclose": true,
+      "stage": "after_interprovincial"
+    }
+  ],
+  "best_by_target": [
+    {
+      "target": "P1_0_14",
+      "model": "fixed20_all_components",
+      "rmse": 2070.3950576708803,
+      "mae": 1335.9413415130614,
+      "relative_rmse": 0.0036657417538098684,
+      "n": 33
+    },
+    {
+      "target": "P2_15_64",
+      "model": "real_single_age_aging_births_deaths_international_interprovincial",
+      "rmse": 3964.228671648426,
+      "mae": 2032.8970523433616,
+      "relative_rmse": 0.0016234808889364091,
+      "n": 33
+    },
+    {
+      "target": "P3_65plus",
+      "model": "real_single_age_aging_births_deaths_international_interprovincial",
+      "rmse": 1776.5937616781887,
+      "mae": 1000.8413290936181,
+      "relative_rmse": 0.002496366500179208,
+      "n": 33
+    },
+    {
+      "target": "P_tot",
+      "model": "real_single_age_aging_births_deaths_international_interprovincial",
+      "rmse": 136.76156838239194,
+      "mae": 75.42067262481005,
+      "relative_rmse": 3.6780912740471295e-05,
+      "n": 33
+    }
+  ],
+  "interpretation": {
+    "what_was_tested": "v2.4.3 estimates aging outflow fractions from the 2021 single-age census distribution and explicitly tests T_real != T_fixed and predictions_real != predictions_fixed.",
+    "caveat": "The single-age census is a cross-sectional anchor, not a longitudinal transition series; this is a stronger pipeline test and practical re-estimation, not a final demographic law."
+  },
+  "known_limitations": [
+    "Observed demographic components are still used in accounting-mode predictions.",
+    "Single-age distribution is a 2021 cross-sectional census anchor.",
+    "No uncertainty propagation yet.",
+    "Interprovincial net migration by age/gender is approximated."
+  ]
+}

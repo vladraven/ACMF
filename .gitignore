@@ -1,15 +1,5 @@
 __pycache__/
-**/__pycache__/
-
-*.py[cod]
-*.class
-
+*.pyc
 .venv/
-venv/
-env/
-
-.vscode/
-.idea/
-
+.env
 .DS_Store
-Thumbs.db
