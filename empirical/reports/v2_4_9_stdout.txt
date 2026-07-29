@@ -1,0 +1,18 @@
+{
+  "status": "PASS_WITH_FINDINGS",
+  "findings": [
+    "This is a local sensitivity/counterfactual audit, not a production operator-selection model.",
+    "Best grid RMSE is 1957.91 at alpha_source=0.255, alpha_target=0.270.",
+    "Observed real_single_age alphas are source=0.181877, target=0.190637; fixed20 uses source=0.200000, target=0.200000.",
+    "A local alpha pair can outperform both real_single_age and fixed20 for Quebec 70-74 in this window; this is evidence for local regime sensitivity, not a general rule.",
+    "fixed20 outperforms real_single_age for Quebec 70-74, confirming the v2.4.8 localized failure mode."
+  ],
+  "best": {
+    "alpha_source_65_69": 0.255,
+    "alpha_target_70_74": 0.27,
+    "rmse": 1957.9141716919976,
+    "mae": 1782.1596382719774,
+    "max_abs_error": 2579.6935829065624,
+    "median_abs_error": 2096.804956644075
+  }
+}
