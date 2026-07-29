@@ -1,0 +1,80 @@
+{
+  "status": "PASS_WITH_FINDINGS",
+  "purpose": "Local alpha sensitivity for Quebec 70-74 to determine whether the failure is tied to the 65-69 inflow / 70-74 stay rates.",
+  "findings": [
+    "This is a local sensitivity/counterfactual audit, not a production operator-selection model.",
+    "Best grid RMSE is 1957.91 at alpha_source=0.255, alpha_target=0.270.",
+    "Observed real_single_age alphas are source=0.181877, target=0.190637; fixed20 uses source=0.200000, target=0.200000.",
+    "A local alpha pair can outperform both real_single_age and fixed20 for Quebec 70-74 in this window; this is evidence for local regime sensitivity, not a general rule.",
+    "fixed20 outperforms real_single_age for Quebec 70-74, confirming the v2.4.8 localized failure mode."
+  ],
+  "model_summary": [
+    {
+      "model": "best_grid_rmse",
+      "alpha_source_65_69": 0.255,
+      "alpha_target_70_74": 0.27,
+      "rmse": 1957.9141716919976,
+      "mae": 1782.1596382719774,
+      "max_abs_error": 2579.6935829065624,
+      "median_abs_error": 2096.804956644075
+    },
+    {
+      "model": "best_grid_mae",
+      "alpha_source_65_69": 0.25,
+      "alpha_target_70_74": 0.265,
+      "rmse": 2031.1571525261045,
+      "mae": 1613.9346382720203,
+      "max_abs_error": 3137.2085829066345,
+      "median_abs_error": 1587.7899566441192
+    },
+    {
+      "model": "fixed20",
+      "alpha_source_65_69": 0.2,
+      "alpha_target_70_74": 0.2,
+      "rmse": 2293.7291663040696,
+      "mae": 2138.6896382720247,
+      "max_abs_error": 3310.909956644173,
+      "median_abs_error": 1567.573582906567
+    },
+    {
+      "model": "real_single_age",
+      "alpha_source_65_69": 0.18187739004384904,
+      "alpha_target_70_74": 0.19063689061848807,
+      "rmse": 5386.3690526954715,
+      "mae": 4933.606688123992,
+      "max_abs_error": 7760.615515058802,
+      "median_abs_error": 4527.455612579826
+    },
+    {
+      "model": "fixed_source_low_target",
+      "alpha_source_65_69": 0.2,
+      "alpha_target_70_74": 0.18,
+      "rmse": 10548.144910124127,
+      "mae": 10387.233916334322,
+      "max_abs_error": 12395.269956644159,
+      "median_abs_error": 10807.625375265314
+    },
+    {
+      "model": "high_source_fixed_target",
+      "alpha_source_65_69": 0.23,
+      "alpha_target_70_74": 0.2,
+      "rmse": 18346.790356233047,
+      "mae": 18273.44058300095,
+      "max_abs_error": 19991.53995664412,
+      "median_abs_error": 18761.69537526532
+    }
+  ],
+  "best_grid_row": {
+    "alpha_source_65_69": 0.255,
+    "alpha_target_70_74": 0.27,
+    "rmse": 1957.9141716919976,
+    "mae": 1782.1596382719774,
+    "max_abs_error": 2579.6935829065624,
+    "median_abs_error": 2096.804956644075
+  },
+  "limitations": [
+    "Grid is evaluated on the same Quebec 2023-2025 window; do not use best_grid as a production operator without out-of-sample validation.",
+    "This is an explanatory counterfactual around one age bin and province.",
+    "Observed components remain accounting-mode inputs."
+  ]
+}

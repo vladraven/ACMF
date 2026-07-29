@@ -1,0 +1,132 @@
+geo,component,value
+Alberta,births,52446.0
+Alberta,deaths,33466.0
+Alberta,emigrants,14610.0
+Alberta,immigrants,58194.0
+Alberta,net_interprovincial_migration,28138.0
+Alberta,net_intraprovincial_migration,0.0
+Alberta,net_non_permanent_residents,21519.0
+Alberta,net_temporary_emigration,0.0
+Alberta,residual_deviation,0.0
+Alberta,returning_emigrants,8095.0
+British Columbia,births,44371.0
+British Columbia,deaths,43902.0
+British Columbia,emigrants,25023.0
+British Columbia,immigrants,56203.0
+British Columbia,net_interprovincial_migration,-2392.0
+British Columbia,net_intraprovincial_migration,0.0
+British Columbia,net_non_permanent_residents,-12612.0
+British Columbia,net_temporary_emigration,0.0
+British Columbia,residual_deviation,0.0
+British Columbia,returning_emigrants,9777.0
+Manitoba,births,15820.0
+Manitoba,deaths,12847.0
+Manitoba,emigrants,3095.0
+Manitoba,immigrants,21433.0
+Manitoba,net_interprovincial_migration,-4047.0
+Manitoba,net_intraprovincial_migration,0.0
+Manitoba,net_non_permanent_residents,-1332.0
+Manitoba,net_temporary_emigration,0.0
+Manitoba,residual_deviation,0.0
+Manitoba,returning_emigrants,1626.0
+New Brunswick,births,6618.0
+New Brunswick,deaths,8888.0
+New Brunswick,emigrants,912.0
+New Brunswick,immigrants,12532.0
+New Brunswick,net_interprovincial_migration,-186.0
+New Brunswick,net_intraprovincial_migration,0.0
+New Brunswick,net_non_permanent_residents,1878.0
+New Brunswick,net_temporary_emigration,0.0
+New Brunswick,residual_deviation,0.0
+New Brunswick,returning_emigrants,347.0
+Newfoundland and Labrador,births,3418.0
+Newfoundland and Labrador,deaths,6347.0
+Newfoundland and Labrador,emigrants,266.0
+Newfoundland and Labrador,immigrants,5473.0
+Newfoundland and Labrador,net_interprovincial_migration,65.0
+Newfoundland and Labrador,net_intraprovincial_migration,0.0
+Newfoundland and Labrador,net_non_permanent_residents,574.0
+Newfoundland and Labrador,net_temporary_emigration,0.0
+Newfoundland and Labrador,residual_deviation,0.0
+Newfoundland and Labrador,returning_emigrants,125.0
+Northwest Territories,births,471.0
+Northwest Territories,deaths,276.0
+Northwest Territories,emigrants,86.0
+Northwest Territories,immigrants,456.0
+Northwest Territories,net_interprovincial_migration,-10.0
+Northwest Territories,net_intraprovincial_migration,0.0
+Northwest Territories,net_non_permanent_residents,124.0
+Northwest Territories,net_temporary_emigration,0.0
+Northwest Territories,residual_deviation,0.0
+Northwest Territories,returning_emigrants,14.0
+Nova Scotia,births,7935.0
+Nova Scotia,deaths,11262.0
+Nova Scotia,emigrants,1905.0
+Nova Scotia,immigrants,10984.0
+Nova Scotia,net_interprovincial_migration,3226.0
+Nova Scotia,net_intraprovincial_migration,0.0
+Nova Scotia,net_non_permanent_residents,841.0
+Nova Scotia,net_temporary_emigration,0.0
+Nova Scotia,residual_deviation,0.0
+Nova Scotia,returning_emigrants,657.0
+Nunavut,births,759.0
+Nunavut,deaths,263.0
+Nunavut,emigrants,0.0
+Nunavut,immigrants,73.0
+Nunavut,net_interprovincial_migration,-236.0
+Nunavut,net_intraprovincial_migration,0.0
+Nunavut,net_non_permanent_residents,87.0
+Nunavut,net_temporary_emigration,0.0
+Nunavut,residual_deviation,0.0
+Nunavut,returning_emigrants,0.0
+Ontario,births,144954.0
+Ontario,deaths,124618.0
+Ontario,emigrants,55979.0
+Ontario,immigrants,190576.0
+Ontario,net_interprovincial_migration,-17779.0
+Ontario,net_intraprovincial_migration,0.0
+Ontario,net_non_permanent_residents,-48664.0
+Ontario,net_temporary_emigration,0.0
+Ontario,residual_deviation,0.0
+Ontario,returning_emigrants,24973.0
+Prince Edward Island,births,1375.0
+Prince Edward Island,deaths,1620.0
+Prince Edward Island,emigrants,257.0
+Prince Edward Island,immigrants,2843.0
+Prince Edward Island,net_interprovincial_migration,1043.0
+Prince Edward Island,net_intraprovincial_migration,0.0
+Prince Edward Island,net_non_permanent_residents,-566.0
+Prince Edward Island,net_temporary_emigration,0.0
+Prince Edward Island,residual_deviation,0.0
+Prince Edward Island,returning_emigrants,130.0
+Quebec,births,77171.0
+Quebec,deaths,79700.0
+Quebec,emigrants,15828.0
+Quebec,immigrants,57629.0
+Quebec,net_interprovincial_migration,-5095.0
+Quebec,net_intraprovincial_migration,0.0
+Quebec,net_non_permanent_residents,21030.0
+Quebec,net_temporary_emigration,0.0
+Quebec,residual_deviation,0.0
+Quebec,returning_emigrants,7616.0
+Saskatchewan,births,13147.0
+Saskatchewan,deaths,11172.0
+Saskatchewan,emigrants,2022.0
+Saskatchewan,immigrants,18199.0
+Saskatchewan,net_interprovincial_migration,-2506.0
+Saskatchewan,net_intraprovincial_migration,0.0
+Saskatchewan,net_non_permanent_residents,2191.0
+Saskatchewan,net_temporary_emigration,0.0
+Saskatchewan,residual_deviation,0.0
+Saskatchewan,returning_emigrants,1254.0
+Yukon,births,443.0
+Yukon,deaths,338.0
+Yukon,emigrants,33.0
+Yukon,immigrants,826.0
+Yukon,net_interprovincial_migration,-221.0
+Yukon,net_intraprovincial_migration,0.0
+Yukon,net_non_permanent_residents,-24.0
+Yukon,net_temporary_emigration,0.0
+Yukon,residual_deviation,0.0
+Yukon,returning_emigrants,30.0
+

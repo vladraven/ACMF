@@ -1,0 +1,1802 @@
+geo,geography_level,component,gender,age_group,period,start_year,end_year,value
+Canada,country,births,Men+,All ages,2024 / 2025,2024,2025,189177.0
+Canada,country,births,Women+,All ages,2024 / 2025,2024,2025,179751.0
+Canada,country,deaths,Men+,All ages,2024 / 2025,2024,2025,174663.0
+Canada,country,deaths,Women+,All ages,2024 / 2025,2024,2025,160036.0
+Canada,country,immigrants,Men+,All ages,2024 / 2025,2024,2025,212711.0
+Canada,country,immigrants,Women+,All ages,2024 / 2025,2024,2025,222710.0
+Canada,country,emigrants,Men+,All ages,2024 / 2025,2024,2025,62103.0
+Canada,country,emigrants,Women+,All ages,2024 / 2025,2024,2025,57913.0
+Canada,country,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,27240.0
+Canada,country,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,27404.0
+Canada,country,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+Canada,country,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+Canada,country,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,0.0
+Canada,country,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,0.0
+Canada,country,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,0.0
+Canada,country,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,0.0
+Canada,country,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-6802.0
+Canada,country,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,-8152.0
+Canada,country,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+Canada,country,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+Newfoundland and Labrador,province,births,Men+,All ages,2024 / 2025,2024,2025,1756.0
+Newfoundland and Labrador,province,births,Women+,All ages,2024 / 2025,2024,2025,1662.0
+Newfoundland and Labrador,province,deaths,Men+,All ages,2024 / 2025,2024,2025,3370.0
+Newfoundland and Labrador,province,deaths,Women+,All ages,2024 / 2025,2024,2025,2977.0
+Newfoundland and Labrador,province,immigrants,Men+,All ages,2024 / 2025,2024,2025,2807.0
+Newfoundland and Labrador,province,immigrants,Women+,All ages,2024 / 2025,2024,2025,2666.0
+Newfoundland and Labrador,province,emigrants,Men+,All ages,2024 / 2025,2024,2025,134.0
+Newfoundland and Labrador,province,emigrants,Women+,All ages,2024 / 2025,2024,2025,132.0
+Newfoundland and Labrador,province,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,62.0
+Newfoundland and Labrador,province,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,63.0
+Newfoundland and Labrador,province,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+Newfoundland and Labrador,province,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+Newfoundland and Labrador,province,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-30.0
+Newfoundland and Labrador,province,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,95.0
+Newfoundland and Labrador,province,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,0.0
+Newfoundland and Labrador,province,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,0.0
+Newfoundland and Labrador,province,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,220.0
+Newfoundland and Labrador,province,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,354.0
+Newfoundland and Labrador,province,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+Newfoundland and Labrador,province,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Avalon Peninsula, Newfoundland and Labrador",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,1083.0
+"Avalon Peninsula, Newfoundland and Labrador",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,949.0
+"Avalon Peninsula, Newfoundland and Labrador",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,1544.0
+"Avalon Peninsula, Newfoundland and Labrador",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,1410.0
+"Avalon Peninsula, Newfoundland and Labrador",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,2017.0
+"Avalon Peninsula, Newfoundland and Labrador",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,1920.0
+"Avalon Peninsula, Newfoundland and Labrador",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,118.0
+"Avalon Peninsula, Newfoundland and Labrador",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,94.0
+"Avalon Peninsula, Newfoundland and Labrador",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,55.0
+"Avalon Peninsula, Newfoundland and Labrador",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,48.0
+"Avalon Peninsula, Newfoundland and Labrador",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Avalon Peninsula, Newfoundland and Labrador",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Avalon Peninsula, Newfoundland and Labrador",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-302.0
+"Avalon Peninsula, Newfoundland and Labrador",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-181.0
+"Avalon Peninsula, Newfoundland and Labrador",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,267.0
+"Avalon Peninsula, Newfoundland and Labrador",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,292.0
+"Avalon Peninsula, Newfoundland and Labrador",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-45.0
+"Avalon Peninsula, Newfoundland and Labrador",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,58.0
+"Avalon Peninsula, Newfoundland and Labrador",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Avalon Peninsula, Newfoundland and Labrador",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"South Coast-Burin Peninsula, Newfoundland and Labrador",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,76.0
+"South Coast-Burin Peninsula, Newfoundland and Labrador",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,73.0
+"South Coast-Burin Peninsula, Newfoundland and Labrador",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,281.0
+"South Coast-Burin Peninsula, Newfoundland and Labrador",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,254.0
+"South Coast-Burin Peninsula, Newfoundland and Labrador",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,37.0
+"South Coast-Burin Peninsula, Newfoundland and Labrador",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,36.0
+"South Coast-Burin Peninsula, Newfoundland and Labrador",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,1.0
+"South Coast-Burin Peninsula, Newfoundland and Labrador",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,0.0
+"South Coast-Burin Peninsula, Newfoundland and Labrador",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,0.0
+"South Coast-Burin Peninsula, Newfoundland and Labrador",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,0.0
+"South Coast-Burin Peninsula, Newfoundland and Labrador",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"South Coast-Burin Peninsula, Newfoundland and Labrador",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"South Coast-Burin Peninsula, Newfoundland and Labrador",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,22.0
+"South Coast-Burin Peninsula, Newfoundland and Labrador",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,23.0
+"South Coast-Burin Peninsula, Newfoundland and Labrador",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-113.0
+"South Coast-Burin Peninsula, Newfoundland and Labrador",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-78.0
+"South Coast-Burin Peninsula, Newfoundland and Labrador",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-6.0
+"South Coast-Burin Peninsula, Newfoundland and Labrador",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,25.0
+"South Coast-Burin Peninsula, Newfoundland and Labrador",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"South Coast-Burin Peninsula, Newfoundland and Labrador",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"West Coast-Northern Peninsula-Labrador, Newfoundland and Labrador",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,328.0
+"West Coast-Northern Peninsula-Labrador, Newfoundland and Labrador",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,370.0
+"West Coast-Northern Peninsula-Labrador, Newfoundland and Labrador",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,710.0
+"West Coast-Northern Peninsula-Labrador, Newfoundland and Labrador",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,542.0
+"West Coast-Northern Peninsula-Labrador, Newfoundland and Labrador",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,498.0
+"West Coast-Northern Peninsula-Labrador, Newfoundland and Labrador",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,479.0
+"West Coast-Northern Peninsula-Labrador, Newfoundland and Labrador",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,4.0
+"West Coast-Northern Peninsula-Labrador, Newfoundland and Labrador",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,22.0
+"West Coast-Northern Peninsula-Labrador, Newfoundland and Labrador",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,4.0
+"West Coast-Northern Peninsula-Labrador, Newfoundland and Labrador",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,9.0
+"West Coast-Northern Peninsula-Labrador, Newfoundland and Labrador",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"West Coast-Northern Peninsula-Labrador, Newfoundland and Labrador",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"West Coast-Northern Peninsula-Labrador, Newfoundland and Labrador",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,50.0
+"West Coast-Northern Peninsula-Labrador, Newfoundland and Labrador",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,64.0
+"West Coast-Northern Peninsula-Labrador, Newfoundland and Labrador",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-103.0
+"West Coast-Northern Peninsula-Labrador, Newfoundland and Labrador",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-164.0
+"West Coast-Northern Peninsula-Labrador, Newfoundland and Labrador",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,155.0
+"West Coast-Northern Peninsula-Labrador, Newfoundland and Labrador",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,148.0
+"West Coast-Northern Peninsula-Labrador, Newfoundland and Labrador",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"West Coast-Northern Peninsula-Labrador, Newfoundland and Labrador",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Notre Dame-Central Bonavista Bay, Newfoundland and Labrador",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,269.0
+"Notre Dame-Central Bonavista Bay, Newfoundland and Labrador",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,270.0
+"Notre Dame-Central Bonavista Bay, Newfoundland and Labrador",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,835.0
+"Notre Dame-Central Bonavista Bay, Newfoundland and Labrador",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,771.0
+"Notre Dame-Central Bonavista Bay, Newfoundland and Labrador",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,255.0
+"Notre Dame-Central Bonavista Bay, Newfoundland and Labrador",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,231.0
+"Notre Dame-Central Bonavista Bay, Newfoundland and Labrador",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,11.0
+"Notre Dame-Central Bonavista Bay, Newfoundland and Labrador",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,16.0
+"Notre Dame-Central Bonavista Bay, Newfoundland and Labrador",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,3.0
+"Notre Dame-Central Bonavista Bay, Newfoundland and Labrador",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,6.0
+"Notre Dame-Central Bonavista Bay, Newfoundland and Labrador",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Notre Dame-Central Bonavista Bay, Newfoundland and Labrador",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Notre Dame-Central Bonavista Bay, Newfoundland and Labrador",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,200.0
+"Notre Dame-Central Bonavista Bay, Newfoundland and Labrador",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,189.0
+"Notre Dame-Central Bonavista Bay, Newfoundland and Labrador",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-51.0
+"Notre Dame-Central Bonavista Bay, Newfoundland and Labrador",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-50.0
+"Notre Dame-Central Bonavista Bay, Newfoundland and Labrador",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,116.0
+"Notre Dame-Central Bonavista Bay, Newfoundland and Labrador",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,123.0
+"Notre Dame-Central Bonavista Bay, Newfoundland and Labrador",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Notre Dame-Central Bonavista Bay, Newfoundland and Labrador",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+Prince Edward Island,province,births,Men+,All ages,2024 / 2025,2024,2025,709.0
+Prince Edward Island,province,births,Women+,All ages,2024 / 2025,2024,2025,666.0
+Prince Edward Island,province,deaths,Men+,All ages,2024 / 2025,2024,2025,862.0
+Prince Edward Island,province,deaths,Women+,All ages,2024 / 2025,2024,2025,758.0
+Prince Edward Island,province,immigrants,Men+,All ages,2024 / 2025,2024,2025,1435.0
+Prince Edward Island,province,immigrants,Women+,All ages,2024 / 2025,2024,2025,1408.0
+Prince Edward Island,province,emigrants,Men+,All ages,2024 / 2025,2024,2025,129.0
+Prince Edward Island,province,emigrants,Women+,All ages,2024 / 2025,2024,2025,128.0
+Prince Edward Island,province,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,64.0
+Prince Edward Island,province,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,66.0
+Prince Edward Island,province,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+Prince Edward Island,province,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+Prince Edward Island,province,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,497.0
+Prince Edward Island,province,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,546.0
+Prince Edward Island,province,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,0.0
+Prince Edward Island,province,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,0.0
+Prince Edward Island,province,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-227.0
+Prince Edward Island,province,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,-339.0
+Prince Edward Island,province,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+Prince Edward Island,province,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Prince Edward Island, Prince Edward Island",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,709.0
+"Prince Edward Island, Prince Edward Island",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,666.0
+"Prince Edward Island, Prince Edward Island",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,862.0
+"Prince Edward Island, Prince Edward Island",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,758.0
+"Prince Edward Island, Prince Edward Island",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,1435.0
+"Prince Edward Island, Prince Edward Island",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,1408.0
+"Prince Edward Island, Prince Edward Island",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,129.0
+"Prince Edward Island, Prince Edward Island",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,128.0
+"Prince Edward Island, Prince Edward Island",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,64.0
+"Prince Edward Island, Prince Edward Island",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,66.0
+"Prince Edward Island, Prince Edward Island",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Prince Edward Island, Prince Edward Island",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Prince Edward Island, Prince Edward Island",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,497.0
+"Prince Edward Island, Prince Edward Island",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,546.0
+"Prince Edward Island, Prince Edward Island",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,0.0
+"Prince Edward Island, Prince Edward Island",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,0.0
+"Prince Edward Island, Prince Edward Island",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-227.0
+"Prince Edward Island, Prince Edward Island",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,-339.0
+"Prince Edward Island, Prince Edward Island",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Prince Edward Island, Prince Edward Island",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+Nova Scotia,province,births,Men+,All ages,2024 / 2025,2024,2025,4063.0
+Nova Scotia,province,births,Women+,All ages,2024 / 2025,2024,2025,3872.0
+Nova Scotia,province,deaths,Men+,All ages,2024 / 2025,2024,2025,5820.0
+Nova Scotia,province,deaths,Women+,All ages,2024 / 2025,2024,2025,5442.0
+Nova Scotia,province,immigrants,Men+,All ages,2024 / 2025,2024,2025,5623.0
+Nova Scotia,province,immigrants,Women+,All ages,2024 / 2025,2024,2025,5361.0
+Nova Scotia,province,emigrants,Men+,All ages,2024 / 2025,2024,2025,948.0
+Nova Scotia,province,emigrants,Women+,All ages,2024 / 2025,2024,2025,957.0
+Nova Scotia,province,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,323.0
+Nova Scotia,province,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,334.0
+Nova Scotia,province,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+Nova Scotia,province,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+Nova Scotia,province,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,1453.0
+Nova Scotia,province,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,1773.0
+Nova Scotia,province,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,0.0
+Nova Scotia,province,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,0.0
+Nova Scotia,province,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,470.0
+Nova Scotia,province,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,371.0
+Nova Scotia,province,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+Nova Scotia,province,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Cape Breton, Nova Scotia",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,514.0
+"Cape Breton, Nova Scotia",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,489.0
+"Cape Breton, Nova Scotia",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,1030.0
+"Cape Breton, Nova Scotia",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,974.0
+"Cape Breton, Nova Scotia",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,326.0
+"Cape Breton, Nova Scotia",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,307.0
+"Cape Breton, Nova Scotia",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,40.0
+"Cape Breton, Nova Scotia",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,13.0
+"Cape Breton, Nova Scotia",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,12.0
+"Cape Breton, Nova Scotia",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,10.0
+"Cape Breton, Nova Scotia",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Cape Breton, Nova Scotia",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Cape Breton, Nova Scotia",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,28.0
+"Cape Breton, Nova Scotia",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,40.0
+"Cape Breton, Nova Scotia",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-704.0
+"Cape Breton, Nova Scotia",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-514.0
+"Cape Breton, Nova Scotia",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,845.0
+"Cape Breton, Nova Scotia",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,611.0
+"Cape Breton, Nova Scotia",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Cape Breton, Nova Scotia",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"North Shore, Nova Scotia",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,578.0
+"North Shore, Nova Scotia",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,558.0
+"North Shore, Nova Scotia",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,1119.0
+"North Shore, Nova Scotia",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,1021.0
+"North Shore, Nova Scotia",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,468.0
+"North Shore, Nova Scotia",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,439.0
+"North Shore, Nova Scotia",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,102.0
+"North Shore, Nova Scotia",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,79.0
+"North Shore, Nova Scotia",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,24.0
+"North Shore, Nova Scotia",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,17.0
+"North Shore, Nova Scotia",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"North Shore, Nova Scotia",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"North Shore, Nova Scotia",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,349.0
+"North Shore, Nova Scotia",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,518.0
+"North Shore, Nova Scotia",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,209.0
+"North Shore, Nova Scotia",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,263.0
+"North Shore, Nova Scotia",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-28.0
+"North Shore, Nova Scotia",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,-72.0
+"North Shore, Nova Scotia",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"North Shore, Nova Scotia",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Annapolis Valley, Nova Scotia",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,556.0
+"Annapolis Valley, Nova Scotia",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,527.0
+"Annapolis Valley, Nova Scotia",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,814.0
+"Annapolis Valley, Nova Scotia",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,784.0
+"Annapolis Valley, Nova Scotia",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,333.0
+"Annapolis Valley, Nova Scotia",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,332.0
+"Annapolis Valley, Nova Scotia",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,146.0
+"Annapolis Valley, Nova Scotia",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,139.0
+"Annapolis Valley, Nova Scotia",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,37.0
+"Annapolis Valley, Nova Scotia",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,37.0
+"Annapolis Valley, Nova Scotia",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Annapolis Valley, Nova Scotia",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Annapolis Valley, Nova Scotia",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,311.0
+"Annapolis Valley, Nova Scotia",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,350.0
+"Annapolis Valley, Nova Scotia",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,309.0
+"Annapolis Valley, Nova Scotia",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,218.0
+"Annapolis Valley, Nova Scotia",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,348.0
+"Annapolis Valley, Nova Scotia",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,111.0
+"Annapolis Valley, Nova Scotia",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Annapolis Valley, Nova Scotia",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Southern, Nova Scotia",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,384.0
+"Southern, Nova Scotia",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,346.0
+"Southern, Nova Scotia",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,895.0
+"Southern, Nova Scotia",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,821.0
+"Southern, Nova Scotia",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,343.0
+"Southern, Nova Scotia",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,294.0
+"Southern, Nova Scotia",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,88.0
+"Southern, Nova Scotia",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,99.0
+"Southern, Nova Scotia",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,25.0
+"Southern, Nova Scotia",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,24.0
+"Southern, Nova Scotia",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Southern, Nova Scotia",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Southern, Nova Scotia",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,307.0
+"Southern, Nova Scotia",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,343.0
+"Southern, Nova Scotia",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,107.0
+"Southern, Nova Scotia",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,75.0
+"Southern, Nova Scotia",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-109.0
+"Southern, Nova Scotia",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,-90.0
+"Southern, Nova Scotia",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Southern, Nova Scotia",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Halifax, Nova Scotia",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,2031.0
+"Halifax, Nova Scotia",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,1952.0
+"Halifax, Nova Scotia",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,1962.0
+"Halifax, Nova Scotia",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,1842.0
+"Halifax, Nova Scotia",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,4153.0
+"Halifax, Nova Scotia",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,3989.0
+"Halifax, Nova Scotia",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,572.0
+"Halifax, Nova Scotia",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,627.0
+"Halifax, Nova Scotia",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,225.0
+"Halifax, Nova Scotia",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,246.0
+"Halifax, Nova Scotia",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Halifax, Nova Scotia",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Halifax, Nova Scotia",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,458.0
+"Halifax, Nova Scotia",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,522.0
+"Halifax, Nova Scotia",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,79.0
+"Halifax, Nova Scotia",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-42.0
+"Halifax, Nova Scotia",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-586.0
+"Halifax, Nova Scotia",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,-189.0
+"Halifax, Nova Scotia",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Halifax, Nova Scotia",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+New Brunswick,province,births,Men+,All ages,2024 / 2025,2024,2025,3400.0
+New Brunswick,province,births,Women+,All ages,2024 / 2025,2024,2025,3218.0
+New Brunswick,province,deaths,Men+,All ages,2024 / 2025,2024,2025,4629.0
+New Brunswick,province,deaths,Women+,All ages,2024 / 2025,2024,2025,4259.0
+New Brunswick,province,immigrants,Men+,All ages,2024 / 2025,2024,2025,6274.0
+New Brunswick,province,immigrants,Women+,All ages,2024 / 2025,2024,2025,6258.0
+New Brunswick,province,emigrants,Men+,All ages,2024 / 2025,2024,2025,479.0
+New Brunswick,province,emigrants,Women+,All ages,2024 / 2025,2024,2025,433.0
+New Brunswick,province,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,175.0
+New Brunswick,province,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,172.0
+New Brunswick,province,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+New Brunswick,province,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+New Brunswick,province,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-92.0
+New Brunswick,province,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-94.0
+New Brunswick,province,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,0.0
+New Brunswick,province,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,0.0
+New Brunswick,province,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,1076.0
+New Brunswick,province,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,802.0
+New Brunswick,province,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+New Brunswick,province,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Campbellton-Miramichi, New Brunswick",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,491.0
+"Campbellton-Miramichi, New Brunswick",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,434.0
+"Campbellton-Miramichi, New Brunswick",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,1122.0
+"Campbellton-Miramichi, New Brunswick",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,906.0
+"Campbellton-Miramichi, New Brunswick",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,478.0
+"Campbellton-Miramichi, New Brunswick",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,466.0
+"Campbellton-Miramichi, New Brunswick",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,26.0
+"Campbellton-Miramichi, New Brunswick",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,10.0
+"Campbellton-Miramichi, New Brunswick",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,9.0
+"Campbellton-Miramichi, New Brunswick",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,5.0
+"Campbellton-Miramichi, New Brunswick",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Campbellton-Miramichi, New Brunswick",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Campbellton-Miramichi, New Brunswick",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,50.0
+"Campbellton-Miramichi, New Brunswick",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,23.0
+"Campbellton-Miramichi, New Brunswick",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-154.0
+"Campbellton-Miramichi, New Brunswick",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-89.0
+"Campbellton-Miramichi, New Brunswick",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,329.0
+"Campbellton-Miramichi, New Brunswick",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,313.0
+"Campbellton-Miramichi, New Brunswick",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Campbellton-Miramichi, New Brunswick",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Moncton-Richibucto, New Brunswick",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,1080.0
+"Moncton-Richibucto, New Brunswick",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,1033.0
+"Moncton-Richibucto, New Brunswick",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,1163.0
+"Moncton-Richibucto, New Brunswick",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,1111.0
+"Moncton-Richibucto, New Brunswick",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,3158.0
+"Moncton-Richibucto, New Brunswick",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,3167.0
+"Moncton-Richibucto, New Brunswick",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,118.0
+"Moncton-Richibucto, New Brunswick",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,153.0
+"Moncton-Richibucto, New Brunswick",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,63.0
+"Moncton-Richibucto, New Brunswick",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,56.0
+"Moncton-Richibucto, New Brunswick",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Moncton-Richibucto, New Brunswick",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Moncton-Richibucto, New Brunswick",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-165.0
+"Moncton-Richibucto, New Brunswick",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-84.0
+"Moncton-Richibucto, New Brunswick",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,142.0
+"Moncton-Richibucto, New Brunswick",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,49.0
+"Moncton-Richibucto, New Brunswick",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,385.0
+"Moncton-Richibucto, New Brunswick",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,293.0
+"Moncton-Richibucto, New Brunswick",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Moncton-Richibucto, New Brunswick",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Saint John-St. Stephen, New Brunswick",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,801.0
+"Saint John-St. Stephen, New Brunswick",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,762.0
+"Saint John-St. Stephen, New Brunswick",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,1039.0
+"Saint John-St. Stephen, New Brunswick",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,1001.0
+"Saint John-St. Stephen, New Brunswick",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,1188.0
+"Saint John-St. Stephen, New Brunswick",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,1167.0
+"Saint John-St. Stephen, New Brunswick",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,98.0
+"Saint John-St. Stephen, New Brunswick",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,76.0
+"Saint John-St. Stephen, New Brunswick",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,30.0
+"Saint John-St. Stephen, New Brunswick",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,28.0
+"Saint John-St. Stephen, New Brunswick",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Saint John-St. Stephen, New Brunswick",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Saint John-St. Stephen, New Brunswick",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,155.0
+"Saint John-St. Stephen, New Brunswick",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,79.0
+"Saint John-St. Stephen, New Brunswick",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-50.0
+"Saint John-St. Stephen, New Brunswick",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-62.0
+"Saint John-St. Stephen, New Brunswick",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,134.0
+"Saint John-St. Stephen, New Brunswick",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,23.0
+"Saint John-St. Stephen, New Brunswick",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Saint John-St. Stephen, New Brunswick",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Fredericton-Oromocto, New Brunswick",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,718.0
+"Fredericton-Oromocto, New Brunswick",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,678.0
+"Fredericton-Oromocto, New Brunswick",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,736.0
+"Fredericton-Oromocto, New Brunswick",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,729.0
+"Fredericton-Oromocto, New Brunswick",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,990.0
+"Fredericton-Oromocto, New Brunswick",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,1021.0
+"Fredericton-Oromocto, New Brunswick",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,165.0
+"Fredericton-Oromocto, New Brunswick",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,147.0
+"Fredericton-Oromocto, New Brunswick",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,64.0
+"Fredericton-Oromocto, New Brunswick",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,73.0
+"Fredericton-Oromocto, New Brunswick",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Fredericton-Oromocto, New Brunswick",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Fredericton-Oromocto, New Brunswick",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-124.0
+"Fredericton-Oromocto, New Brunswick",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-71.0
+"Fredericton-Oromocto, New Brunswick",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,172.0
+"Fredericton-Oromocto, New Brunswick",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,221.0
+"Fredericton-Oromocto, New Brunswick",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,81.0
+"Fredericton-Oromocto, New Brunswick",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,34.0
+"Fredericton-Oromocto, New Brunswick",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Fredericton-Oromocto, New Brunswick",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Edmundston-Woodstock, New Brunswick",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,310.0
+"Edmundston-Woodstock, New Brunswick",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,311.0
+"Edmundston-Woodstock, New Brunswick",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,569.0
+"Edmundston-Woodstock, New Brunswick",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,512.0
+"Edmundston-Woodstock, New Brunswick",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,460.0
+"Edmundston-Woodstock, New Brunswick",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,437.0
+"Edmundston-Woodstock, New Brunswick",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,72.0
+"Edmundston-Woodstock, New Brunswick",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,47.0
+"Edmundston-Woodstock, New Brunswick",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,9.0
+"Edmundston-Woodstock, New Brunswick",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,10.0
+"Edmundston-Woodstock, New Brunswick",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Edmundston-Woodstock, New Brunswick",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Edmundston-Woodstock, New Brunswick",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-8.0
+"Edmundston-Woodstock, New Brunswick",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-41.0
+"Edmundston-Woodstock, New Brunswick",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-110.0
+"Edmundston-Woodstock, New Brunswick",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-119.0
+"Edmundston-Woodstock, New Brunswick",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,147.0
+"Edmundston-Woodstock, New Brunswick",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,139.0
+"Edmundston-Woodstock, New Brunswick",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Edmundston-Woodstock, New Brunswick",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+Quebec,province,births,Men+,All ages,2024 / 2025,2024,2025,39537.0
+Quebec,province,births,Women+,All ages,2024 / 2025,2024,2025,37634.0
+Quebec,province,deaths,Men+,All ages,2024 / 2025,2024,2025,39817.0
+Quebec,province,deaths,Women+,All ages,2024 / 2025,2024,2025,39883.0
+Quebec,province,immigrants,Men+,All ages,2024 / 2025,2024,2025,29106.0
+Quebec,province,immigrants,Women+,All ages,2024 / 2025,2024,2025,28523.0
+Quebec,province,emigrants,Men+,All ages,2024 / 2025,2024,2025,8066.0
+Quebec,province,emigrants,Women+,All ages,2024 / 2025,2024,2025,7762.0
+Quebec,province,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,3772.0
+Quebec,province,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,3844.0
+Quebec,province,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+Quebec,province,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+Quebec,province,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-2884.0
+Quebec,province,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-2211.0
+Quebec,province,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,0.0
+Quebec,province,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,0.0
+Quebec,province,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,10560.0
+Quebec,province,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,10470.0
+Quebec,province,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+Quebec,province,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Gaspésie-Îles-de-la-Madeleine, Quebec",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,307.0
+"Gaspésie-Îles-de-la-Madeleine, Quebec",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,276.0
+"Gaspésie-Îles-de-la-Madeleine, Quebec",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,632.0
+"Gaspésie-Îles-de-la-Madeleine, Quebec",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,598.0
+"Gaspésie-Îles-de-la-Madeleine, Quebec",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,44.0
+"Gaspésie-Îles-de-la-Madeleine, Quebec",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,45.0
+"Gaspésie-Îles-de-la-Madeleine, Quebec",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,14.0
+"Gaspésie-Îles-de-la-Madeleine, Quebec",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,10.0
+"Gaspésie-Îles-de-la-Madeleine, Quebec",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,9.0
+"Gaspésie-Îles-de-la-Madeleine, Quebec",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,7.0
+"Gaspésie-Îles-de-la-Madeleine, Quebec",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Gaspésie-Îles-de-la-Madeleine, Quebec",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Gaspésie-Îles-de-la-Madeleine, Quebec",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,11.0
+"Gaspésie-Îles-de-la-Madeleine, Quebec",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,8.0
+"Gaspésie-Îles-de-la-Madeleine, Quebec",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,235.0
+"Gaspésie-Îles-de-la-Madeleine, Quebec",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,202.0
+"Gaspésie-Îles-de-la-Madeleine, Quebec",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,0.0
+"Gaspésie-Îles-de-la-Madeleine, Quebec",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,38.0
+"Gaspésie-Îles-de-la-Madeleine, Quebec",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Gaspésie-Îles-de-la-Madeleine, Quebec",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Bas-Saint-Laurent, Quebec",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,719.0
+"Bas-Saint-Laurent, Quebec",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,664.0
+"Bas-Saint-Laurent, Quebec",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,1216.0
+"Bas-Saint-Laurent, Quebec",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,1209.0
+"Bas-Saint-Laurent, Quebec",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,256.0
+"Bas-Saint-Laurent, Quebec",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,244.0
+"Bas-Saint-Laurent, Quebec",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,39.0
+"Bas-Saint-Laurent, Quebec",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,62.0
+"Bas-Saint-Laurent, Quebec",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,16.0
+"Bas-Saint-Laurent, Quebec",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,18.0
+"Bas-Saint-Laurent, Quebec",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Bas-Saint-Laurent, Quebec",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Bas-Saint-Laurent, Quebec",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,12.0
+"Bas-Saint-Laurent, Quebec",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,28.0
+"Bas-Saint-Laurent, Quebec",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,336.0
+"Bas-Saint-Laurent, Quebec",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,309.0
+"Bas-Saint-Laurent, Quebec",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,332.0
+"Bas-Saint-Laurent, Quebec",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,204.0
+"Bas-Saint-Laurent, Quebec",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Bas-Saint-Laurent, Quebec",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Capitale-Nationale, Quebec",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,3642.0
+"Capitale-Nationale, Quebec",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,3629.0
+"Capitale-Nationale, Quebec",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,3712.0
+"Capitale-Nationale, Quebec",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,3911.0
+"Capitale-Nationale, Quebec",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,3722.0
+"Capitale-Nationale, Quebec",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,3635.0
+"Capitale-Nationale, Quebec",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,491.0
+"Capitale-Nationale, Quebec",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,442.0
+"Capitale-Nationale, Quebec",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,237.0
+"Capitale-Nationale, Quebec",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,245.0
+"Capitale-Nationale, Quebec",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Capitale-Nationale, Quebec",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Capitale-Nationale, Quebec",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,139.0
+"Capitale-Nationale, Quebec",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,235.0
+"Capitale-Nationale, Quebec",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,241.0
+"Capitale-Nationale, Quebec",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,423.0
+"Capitale-Nationale, Quebec",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-695.0
+"Capitale-Nationale, Quebec",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,364.0
+"Capitale-Nationale, Quebec",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Capitale-Nationale, Quebec",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Chaudière-Appalaches, Quebec",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,1941.0
+"Chaudière-Appalaches, Quebec",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,1941.0
+"Chaudière-Appalaches, Quebec",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,2059.0
+"Chaudière-Appalaches, Quebec",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,2218.0
+"Chaudière-Appalaches, Quebec",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,1075.0
+"Chaudière-Appalaches, Quebec",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,1007.0
+"Chaudière-Appalaches, Quebec",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,110.0
+"Chaudière-Appalaches, Quebec",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,110.0
+"Chaudière-Appalaches, Quebec",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,70.0
+"Chaudière-Appalaches, Quebec",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,58.0
+"Chaudière-Appalaches, Quebec",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Chaudière-Appalaches, Quebec",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Chaudière-Appalaches, Quebec",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,41.0
+"Chaudière-Appalaches, Quebec",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,76.0
+"Chaudière-Appalaches, Quebec",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,1708.0
+"Chaudière-Appalaches, Quebec",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,1705.0
+"Chaudière-Appalaches, Quebec",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-264.0
+"Chaudière-Appalaches, Quebec",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,-106.0
+"Chaudière-Appalaches, Quebec",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Chaudière-Appalaches, Quebec",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Estrie, Quebec",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,1484.0
+"Estrie, Quebec",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,1346.0
+"Estrie, Quebec",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,1771.0
+"Estrie, Quebec",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,1700.0
+"Estrie, Quebec",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,788.0
+"Estrie, Quebec",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,747.0
+"Estrie, Quebec",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,171.0
+"Estrie, Quebec",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,157.0
+"Estrie, Quebec",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,98.0
+"Estrie, Quebec",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,97.0
+"Estrie, Quebec",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Estrie, Quebec",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Estrie, Quebec",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-23.0
+"Estrie, Quebec",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-3.0
+"Estrie, Quebec",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,819.0
+"Estrie, Quebec",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,861.0
+"Estrie, Quebec",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,173.0
+"Estrie, Quebec",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,100.0
+"Estrie, Quebec",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Estrie, Quebec",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Centre-du-Québec, Quebec",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,1156.0
+"Centre-du-Québec, Quebec",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,1097.0
+"Centre-du-Québec, Quebec",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,1334.0
+"Centre-du-Québec, Quebec",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,1322.0
+"Centre-du-Québec, Quebec",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,575.0
+"Centre-du-Québec, Quebec",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,522.0
+"Centre-du-Québec, Quebec",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,60.0
+"Centre-du-Québec, Quebec",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,64.0
+"Centre-du-Québec, Quebec",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,27.0
+"Centre-du-Québec, Quebec",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,32.0
+"Centre-du-Québec, Quebec",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Centre-du-Québec, Quebec",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Centre-du-Québec, Quebec",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,12.0
+"Centre-du-Québec, Quebec",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-6.0
+"Centre-du-Québec, Quebec",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,857.0
+"Centre-du-Québec, Quebec",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,668.0
+"Centre-du-Québec, Quebec",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-97.0
+"Centre-du-Québec, Quebec",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,68.0
+"Centre-du-Québec, Quebec",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Centre-du-Québec, Quebec",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Montérégie, Quebec",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,7358.0
+"Montérégie, Quebec",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,7120.0
+"Montérégie, Quebec",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,7320.0
+"Montérégie, Quebec",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,7357.0
+"Montérégie, Quebec",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,3997.0
+"Montérégie, Quebec",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,4114.0
+"Montérégie, Quebec",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,1265.0
+"Montérégie, Quebec",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,1211.0
+"Montérégie, Quebec",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,556.0
+"Montérégie, Quebec",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,555.0
+"Montérégie, Quebec",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Montérégie, Quebec",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Montérégie, Quebec",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-262.0
+"Montérégie, Quebec",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-333.0
+"Montérégie, Quebec",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,2053.0
+"Montérégie, Quebec",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,2546.0
+"Montérégie, Quebec",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,852.0
+"Montérégie, Quebec",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,1073.0
+"Montérégie, Quebec",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Montérégie, Quebec",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Montréal, Quebec",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,9983.0
+"Montréal, Quebec",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,9442.0
+"Montréal, Quebec",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,7988.0
+"Montréal, Quebec",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,8183.0
+"Montréal, Quebec",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,13149.0
+"Montréal, Quebec",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,12688.0
+"Montréal, Quebec",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,4566.0
+"Montréal, Quebec",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,4308.0
+"Montréal, Quebec",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,2089.0
+"Montréal, Quebec",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,2132.0
+"Montréal, Quebec",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Montréal, Quebec",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Montréal, Quebec",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-2960.0
+"Montréal, Quebec",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-2413.0
+"Montréal, Quebec",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-11838.0
+"Montréal, Quebec",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-12301.0
+"Montréal, Quebec",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,6349.0
+"Montréal, Quebec",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,4260.0
+"Montréal, Quebec",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Montréal, Quebec",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Laval, Quebec",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,2054.0
+"Laval, Quebec",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,1860.0
+"Laval, Quebec",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,1821.0
+"Laval, Quebec",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,1832.0
+"Laval, Quebec",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,1442.0
+"Laval, Quebec",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,1552.0
+"Laval, Quebec",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,352.0
+"Laval, Quebec",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,386.0
+"Laval, Quebec",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,230.0
+"Laval, Quebec",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,238.0
+"Laval, Quebec",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Laval, Quebec",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Laval, Quebec",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-32.0
+"Laval, Quebec",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-6.0
+"Laval, Quebec",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-774.0
+"Laval, Quebec",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-1148.0
+"Laval, Quebec",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,1225.0
+"Laval, Quebec",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,1166.0
+"Laval, Quebec",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Laval, Quebec",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Lanaudière, Quebec",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,2381.0
+"Lanaudière, Quebec",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,2252.0
+"Lanaudière, Quebec",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,2555.0
+"Lanaudière, Quebec",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,2326.0
+"Lanaudière, Quebec",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,662.0
+"Lanaudière, Quebec",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,667.0
+"Lanaudière, Quebec",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,163.0
+"Lanaudière, Quebec",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,167.0
+"Lanaudière, Quebec",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,87.0
+"Lanaudière, Quebec",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,77.0
+"Lanaudière, Quebec",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Lanaudière, Quebec",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Lanaudière, Quebec",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-29.0
+"Lanaudière, Quebec",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-12.0
+"Lanaudière, Quebec",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,2831.0
+"Lanaudière, Quebec",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,3265.0
+"Lanaudière, Quebec",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,815.0
+"Lanaudière, Quebec",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,1079.0
+"Lanaudière, Quebec",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Lanaudière, Quebec",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Laurentides, Quebec",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,2854.0
+"Laurentides, Quebec",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,2721.0
+"Laurentides, Quebec",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,2951.0
+"Laurentides, Quebec",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,2870.0
+"Laurentides, Quebec",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,713.0
+"Laurentides, Quebec",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,732.0
+"Laurentides, Quebec",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,424.0
+"Laurentides, Quebec",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,394.0
+"Laurentides, Quebec",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,154.0
+"Laurentides, Quebec",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,150.0
+"Laurentides, Quebec",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Laurentides, Quebec",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Laurentides, Quebec",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,9.0
+"Laurentides, Quebec",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,53.0
+"Laurentides, Quebec",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,2750.0
+"Laurentides, Quebec",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,2984.0
+"Laurentides, Quebec",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,438.0
+"Laurentides, Quebec",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,686.0
+"Laurentides, Quebec",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Laurentides, Quebec",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Outaouais, Quebec",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,1980.0
+"Outaouais, Quebec",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,1815.0
+"Outaouais, Quebec",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,1840.0
+"Outaouais, Quebec",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,1749.0
+"Outaouais, Quebec",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,1309.0
+"Outaouais, Quebec",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,1338.0
+"Outaouais, Quebec",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,249.0
+"Outaouais, Quebec",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,263.0
+"Outaouais, Quebec",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,135.0
+"Outaouais, Quebec",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,160.0
+"Outaouais, Quebec",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Outaouais, Quebec",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Outaouais, Quebec",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,94.0
+"Outaouais, Quebec",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,25.0
+"Outaouais, Quebec",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,1.0
+"Outaouais, Quebec",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,53.0
+"Outaouais, Quebec",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,301.0
+"Outaouais, Quebec",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,623.0
+"Outaouais, Quebec",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Outaouais, Quebec",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Abitibi-Témiscamingue, Quebec",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,685.0
+"Abitibi-Témiscamingue, Quebec",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,653.0
+"Abitibi-Témiscamingue, Quebec",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,866.0
+"Abitibi-Témiscamingue, Quebec",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,796.0
+"Abitibi-Témiscamingue, Quebec",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,212.0
+"Abitibi-Témiscamingue, Quebec",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,169.0
+"Abitibi-Témiscamingue, Quebec",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,7.0
+"Abitibi-Témiscamingue, Quebec",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,12.0
+"Abitibi-Témiscamingue, Quebec",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,5.0
+"Abitibi-Témiscamingue, Quebec",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,5.0
+"Abitibi-Témiscamingue, Quebec",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Abitibi-Témiscamingue, Quebec",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Abitibi-Témiscamingue, Quebec",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,10.0
+"Abitibi-Témiscamingue, Quebec",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,29.0
+"Abitibi-Témiscamingue, Quebec",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-238.0
+"Abitibi-Témiscamingue, Quebec",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-269.0
+"Abitibi-Témiscamingue, Quebec",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,275.0
+"Abitibi-Témiscamingue, Quebec",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,247.0
+"Abitibi-Témiscamingue, Quebec",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Abitibi-Témiscamingue, Quebec",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Mauricie, Quebec",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,1161.0
+"Mauricie, Quebec",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,1068.0
+"Mauricie, Quebec",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,1611.0
+"Mauricie, Quebec",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,1754.0
+"Mauricie, Quebec",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,673.0
+"Mauricie, Quebec",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,656.0
+"Mauricie, Quebec",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,102.0
+"Mauricie, Quebec",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,117.0
+"Mauricie, Quebec",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,39.0
+"Mauricie, Quebec",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,46.0
+"Mauricie, Quebec",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Mauricie, Quebec",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Mauricie, Quebec",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,59.0
+"Mauricie, Quebec",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,54.0
+"Mauricie, Quebec",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,906.0
+"Mauricie, Quebec",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,826.0
+"Mauricie, Quebec",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,253.0
+"Mauricie, Quebec",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,151.0
+"Mauricie, Quebec",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Mauricie, Quebec",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Saguenay-Lac-Saint-Jean, Quebec",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,1092.0
+"Saguenay-Lac-Saint-Jean, Quebec",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,1023.0
+"Saguenay-Lac-Saint-Jean, Quebec",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,1412.0
+"Saguenay-Lac-Saint-Jean, Quebec",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,1493.0
+"Saguenay-Lac-Saint-Jean, Quebec",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,325.0
+"Saguenay-Lac-Saint-Jean, Quebec",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,244.0
+"Saguenay-Lac-Saint-Jean, Quebec",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,30.0
+"Saguenay-Lac-Saint-Jean, Quebec",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,38.0
+"Saguenay-Lac-Saint-Jean, Quebec",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,14.0
+"Saguenay-Lac-Saint-Jean, Quebec",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,17.0
+"Saguenay-Lac-Saint-Jean, Quebec",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Saguenay-Lac-Saint-Jean, Quebec",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Saguenay-Lac-Saint-Jean, Quebec",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,36.0
+"Saguenay-Lac-Saint-Jean, Quebec",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,49.0
+"Saguenay-Lac-Saint-Jean, Quebec",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,303.0
+"Saguenay-Lac-Saint-Jean, Quebec",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,179.0
+"Saguenay-Lac-Saint-Jean, Quebec",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,398.0
+"Saguenay-Lac-Saint-Jean, Quebec",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,386.0
+"Saguenay-Lac-Saint-Jean, Quebec",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Saguenay-Lac-Saint-Jean, Quebec",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Côte-Nord, Quebec",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,369.0
+"Côte-Nord, Quebec",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,350.0
+"Côte-Nord, Quebec",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,537.0
+"Côte-Nord, Quebec",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,437.0
+"Côte-Nord, Quebec",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,121.0
+"Côte-Nord, Quebec",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,116.0
+"Côte-Nord, Quebec",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,23.0
+"Côte-Nord, Quebec",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,16.0
+"Côte-Nord, Quebec",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,4.0
+"Côte-Nord, Quebec",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,5.0
+"Côte-Nord, Quebec",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Côte-Nord, Quebec",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Côte-Nord, Quebec",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-5.0
+"Côte-Nord, Quebec",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,8.0
+"Côte-Nord, Quebec",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-96.0
+"Côte-Nord, Quebec",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-171.0
+"Côte-Nord, Quebec",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,170.0
+"Côte-Nord, Quebec",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,86.0
+"Côte-Nord, Quebec",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Côte-Nord, Quebec",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Nord-du-Québec, Quebec",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,371.0
+"Nord-du-Québec, Quebec",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,377.0
+"Nord-du-Québec, Quebec",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,192.0
+"Nord-du-Québec, Quebec",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,128.0
+"Nord-du-Québec, Quebec",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,43.0
+"Nord-du-Québec, Quebec",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,47.0
+"Nord-du-Québec, Quebec",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,0.0
+"Nord-du-Québec, Quebec",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,5.0
+"Nord-du-Québec, Quebec",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,2.0
+"Nord-du-Québec, Quebec",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,2.0
+"Nord-du-Québec, Quebec",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Nord-du-Québec, Quebec",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Nord-du-Québec, Quebec",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,4.0
+"Nord-du-Québec, Quebec",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-3.0
+"Nord-du-Québec, Quebec",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-94.0
+"Nord-du-Québec, Quebec",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-132.0
+"Nord-du-Québec, Quebec",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,35.0
+"Nord-du-Québec, Quebec",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,45.0
+"Nord-du-Québec, Quebec",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Nord-du-Québec, Quebec",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+Ontario,province,births,Men+,All ages,2024 / 2025,2024,2025,74380.0
+Ontario,province,births,Women+,All ages,2024 / 2025,2024,2025,70574.0
+Ontario,province,deaths,Men+,All ages,2024 / 2025,2024,2025,64756.0
+Ontario,province,deaths,Women+,All ages,2024 / 2025,2024,2025,59862.0
+Ontario,province,immigrants,Men+,All ages,2024 / 2025,2024,2025,92281.0
+Ontario,province,immigrants,Women+,All ages,2024 / 2025,2024,2025,98295.0
+Ontario,province,emigrants,Men+,All ages,2024 / 2025,2024,2025,29113.0
+Ontario,province,emigrants,Women+,All ages,2024 / 2025,2024,2025,26866.0
+Ontario,province,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,12478.0
+Ontario,province,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,12495.0
+Ontario,province,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+Ontario,province,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+Ontario,province,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-8585.0
+Ontario,province,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-9194.0
+Ontario,province,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,0.0
+Ontario,province,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,0.0
+Ontario,province,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-26922.0
+Ontario,province,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,-21742.0
+Ontario,province,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+Ontario,province,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Ottawa, Ontario",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,7326.0
+"Ottawa, Ontario",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,7010.0
+"Ottawa, Ontario",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,6541.0
+"Ottawa, Ontario",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,6045.0
+"Ottawa, Ontario",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,12218.0
+"Ottawa, Ontario",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,12953.0
+"Ottawa, Ontario",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,3055.0
+"Ottawa, Ontario",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,2753.0
+"Ottawa, Ontario",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,1466.0
+"Ottawa, Ontario",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,1408.0
+"Ottawa, Ontario",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Ottawa, Ontario",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Ottawa, Ontario",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,2053.0
+"Ottawa, Ontario",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,2016.0
+"Ottawa, Ontario",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,3720.0
+"Ottawa, Ontario",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,3488.0
+"Ottawa, Ontario",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,499.0
+"Ottawa, Ontario",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,1169.0
+"Ottawa, Ontario",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Ottawa, Ontario",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Kingston-Pembroke, Ontario",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,2089.0
+"Kingston-Pembroke, Ontario",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,2056.0
+"Kingston-Pembroke, Ontario",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,2996.0
+"Kingston-Pembroke, Ontario",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,2853.0
+"Kingston-Pembroke, Ontario",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,809.0
+"Kingston-Pembroke, Ontario",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,896.0
+"Kingston-Pembroke, Ontario",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,709.0
+"Kingston-Pembroke, Ontario",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,649.0
+"Kingston-Pembroke, Ontario",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,277.0
+"Kingston-Pembroke, Ontario",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,306.0
+"Kingston-Pembroke, Ontario",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Kingston-Pembroke, Ontario",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Kingston-Pembroke, Ontario",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,39.0
+"Kingston-Pembroke, Ontario",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-5.0
+"Kingston-Pembroke, Ontario",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,2634.0
+"Kingston-Pembroke, Ontario",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,2536.0
+"Kingston-Pembroke, Ontario",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-77.0
+"Kingston-Pembroke, Ontario",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,-234.0
+"Kingston-Pembroke, Ontario",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Kingston-Pembroke, Ontario",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Muskoka-Kawarthas, Ontario",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,1521.0
+"Muskoka-Kawarthas, Ontario",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,1544.0
+"Muskoka-Kawarthas, Ontario",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,2785.0
+"Muskoka-Kawarthas, Ontario",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,2710.0
+"Muskoka-Kawarthas, Ontario",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,423.0
+"Muskoka-Kawarthas, Ontario",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,504.0
+"Muskoka-Kawarthas, Ontario",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,374.0
+"Muskoka-Kawarthas, Ontario",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,301.0
+"Muskoka-Kawarthas, Ontario",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,163.0
+"Muskoka-Kawarthas, Ontario",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,152.0
+"Muskoka-Kawarthas, Ontario",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Muskoka-Kawarthas, Ontario",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Muskoka-Kawarthas, Ontario",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-335.0
+"Muskoka-Kawarthas, Ontario",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-362.0
+"Muskoka-Kawarthas, Ontario",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,3129.0
+"Muskoka-Kawarthas, Ontario",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,2993.0
+"Muskoka-Kawarthas, Ontario",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-56.0
+"Muskoka-Kawarthas, Ontario",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,387.0
+"Muskoka-Kawarthas, Ontario",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Muskoka-Kawarthas, Ontario",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Toronto, Ontario",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,34551.0
+"Toronto, Ontario",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,32779.0
+"Toronto, Ontario",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,22815.0
+"Toronto, Ontario",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,21198.0
+"Toronto, Ontario",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,56547.0
+"Toronto, Ontario",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,60834.0
+"Toronto, Ontario",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,16601.0
+"Toronto, Ontario",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,15156.0
+"Toronto, Ontario",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,7169.0
+"Toronto, Ontario",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,7097.0
+"Toronto, Ontario",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Toronto, Ontario",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Toronto, Ontario",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-6794.0
+"Toronto, Ontario",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-6909.0
+"Toronto, Ontario",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-32055.0
+"Toronto, Ontario",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-30940.0
+"Toronto, Ontario",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-23552.0
+"Toronto, Ontario",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,-20428.0
+"Toronto, Ontario",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Toronto, Ontario",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Kitchener-Waterloo-Barrie, Ontario",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,8055.0
+"Kitchener-Waterloo-Barrie, Ontario",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,7738.0
+"Kitchener-Waterloo-Barrie, Ontario",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,6505.0
+"Kitchener-Waterloo-Barrie, Ontario",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,6116.0
+"Kitchener-Waterloo-Barrie, Ontario",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,7382.0
+"Kitchener-Waterloo-Barrie, Ontario",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,7475.0
+"Kitchener-Waterloo-Barrie, Ontario",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,2585.0
+"Kitchener-Waterloo-Barrie, Ontario",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,2483.0
+"Kitchener-Waterloo-Barrie, Ontario",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,913.0
+"Kitchener-Waterloo-Barrie, Ontario",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,945.0
+"Kitchener-Waterloo-Barrie, Ontario",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Kitchener-Waterloo-Barrie, Ontario",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Kitchener-Waterloo-Barrie, Ontario",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-1997.0
+"Kitchener-Waterloo-Barrie, Ontario",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-1992.0
+"Kitchener-Waterloo-Barrie, Ontario",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,6789.0
+"Kitchener-Waterloo-Barrie, Ontario",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,6790.0
+"Kitchener-Waterloo-Barrie, Ontario",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-5770.0
+"Kitchener-Waterloo-Barrie, Ontario",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,-3215.0
+"Kitchener-Waterloo-Barrie, Ontario",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Kitchener-Waterloo-Barrie, Ontario",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Hamilton-Niagara Peninsula, Ontario",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,8078.0
+"Hamilton-Niagara Peninsula, Ontario",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,7526.0
+"Hamilton-Niagara Peninsula, Ontario",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,8044.0
+"Hamilton-Niagara Peninsula, Ontario",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,7538.0
+"Hamilton-Niagara Peninsula, Ontario",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,5913.0
+"Hamilton-Niagara Peninsula, Ontario",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,6533.0
+"Hamilton-Niagara Peninsula, Ontario",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,2376.0
+"Hamilton-Niagara Peninsula, Ontario",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,2298.0
+"Hamilton-Niagara Peninsula, Ontario",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,1019.0
+"Hamilton-Niagara Peninsula, Ontario",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,1073.0
+"Hamilton-Niagara Peninsula, Ontario",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Hamilton-Niagara Peninsula, Ontario",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Hamilton-Niagara Peninsula, Ontario",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-762.0
+"Hamilton-Niagara Peninsula, Ontario",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-876.0
+"Hamilton-Niagara Peninsula, Ontario",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,8369.0
+"Hamilton-Niagara Peninsula, Ontario",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,7749.0
+"Hamilton-Niagara Peninsula, Ontario",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,772.0
+"Hamilton-Niagara Peninsula, Ontario",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,576.0
+"Hamilton-Niagara Peninsula, Ontario",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Hamilton-Niagara Peninsula, Ontario",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"London, Ontario",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,4166.0
+"London, Ontario",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,3898.0
+"London, Ontario",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,3684.0
+"London, Ontario",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,3388.0
+"London, Ontario",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,3760.0
+"London, Ontario",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,3882.0
+"London, Ontario",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,1125.0
+"London, Ontario",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,1008.0
+"London, Ontario",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,521.0
+"London, Ontario",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,544.0
+"London, Ontario",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"London, Ontario",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"London, Ontario",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-395.0
+"London, Ontario",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-496.0
+"London, Ontario",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,2439.0
+"London, Ontario",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,2380.0
+"London, Ontario",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-654.0
+"London, Ontario",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,-767.0
+"London, Ontario",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"London, Ontario",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Windsor-Sarnia, Ontario",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,3149.0
+"Windsor-Sarnia, Ontario",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,3094.0
+"Windsor-Sarnia, Ontario",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,3795.0
+"Windsor-Sarnia, Ontario",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,3518.0
+"Windsor-Sarnia, Ontario",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,2398.0
+"Windsor-Sarnia, Ontario",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,2337.0
+"Windsor-Sarnia, Ontario",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,1510.0
+"Windsor-Sarnia, Ontario",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,1400.0
+"Windsor-Sarnia, Ontario",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,549.0
+"Windsor-Sarnia, Ontario",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,537.0
+"Windsor-Sarnia, Ontario",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Windsor-Sarnia, Ontario",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Windsor-Sarnia, Ontario",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-227.0
+"Windsor-Sarnia, Ontario",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-109.0
+"Windsor-Sarnia, Ontario",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,461.0
+"Windsor-Sarnia, Ontario",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,975.0
+"Windsor-Sarnia, Ontario",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,2025.0
+"Windsor-Sarnia, Ontario",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,1023.0
+"Windsor-Sarnia, Ontario",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Windsor-Sarnia, Ontario",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Stratford-Bruce Peninsula, Ontario",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,1869.0
+"Stratford-Bruce Peninsula, Ontario",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,1639.0
+"Stratford-Bruce Peninsula, Ontario",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,1992.0
+"Stratford-Bruce Peninsula, Ontario",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,1724.0
+"Stratford-Bruce Peninsula, Ontario",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,359.0
+"Stratford-Bruce Peninsula, Ontario",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,370.0
+"Stratford-Bruce Peninsula, Ontario",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,222.0
+"Stratford-Bruce Peninsula, Ontario",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,274.0
+"Stratford-Bruce Peninsula, Ontario",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,170.0
+"Stratford-Bruce Peninsula, Ontario",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,178.0
+"Stratford-Bruce Peninsula, Ontario",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Stratford-Bruce Peninsula, Ontario",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Stratford-Bruce Peninsula, Ontario",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-88.0
+"Stratford-Bruce Peninsula, Ontario",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-142.0
+"Stratford-Bruce Peninsula, Ontario",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,2537.0
+"Stratford-Bruce Peninsula, Ontario",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,2551.0
+"Stratford-Bruce Peninsula, Ontario",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-32.0
+"Stratford-Bruce Peninsula, Ontario",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,-73.0
+"Stratford-Bruce Peninsula, Ontario",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Stratford-Bruce Peninsula, Ontario",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Northeast, Ontario",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,2392.0
+"Northeast, Ontario",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,2262.0
+"Northeast, Ontario",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,3959.0
+"Northeast, Ontario",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,3353.0
+"Northeast, Ontario",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,1917.0
+"Northeast, Ontario",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,1948.0
+"Northeast, Ontario",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,353.0
+"Northeast, Ontario",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,374.0
+"Northeast, Ontario",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,154.0
+"Northeast, Ontario",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,171.0
+"Northeast, Ontario",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Northeast, Ontario",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Northeast, Ontario",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-143.0
+"Northeast, Ontario",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-248.0
+"Northeast, Ontario",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,1794.0
+"Northeast, Ontario",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,1377.0
+"Northeast, Ontario",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-294.0
+"Northeast, Ontario",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,-324.0
+"Northeast, Ontario",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Northeast, Ontario",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Northwest, Ontario",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,1184.0
+"Northwest, Ontario",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,1028.0
+"Northwest, Ontario",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,1640.0
+"Northwest, Ontario",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,1419.0
+"Northwest, Ontario",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,555.0
+"Northwest, Ontario",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,563.0
+"Northwest, Ontario",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,203.0
+"Northwest, Ontario",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,170.0
+"Northwest, Ontario",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,77.0
+"Northwest, Ontario",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,84.0
+"Northwest, Ontario",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Northwest, Ontario",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Northwest, Ontario",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,64.0
+"Northwest, Ontario",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-71.0
+"Northwest, Ontario",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,183.0
+"Northwest, Ontario",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,101.0
+"Northwest, Ontario",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,217.0
+"Northwest, Ontario",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,144.0
+"Northwest, Ontario",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Northwest, Ontario",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+Manitoba,province,births,Men+,All ages,2024 / 2025,2024,2025,8098.0
+Manitoba,province,births,Women+,All ages,2024 / 2025,2024,2025,7722.0
+Manitoba,province,deaths,Men+,All ages,2024 / 2025,2024,2025,6800.0
+Manitoba,province,deaths,Women+,All ages,2024 / 2025,2024,2025,6047.0
+Manitoba,province,immigrants,Men+,All ages,2024 / 2025,2024,2025,10740.0
+Manitoba,province,immigrants,Women+,All ages,2024 / 2025,2024,2025,10693.0
+Manitoba,province,emigrants,Men+,All ages,2024 / 2025,2024,2025,1605.0
+Manitoba,province,emigrants,Women+,All ages,2024 / 2025,2024,2025,1490.0
+Manitoba,province,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,809.0
+Manitoba,province,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,817.0
+Manitoba,province,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+Manitoba,province,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+Manitoba,province,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-1958.0
+Manitoba,province,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-2089.0
+Manitoba,province,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,0.0
+Manitoba,province,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,0.0
+Manitoba,province,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-547.0
+Manitoba,province,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,-785.0
+Manitoba,province,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+Manitoba,province,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Southeast, Manitoba",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,916.0
+"Southeast, Manitoba",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,900.0
+"Southeast, Manitoba",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,570.0
+"Southeast, Manitoba",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,423.0
+"Southeast, Manitoba",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,421.0
+"Southeast, Manitoba",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,434.0
+"Southeast, Manitoba",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,137.0
+"Southeast, Manitoba",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,145.0
+"Southeast, Manitoba",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,102.0
+"Southeast, Manitoba",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,112.0
+"Southeast, Manitoba",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Southeast, Manitoba",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Southeast, Manitoba",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-71.0
+"Southeast, Manitoba",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,34.0
+"Southeast, Manitoba",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,622.0
+"Southeast, Manitoba",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,575.0
+"Southeast, Manitoba",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,167.0
+"Southeast, Manitoba",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,215.0
+"Southeast, Manitoba",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Southeast, Manitoba",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"South Central, Manitoba",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,548.0
+"South Central, Manitoba",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,507.0
+"South Central, Manitoba",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,289.0
+"South Central, Manitoba",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,265.0
+"South Central, Manitoba",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,555.0
+"South Central, Manitoba",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,579.0
+"South Central, Manitoba",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,91.0
+"South Central, Manitoba",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,72.0
+"South Central, Manitoba",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,82.0
+"South Central, Manitoba",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,69.0
+"South Central, Manitoba",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"South Central, Manitoba",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"South Central, Manitoba",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-25.0
+"South Central, Manitoba",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-5.0
+"South Central, Manitoba",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-155.0
+"South Central, Manitoba",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-153.0
+"South Central, Manitoba",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-108.0
+"South Central, Manitoba",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,-48.0
+"South Central, Manitoba",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"South Central, Manitoba",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Southwest, Manitoba",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,687.0
+"Southwest, Manitoba",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,691.0
+"Southwest, Manitoba",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,627.0
+"Southwest, Manitoba",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,635.0
+"Southwest, Manitoba",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,1058.0
+"Southwest, Manitoba",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,1106.0
+"Southwest, Manitoba",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,134.0
+"Southwest, Manitoba",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,70.0
+"Southwest, Manitoba",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,49.0
+"Southwest, Manitoba",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,53.0
+"Southwest, Manitoba",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Southwest, Manitoba",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Southwest, Manitoba",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-229.0
+"Southwest, Manitoba",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-261.0
+"Southwest, Manitoba",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-136.0
+"Southwest, Manitoba",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-178.0
+"Southwest, Manitoba",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,24.0
+"Southwest, Manitoba",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,-4.0
+"Southwest, Manitoba",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Southwest, Manitoba",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"North Central, Manitoba",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,348.0
+"North Central, Manitoba",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,323.0
+"North Central, Manitoba",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,236.0
+"North Central, Manitoba",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,210.0
+"North Central, Manitoba",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,156.0
+"North Central, Manitoba",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,181.0
+"North Central, Manitoba",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,93.0
+"North Central, Manitoba",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,81.0
+"North Central, Manitoba",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,22.0
+"North Central, Manitoba",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,25.0
+"North Central, Manitoba",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"North Central, Manitoba",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"North Central, Manitoba",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,18.0
+"North Central, Manitoba",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,31.0
+"North Central, Manitoba",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,89.0
+"North Central, Manitoba",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,125.0
+"North Central, Manitoba",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,60.0
+"North Central, Manitoba",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,-14.0
+"North Central, Manitoba",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"North Central, Manitoba",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Winnipeg, Manitoba",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,3981.0
+"Winnipeg, Manitoba",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,3750.0
+"Winnipeg, Manitoba",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,3722.0
+"Winnipeg, Manitoba",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,3399.0
+"Winnipeg, Manitoba",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,8030.0
+"Winnipeg, Manitoba",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,7880.0
+"Winnipeg, Manitoba",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,1000.0
+"Winnipeg, Manitoba",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,961.0
+"Winnipeg, Manitoba",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,490.0
+"Winnipeg, Manitoba",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,495.0
+"Winnipeg, Manitoba",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Winnipeg, Manitoba",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Winnipeg, Manitoba",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-1667.0
+"Winnipeg, Manitoba",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-1961.0
+"Winnipeg, Manitoba",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-848.0
+"Winnipeg, Manitoba",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-856.0
+"Winnipeg, Manitoba",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-792.0
+"Winnipeg, Manitoba",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,-982.0
+"Winnipeg, Manitoba",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Winnipeg, Manitoba",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Interlake, Manitoba",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,510.0
+"Interlake, Manitoba",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,502.0
+"Interlake, Manitoba",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,553.0
+"Interlake, Manitoba",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,435.0
+"Interlake, Manitoba",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,250.0
+"Interlake, Manitoba",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,245.0
+"Interlake, Manitoba",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,58.0
+"Interlake, Manitoba",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,55.0
+"Interlake, Manitoba",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,26.0
+"Interlake, Manitoba",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,20.0
+"Interlake, Manitoba",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Interlake, Manitoba",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Interlake, Manitoba",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-1.0
+"Interlake, Manitoba",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,39.0
+"Interlake, Manitoba",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,821.0
+"Interlake, Manitoba",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,789.0
+"Interlake, Manitoba",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,114.0
+"Interlake, Manitoba",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,43.0
+"Interlake, Manitoba",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Interlake, Manitoba",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Parklands, Manitoba",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,236.0
+"Parklands, Manitoba",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,225.0
+"Parklands, Manitoba",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,287.0
+"Parklands, Manitoba",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,296.0
+"Parklands, Manitoba",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,112.0
+"Parklands, Manitoba",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,106.0
+"Parklands, Manitoba",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,28.0
+"Parklands, Manitoba",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,20.0
+"Parklands, Manitoba",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,23.0
+"Parklands, Manitoba",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,20.0
+"Parklands, Manitoba",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Parklands, Manitoba",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Parklands, Manitoba",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,39.0
+"Parklands, Manitoba",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,48.0
+"Parklands, Manitoba",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-88.0
+"Parklands, Manitoba",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-19.0
+"Parklands, Manitoba",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-3.0
+"Parklands, Manitoba",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,-8.0
+"Parklands, Manitoba",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Parklands, Manitoba",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"North, Manitoba",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,872.0
+"North, Manitoba",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,824.0
+"North, Manitoba",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,516.0
+"North, Manitoba",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,384.0
+"North, Manitoba",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,158.0
+"North, Manitoba",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,162.0
+"North, Manitoba",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,64.0
+"North, Manitoba",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,86.0
+"North, Manitoba",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,15.0
+"North, Manitoba",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,23.0
+"North, Manitoba",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"North, Manitoba",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"North, Manitoba",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-22.0
+"North, Manitoba",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-14.0
+"North, Manitoba",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-305.0
+"North, Manitoba",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-283.0
+"North, Manitoba",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-9.0
+"North, Manitoba",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,13.0
+"North, Manitoba",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"North, Manitoba",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+Saskatchewan,province,births,Men+,All ages,2024 / 2025,2024,2025,6722.0
+Saskatchewan,province,births,Women+,All ages,2024 / 2025,2024,2025,6425.0
+Saskatchewan,province,deaths,Men+,All ages,2024 / 2025,2024,2025,5903.0
+Saskatchewan,province,deaths,Women+,All ages,2024 / 2025,2024,2025,5269.0
+Saskatchewan,province,immigrants,Men+,All ages,2024 / 2025,2024,2025,9151.0
+Saskatchewan,province,immigrants,Women+,All ages,2024 / 2025,2024,2025,9048.0
+Saskatchewan,province,emigrants,Men+,All ages,2024 / 2025,2024,2025,991.0
+Saskatchewan,province,emigrants,Women+,All ages,2024 / 2025,2024,2025,1031.0
+Saskatchewan,province,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,612.0
+Saskatchewan,province,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,642.0
+Saskatchewan,province,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+Saskatchewan,province,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+Saskatchewan,province,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-1183.0
+Saskatchewan,province,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-1323.0
+Saskatchewan,province,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,0.0
+Saskatchewan,province,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,0.0
+Saskatchewan,province,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,1225.0
+Saskatchewan,province,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,966.0
+Saskatchewan,province,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+Saskatchewan,province,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Regina-Moose Mountain, Saskatchewan",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,1738.0
+"Regina-Moose Mountain, Saskatchewan",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,1734.0
+"Regina-Moose Mountain, Saskatchewan",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,1658.0
+"Regina-Moose Mountain, Saskatchewan",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,1445.0
+"Regina-Moose Mountain, Saskatchewan",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,3561.0
+"Regina-Moose Mountain, Saskatchewan",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,3371.0
+"Regina-Moose Mountain, Saskatchewan",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,246.0
+"Regina-Moose Mountain, Saskatchewan",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,281.0
+"Regina-Moose Mountain, Saskatchewan",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,162.0
+"Regina-Moose Mountain, Saskatchewan",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,178.0
+"Regina-Moose Mountain, Saskatchewan",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Regina-Moose Mountain, Saskatchewan",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Regina-Moose Mountain, Saskatchewan",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-672.0
+"Regina-Moose Mountain, Saskatchewan",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-801.0
+"Regina-Moose Mountain, Saskatchewan",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,11.0
+"Regina-Moose Mountain, Saskatchewan",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,27.0
+"Regina-Moose Mountain, Saskatchewan",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,489.0
+"Regina-Moose Mountain, Saskatchewan",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,378.0
+"Regina-Moose Mountain, Saskatchewan",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Regina-Moose Mountain, Saskatchewan",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Swift Current-Moose Jaw, Saskatchewan",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,564.0
+"Swift Current-Moose Jaw, Saskatchewan",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,462.0
+"Swift Current-Moose Jaw, Saskatchewan",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,624.0
+"Swift Current-Moose Jaw, Saskatchewan",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,586.0
+"Swift Current-Moose Jaw, Saskatchewan",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,635.0
+"Swift Current-Moose Jaw, Saskatchewan",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,633.0
+"Swift Current-Moose Jaw, Saskatchewan",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,87.0
+"Swift Current-Moose Jaw, Saskatchewan",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,118.0
+"Swift Current-Moose Jaw, Saskatchewan",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,40.0
+"Swift Current-Moose Jaw, Saskatchewan",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,48.0
+"Swift Current-Moose Jaw, Saskatchewan",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Swift Current-Moose Jaw, Saskatchewan",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Swift Current-Moose Jaw, Saskatchewan",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-10.0
+"Swift Current-Moose Jaw, Saskatchewan",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,59.0
+"Swift Current-Moose Jaw, Saskatchewan",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-254.0
+"Swift Current-Moose Jaw, Saskatchewan",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-218.0
+"Swift Current-Moose Jaw, Saskatchewan",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-6.0
+"Swift Current-Moose Jaw, Saskatchewan",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,-46.0
+"Swift Current-Moose Jaw, Saskatchewan",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Swift Current-Moose Jaw, Saskatchewan",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Saskatoon-Biggar, Saskatchewan",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,2165.0
+"Saskatoon-Biggar, Saskatchewan",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,2139.0
+"Saskatoon-Biggar, Saskatchewan",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,1593.0
+"Saskatoon-Biggar, Saskatchewan",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,1544.0
+"Saskatoon-Biggar, Saskatchewan",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,3663.0
+"Saskatoon-Biggar, Saskatchewan",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,3687.0
+"Saskatoon-Biggar, Saskatchewan",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,542.0
+"Saskatoon-Biggar, Saskatchewan",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,478.0
+"Saskatoon-Biggar, Saskatchewan",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,340.0
+"Saskatoon-Biggar, Saskatchewan",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,323.0
+"Saskatoon-Biggar, Saskatchewan",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Saskatoon-Biggar, Saskatchewan",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Saskatoon-Biggar, Saskatchewan",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-815.0
+"Saskatoon-Biggar, Saskatchewan",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-828.0
+"Saskatoon-Biggar, Saskatchewan",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,427.0
+"Saskatoon-Biggar, Saskatchewan",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,453.0
+"Saskatoon-Biggar, Saskatchewan",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,634.0
+"Saskatoon-Biggar, Saskatchewan",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,583.0
+"Saskatoon-Biggar, Saskatchewan",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Saskatoon-Biggar, Saskatchewan",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Yorkton-Melville, Saskatchewan",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,463.0
+"Yorkton-Melville, Saskatchewan",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,418.0
+"Yorkton-Melville, Saskatchewan",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,581.0
+"Yorkton-Melville, Saskatchewan",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,567.0
+"Yorkton-Melville, Saskatchewan",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,329.0
+"Yorkton-Melville, Saskatchewan",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,342.0
+"Yorkton-Melville, Saskatchewan",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,34.0
+"Yorkton-Melville, Saskatchewan",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,52.0
+"Yorkton-Melville, Saskatchewan",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,25.0
+"Yorkton-Melville, Saskatchewan",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,22.0
+"Yorkton-Melville, Saskatchewan",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Yorkton-Melville, Saskatchewan",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Yorkton-Melville, Saskatchewan",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,147.0
+"Yorkton-Melville, Saskatchewan",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,67.0
+"Yorkton-Melville, Saskatchewan",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-157.0
+"Yorkton-Melville, Saskatchewan",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-89.0
+"Yorkton-Melville, Saskatchewan",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-2.0
+"Yorkton-Melville, Saskatchewan",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,31.0
+"Yorkton-Melville, Saskatchewan",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Yorkton-Melville, Saskatchewan",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Prince Albert, Saskatchewan",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,1418.0
+"Prince Albert, Saskatchewan",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,1280.0
+"Prince Albert, Saskatchewan",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,1259.0
+"Prince Albert, Saskatchewan",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,1009.0
+"Prince Albert, Saskatchewan",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,924.0
+"Prince Albert, Saskatchewan",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,969.0
+"Prince Albert, Saskatchewan",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,77.0
+"Prince Albert, Saskatchewan",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,102.0
+"Prince Albert, Saskatchewan",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,44.0
+"Prince Albert, Saskatchewan",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,66.0
+"Prince Albert, Saskatchewan",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Prince Albert, Saskatchewan",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Prince Albert, Saskatchewan",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,168.0
+"Prince Albert, Saskatchewan",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,189.0
+"Prince Albert, Saskatchewan",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,75.0
+"Prince Albert, Saskatchewan",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-109.0
+"Prince Albert, Saskatchewan",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,116.0
+"Prince Albert, Saskatchewan",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,19.0
+"Prince Albert, Saskatchewan",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Prince Albert, Saskatchewan",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Northern, Saskatchewan",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,374.0
+"Northern, Saskatchewan",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,392.0
+"Northern, Saskatchewan",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,188.0
+"Northern, Saskatchewan",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,118.0
+"Northern, Saskatchewan",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,39.0
+"Northern, Saskatchewan",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,46.0
+"Northern, Saskatchewan",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,5.0
+"Northern, Saskatchewan",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,0.0
+"Northern, Saskatchewan",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,1.0
+"Northern, Saskatchewan",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,5.0
+"Northern, Saskatchewan",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Northern, Saskatchewan",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Northern, Saskatchewan",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-1.0
+"Northern, Saskatchewan",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-9.0
+"Northern, Saskatchewan",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-102.0
+"Northern, Saskatchewan",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-64.0
+"Northern, Saskatchewan",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-6.0
+"Northern, Saskatchewan",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,1.0
+"Northern, Saskatchewan",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Northern, Saskatchewan",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+Alberta,province,births,Men+,All ages,2024 / 2025,2024,2025,26852.0
+Alberta,province,births,Women+,All ages,2024 / 2025,2024,2025,25594.0
+Alberta,province,deaths,Men+,All ages,2024 / 2025,2024,2025,18196.0
+Alberta,province,deaths,Women+,All ages,2024 / 2025,2024,2025,15270.0
+Alberta,province,immigrants,Men+,All ages,2024 / 2025,2024,2025,28180.0
+Alberta,province,immigrants,Women+,All ages,2024 / 2025,2024,2025,30014.0
+Alberta,province,emigrants,Men+,All ages,2024 / 2025,2024,2025,7592.0
+Alberta,province,emigrants,Women+,All ages,2024 / 2025,2024,2025,7018.0
+Alberta,province,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,4026.0
+Alberta,province,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,4069.0
+Alberta,province,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+Alberta,province,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+Alberta,province,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,13915.0
+Alberta,province,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,14223.0
+Alberta,province,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,0.0
+Alberta,province,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,0.0
+Alberta,province,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,12981.0
+Alberta,province,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,8538.0
+Alberta,province,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+Alberta,province,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Lethbridge-Medicine Hat, Alberta",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,1928.0
+"Lethbridge-Medicine Hat, Alberta",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,1851.0
+"Lethbridge-Medicine Hat, Alberta",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,1643.0
+"Lethbridge-Medicine Hat, Alberta",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,1493.0
+"Lethbridge-Medicine Hat, Alberta",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,959.0
+"Lethbridge-Medicine Hat, Alberta",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,1005.0
+"Lethbridge-Medicine Hat, Alberta",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,401.0
+"Lethbridge-Medicine Hat, Alberta",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,450.0
+"Lethbridge-Medicine Hat, Alberta",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,251.0
+"Lethbridge-Medicine Hat, Alberta",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,254.0
+"Lethbridge-Medicine Hat, Alberta",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Lethbridge-Medicine Hat, Alberta",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Lethbridge-Medicine Hat, Alberta",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,608.0
+"Lethbridge-Medicine Hat, Alberta",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,786.0
+"Lethbridge-Medicine Hat, Alberta",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-105.0
+"Lethbridge-Medicine Hat, Alberta",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-93.0
+"Lethbridge-Medicine Hat, Alberta",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,673.0
+"Lethbridge-Medicine Hat, Alberta",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,443.0
+"Lethbridge-Medicine Hat, Alberta",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Lethbridge-Medicine Hat, Alberta",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Camrose-Drumheller, Alberta",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,1084.0
+"Camrose-Drumheller, Alberta",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,1106.0
+"Camrose-Drumheller, Alberta",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,1249.0
+"Camrose-Drumheller, Alberta",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,1042.0
+"Camrose-Drumheller, Alberta",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,323.0
+"Camrose-Drumheller, Alberta",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,367.0
+"Camrose-Drumheller, Alberta",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,261.0
+"Camrose-Drumheller, Alberta",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,239.0
+"Camrose-Drumheller, Alberta",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,123.0
+"Camrose-Drumheller, Alberta",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,117.0
+"Camrose-Drumheller, Alberta",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Camrose-Drumheller, Alberta",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Camrose-Drumheller, Alberta",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,428.0
+"Camrose-Drumheller, Alberta",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,356.0
+"Camrose-Drumheller, Alberta",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,346.0
+"Camrose-Drumheller, Alberta",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,145.0
+"Camrose-Drumheller, Alberta",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,356.0
+"Camrose-Drumheller, Alberta",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,103.0
+"Camrose-Drumheller, Alberta",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Camrose-Drumheller, Alberta",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Calgary, Alberta",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,10193.0
+"Calgary, Alberta",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,9560.0
+"Calgary, Alberta",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,5626.0
+"Calgary, Alberta",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,4877.0
+"Calgary, Alberta",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,13946.0
+"Calgary, Alberta",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,14897.0
+"Calgary, Alberta",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,4308.0
+"Calgary, Alberta",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,3818.0
+"Calgary, Alberta",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,2267.0
+"Calgary, Alberta",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,2271.0
+"Calgary, Alberta",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Calgary, Alberta",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Calgary, Alberta",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,5529.0
+"Calgary, Alberta",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,5595.0
+"Calgary, Alberta",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-1473.0
+"Calgary, Alberta",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-1211.0
+"Calgary, Alberta",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,6009.0
+"Calgary, Alberta",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,3885.0
+"Calgary, Alberta",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Calgary, Alberta",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Banff-Jasper-Rocky Mountain House, Alberta",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,455.0
+"Banff-Jasper-Rocky Mountain House, Alberta",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,416.0
+"Banff-Jasper-Rocky Mountain House, Alberta",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,436.0
+"Banff-Jasper-Rocky Mountain House, Alberta",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,329.0
+"Banff-Jasper-Rocky Mountain House, Alberta",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,275.0
+"Banff-Jasper-Rocky Mountain House, Alberta",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,374.0
+"Banff-Jasper-Rocky Mountain House, Alberta",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,140.0
+"Banff-Jasper-Rocky Mountain House, Alberta",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,197.0
+"Banff-Jasper-Rocky Mountain House, Alberta",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,71.0
+"Banff-Jasper-Rocky Mountain House, Alberta",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,79.0
+"Banff-Jasper-Rocky Mountain House, Alberta",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Banff-Jasper-Rocky Mountain House, Alberta",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Banff-Jasper-Rocky Mountain House, Alberta",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,129.0
+"Banff-Jasper-Rocky Mountain House, Alberta",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,94.0
+"Banff-Jasper-Rocky Mountain House, Alberta",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-211.0
+"Banff-Jasper-Rocky Mountain House, Alberta",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-213.0
+"Banff-Jasper-Rocky Mountain House, Alberta",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-242.0
+"Banff-Jasper-Rocky Mountain House, Alberta",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,-333.0
+"Banff-Jasper-Rocky Mountain House, Alberta",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Banff-Jasper-Rocky Mountain House, Alberta",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Red Deer, Alberta",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,1230.0
+"Red Deer, Alberta",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,1132.0
+"Red Deer, Alberta",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,1067.0
+"Red Deer, Alberta",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,909.0
+"Red Deer, Alberta",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,511.0
+"Red Deer, Alberta",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,595.0
+"Red Deer, Alberta",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,190.0
+"Red Deer, Alberta",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,179.0
+"Red Deer, Alberta",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,105.0
+"Red Deer, Alberta",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,110.0
+"Red Deer, Alberta",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Red Deer, Alberta",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Red Deer, Alberta",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,646.0
+"Red Deer, Alberta",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,664.0
+"Red Deer, Alberta",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,329.0
+"Red Deer, Alberta",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,199.0
+"Red Deer, Alberta",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,502.0
+"Red Deer, Alberta",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,328.0
+"Red Deer, Alberta",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Red Deer, Alberta",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Edmonton, Alberta",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,9061.0
+"Edmonton, Alberta",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,8776.0
+"Edmonton, Alberta",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,6310.0
+"Edmonton, Alberta",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,5267.0
+"Edmonton, Alberta",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,10664.0
+"Edmonton, Alberta",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,11145.0
+"Edmonton, Alberta",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,1953.0
+"Edmonton, Alberta",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,1779.0
+"Edmonton, Alberta",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,980.0
+"Edmonton, Alberta",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,1038.0
+"Edmonton, Alberta",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Edmonton, Alberta",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Edmonton, Alberta",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,5872.0
+"Edmonton, Alberta",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,5997.0
+"Edmonton, Alberta",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,1647.0
+"Edmonton, Alberta",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,1795.0
+"Edmonton, Alberta",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,5326.0
+"Edmonton, Alberta",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,3714.0
+"Edmonton, Alberta",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Edmonton, Alberta",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Athabasca-Grande Prairie-Peace River, Alberta",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,1891.0
+"Athabasca-Grande Prairie-Peace River, Alberta",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,1840.0
+"Athabasca-Grande Prairie-Peace River, Alberta",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,1349.0
+"Athabasca-Grande Prairie-Peace River, Alberta",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,1011.0
+"Athabasca-Grande Prairie-Peace River, Alberta",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,839.0
+"Athabasca-Grande Prairie-Peace River, Alberta",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,925.0
+"Athabasca-Grande Prairie-Peace River, Alberta",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,150.0
+"Athabasca-Grande Prairie-Peace River, Alberta",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,209.0
+"Athabasca-Grande Prairie-Peace River, Alberta",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,167.0
+"Athabasca-Grande Prairie-Peace River, Alberta",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,144.0
+"Athabasca-Grande Prairie-Peace River, Alberta",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Athabasca-Grande Prairie-Peace River, Alberta",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Athabasca-Grande Prairie-Peace River, Alberta",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,683.0
+"Athabasca-Grande Prairie-Peace River, Alberta",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,654.0
+"Athabasca-Grande Prairie-Peace River, Alberta",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-80.0
+"Athabasca-Grande Prairie-Peace River, Alberta",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-55.0
+"Athabasca-Grande Prairie-Peace River, Alberta",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,165.0
+"Athabasca-Grande Prairie-Peace River, Alberta",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,218.0
+"Athabasca-Grande Prairie-Peace River, Alberta",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Athabasca-Grande Prairie-Peace River, Alberta",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Wood Buffalo-Cold Lake, Alberta",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,1010.0
+"Wood Buffalo-Cold Lake, Alberta",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,913.0
+"Wood Buffalo-Cold Lake, Alberta",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,516.0
+"Wood Buffalo-Cold Lake, Alberta",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,342.0
+"Wood Buffalo-Cold Lake, Alberta",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,663.0
+"Wood Buffalo-Cold Lake, Alberta",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,706.0
+"Wood Buffalo-Cold Lake, Alberta",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,189.0
+"Wood Buffalo-Cold Lake, Alberta",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,147.0
+"Wood Buffalo-Cold Lake, Alberta",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,62.0
+"Wood Buffalo-Cold Lake, Alberta",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,56.0
+"Wood Buffalo-Cold Lake, Alberta",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Wood Buffalo-Cold Lake, Alberta",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Wood Buffalo-Cold Lake, Alberta",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,20.0
+"Wood Buffalo-Cold Lake, Alberta",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,77.0
+"Wood Buffalo-Cold Lake, Alberta",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-453.0
+"Wood Buffalo-Cold Lake, Alberta",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-567.0
+"Wood Buffalo-Cold Lake, Alberta",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,192.0
+"Wood Buffalo-Cold Lake, Alberta",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,180.0
+"Wood Buffalo-Cold Lake, Alberta",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Wood Buffalo-Cold Lake, Alberta",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+British Columbia,province,births,Men+,All ages,2024 / 2025,2024,2025,22796.0
+British Columbia,province,births,Women+,All ages,2024 / 2025,2024,2025,21575.0
+British Columbia,province,deaths,Men+,All ages,2024 / 2025,2024,2025,24012.0
+British Columbia,province,deaths,Women+,All ages,2024 / 2025,2024,2025,19890.0
+British Columbia,province,immigrants,Men+,All ages,2024 / 2025,2024,2025,26424.0
+British Columbia,province,immigrants,Women+,All ages,2024 / 2025,2024,2025,29779.0
+British Columbia,province,emigrants,Men+,All ages,2024 / 2025,2024,2025,12985.0
+British Columbia,province,emigrants,Women+,All ages,2024 / 2025,2024,2025,12038.0
+British Columbia,province,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,4897.0
+British Columbia,province,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,4880.0
+British Columbia,province,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+British Columbia,province,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+British Columbia,province,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-1004.0
+British Columbia,province,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-1388.0
+British Columbia,province,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,0.0
+British Columbia,province,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,0.0
+British Columbia,province,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-5721.0
+British Columbia,province,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,-6891.0
+British Columbia,province,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+British Columbia,province,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Vancouver Island and Coast, British Columbia",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,3105.0
+"Vancouver Island and Coast, British Columbia",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,3018.0
+"Vancouver Island and Coast, British Columbia",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,5147.0
+"Vancouver Island and Coast, British Columbia",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,4579.0
+"Vancouver Island and Coast, British Columbia",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,2198.0
+"Vancouver Island and Coast, British Columbia",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,2537.0
+"Vancouver Island and Coast, British Columbia",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,1315.0
+"Vancouver Island and Coast, British Columbia",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,1331.0
+"Vancouver Island and Coast, British Columbia",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,562.0
+"Vancouver Island and Coast, British Columbia",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,597.0
+"Vancouver Island and Coast, British Columbia",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Vancouver Island and Coast, British Columbia",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Vancouver Island and Coast, British Columbia",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,1157.0
+"Vancouver Island and Coast, British Columbia",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,1241.0
+"Vancouver Island and Coast, British Columbia",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,3173.0
+"Vancouver Island and Coast, British Columbia",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,3559.0
+"Vancouver Island and Coast, British Columbia",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-805.0
+"Vancouver Island and Coast, British Columbia",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,-1009.0
+"Vancouver Island and Coast, British Columbia",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Vancouver Island and Coast, British Columbia",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Lower Mainland-Southwest, British Columbia",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,14909.0
+"Lower Mainland-Southwest, British Columbia",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,14012.0
+"Lower Mainland-Southwest, British Columbia",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,12122.0
+"Lower Mainland-Southwest, British Columbia",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,9956.0
+"Lower Mainland-Southwest, British Columbia",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,21353.0
+"Lower Mainland-Southwest, British Columbia",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,24073.0
+"Lower Mainland-Southwest, British Columbia",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,10102.0
+"Lower Mainland-Southwest, British Columbia",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,9186.0
+"Lower Mainland-Southwest, British Columbia",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,3791.0
+"Lower Mainland-Southwest, British Columbia",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,3756.0
+"Lower Mainland-Southwest, British Columbia",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Lower Mainland-Southwest, British Columbia",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Lower Mainland-Southwest, British Columbia",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-2687.0
+"Lower Mainland-Southwest, British Columbia",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-2844.0
+"Lower Mainland-Southwest, British Columbia",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-6245.0
+"Lower Mainland-Southwest, British Columbia",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-6314.0
+"Lower Mainland-Southwest, British Columbia",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-5767.0
+"Lower Mainland-Southwest, British Columbia",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,-5038.0
+"Lower Mainland-Southwest, British Columbia",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Lower Mainland-Southwest, British Columbia",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Thompson-Okanagan, British Columbia",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,2406.0
+"Thompson-Okanagan, British Columbia",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,2208.0
+"Thompson-Okanagan, British Columbia",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,3916.0
+"Thompson-Okanagan, British Columbia",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,3186.0
+"Thompson-Okanagan, British Columbia",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,1730.0
+"Thompson-Okanagan, British Columbia",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,1875.0
+"Thompson-Okanagan, British Columbia",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,1055.0
+"Thompson-Okanagan, British Columbia",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,943.0
+"Thompson-Okanagan, British Columbia",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,368.0
+"Thompson-Okanagan, British Columbia",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,340.0
+"Thompson-Okanagan, British Columbia",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Thompson-Okanagan, British Columbia",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Thompson-Okanagan, British Columbia",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,229.0
+"Thompson-Okanagan, British Columbia",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,213.0
+"Thompson-Okanagan, British Columbia",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,2200.0
+"Thompson-Okanagan, British Columbia",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,2127.0
+"Thompson-Okanagan, British Columbia",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,180.0
+"Thompson-Okanagan, British Columbia",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,-743.0
+"Thompson-Okanagan, British Columbia",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Thompson-Okanagan, British Columbia",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Kootenay, British Columbia",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,610.0
+"Kootenay, British Columbia",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,642.0
+"Kootenay, British Columbia",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,1043.0
+"Kootenay, British Columbia",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,799.0
+"Kootenay, British Columbia",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,360.0
+"Kootenay, British Columbia",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,361.0
+"Kootenay, British Columbia",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,256.0
+"Kootenay, British Columbia",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,270.0
+"Kootenay, British Columbia",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,86.0
+"Kootenay, British Columbia",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,81.0
+"Kootenay, British Columbia",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Kootenay, British Columbia",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Kootenay, British Columbia",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,313.0
+"Kootenay, British Columbia",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,300.0
+"Kootenay, British Columbia",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,446.0
+"Kootenay, British Columbia",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,292.0
+"Kootenay, British Columbia",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-53.0
+"Kootenay, British Columbia",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,-190.0
+"Kootenay, British Columbia",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Kootenay, British Columbia",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Cariboo, British Columbia",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,789.0
+"Cariboo, British Columbia",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,698.0
+"Cariboo, British Columbia",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,942.0
+"Cariboo, British Columbia",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,753.0
+"Cariboo, British Columbia",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,369.0
+"Cariboo, British Columbia",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,428.0
+"Cariboo, British Columbia",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,125.0
+"Cariboo, British Columbia",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,169.0
+"Cariboo, British Columbia",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,42.0
+"Cariboo, British Columbia",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,58.0
+"Cariboo, British Columbia",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Cariboo, British Columbia",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Cariboo, British Columbia",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-80.0
+"Cariboo, British Columbia",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-88.0
+"Cariboo, British Columbia",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,497.0
+"Cariboo, British Columbia",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,384.0
+"Cariboo, British Columbia",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,159.0
+"Cariboo, British Columbia",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,144.0
+"Cariboo, British Columbia",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Cariboo, British Columbia",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"North Coast, British Columbia",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,299.0
+"North Coast, British Columbia",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,288.0
+"North Coast, British Columbia",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,323.0
+"North Coast, British Columbia",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,263.0
+"North Coast, British Columbia",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,153.0
+"North Coast, British Columbia",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,195.0
+"North Coast, British Columbia",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,65.0
+"North Coast, British Columbia",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,49.0
+"North Coast, British Columbia",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,20.0
+"North Coast, British Columbia",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,21.0
+"North Coast, British Columbia",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"North Coast, British Columbia",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"North Coast, British Columbia",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,155.0
+"North Coast, British Columbia",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-9.0
+"North Coast, British Columbia",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,6.0
+"North Coast, British Columbia",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-49.0
+"North Coast, British Columbia",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,576.0
+"North Coast, British Columbia",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,3.0
+"North Coast, British Columbia",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"North Coast, British Columbia",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Nechako, British Columbia",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,214.0
+"Nechako, British Columbia",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,215.0
+"Nechako, British Columbia",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,233.0
+"Nechako, British Columbia",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,150.0
+"Nechako, British Columbia",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,46.0
+"Nechako, British Columbia",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,48.0
+"Nechako, British Columbia",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,13.0
+"Nechako, British Columbia",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,41.0
+"Nechako, British Columbia",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,12.0
+"Nechako, British Columbia",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,12.0
+"Nechako, British Columbia",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Nechako, British Columbia",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Nechako, British Columbia",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-40.0
+"Nechako, British Columbia",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-24.0
+"Nechako, British Columbia",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-34.0
+"Nechako, British Columbia",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,40.0
+"Nechako, British Columbia",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-4.0
+"Nechako, British Columbia",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,-34.0
+"Nechako, British Columbia",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Nechako, British Columbia",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Northeast, British Columbia",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,464.0
+"Northeast, British Columbia",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,494.0
+"Northeast, British Columbia",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,286.0
+"Northeast, British Columbia",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,204.0
+"Northeast, British Columbia",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,215.0
+"Northeast, British Columbia",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,262.0
+"Northeast, British Columbia",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,54.0
+"Northeast, British Columbia",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,49.0
+"Northeast, British Columbia",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,16.0
+"Northeast, British Columbia",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,15.0
+"Northeast, British Columbia",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Northeast, British Columbia",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Northeast, British Columbia",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-51.0
+"Northeast, British Columbia",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-177.0
+"Northeast, British Columbia",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-43.0
+"Northeast, British Columbia",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-39.0
+"Northeast, British Columbia",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-7.0
+"Northeast, British Columbia",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,-24.0
+"Northeast, British Columbia",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Northeast, British Columbia",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+Yukon,province,births,Men+,All ages,2024 / 2025,2024,2025,231.0
+Yukon,province,births,Women+,All ages,2024 / 2025,2024,2025,212.0
+Yukon,province,deaths,Men+,All ages,2024 / 2025,2024,2025,186.0
+Yukon,province,deaths,Women+,All ages,2024 / 2025,2024,2025,152.0
+Yukon,province,immigrants,Men+,All ages,2024 / 2025,2024,2025,406.0
+Yukon,province,immigrants,Women+,All ages,2024 / 2025,2024,2025,420.0
+Yukon,province,emigrants,Men+,All ages,2024 / 2025,2024,2025,17.0
+Yukon,province,emigrants,Women+,All ages,2024 / 2025,2024,2025,16.0
+Yukon,province,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,15.0
+Yukon,province,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,15.0
+Yukon,province,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+Yukon,province,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+Yukon,province,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-84.0
+Yukon,province,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-137.0
+Yukon,province,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,0.0
+Yukon,province,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,0.0
+Yukon,province,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-27.0
+Yukon,province,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,3.0
+Yukon,province,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+Yukon,province,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Yukon, Yukon",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,231.0
+"Yukon, Yukon",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,212.0
+"Yukon, Yukon",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,186.0
+"Yukon, Yukon",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,152.0
+"Yukon, Yukon",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,406.0
+"Yukon, Yukon",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,420.0
+"Yukon, Yukon",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,17.0
+"Yukon, Yukon",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,16.0
+"Yukon, Yukon",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,15.0
+"Yukon, Yukon",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,15.0
+"Yukon, Yukon",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Yukon, Yukon",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Yukon, Yukon",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-84.0
+"Yukon, Yukon",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-137.0
+"Yukon, Yukon",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,0.0
+"Yukon, Yukon",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,0.0
+"Yukon, Yukon",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,-27.0
+"Yukon, Yukon",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,3.0
+"Yukon, Yukon",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Yukon, Yukon",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+Northwest Territories,province,births,Men+,All ages,2024 / 2025,2024,2025,243.0
+Northwest Territories,province,births,Women+,All ages,2024 / 2025,2024,2025,228.0
+Northwest Territories,province,deaths,Men+,All ages,2024 / 2025,2024,2025,165.0
+Northwest Territories,province,deaths,Women+,All ages,2024 / 2025,2024,2025,111.0
+Northwest Territories,province,immigrants,Men+,All ages,2024 / 2025,2024,2025,248.0
+Northwest Territories,province,immigrants,Women+,All ages,2024 / 2025,2024,2025,208.0
+Northwest Territories,province,emigrants,Men+,All ages,2024 / 2025,2024,2025,44.0
+Northwest Territories,province,emigrants,Women+,All ages,2024 / 2025,2024,2025,42.0
+Northwest Territories,province,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,7.0
+Northwest Territories,province,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,7.0
+Northwest Territories,province,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+Northwest Territories,province,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+Northwest Territories,province,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,40.0
+Northwest Territories,province,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-50.0
+Northwest Territories,province,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,0.0
+Northwest Territories,province,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,0.0
+Northwest Territories,province,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,63.0
+Northwest Territories,province,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,61.0
+Northwest Territories,province,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+Northwest Territories,province,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Northwest Territories, Northwest Territories",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,243.0
+"Northwest Territories, Northwest Territories",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,228.0
+"Northwest Territories, Northwest Territories",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,165.0
+"Northwest Territories, Northwest Territories",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,111.0
+"Northwest Territories, Northwest Territories",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,248.0
+"Northwest Territories, Northwest Territories",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,208.0
+"Northwest Territories, Northwest Territories",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,44.0
+"Northwest Territories, Northwest Territories",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,42.0
+"Northwest Territories, Northwest Territories",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,7.0
+"Northwest Territories, Northwest Territories",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,7.0
+"Northwest Territories, Northwest Territories",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Northwest Territories, Northwest Territories",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Northwest Territories, Northwest Territories",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,40.0
+"Northwest Territories, Northwest Territories",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-50.0
+"Northwest Territories, Northwest Territories",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,0.0
+"Northwest Territories, Northwest Territories",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,0.0
+"Northwest Territories, Northwest Territories",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,63.0
+"Northwest Territories, Northwest Territories",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,61.0
+"Northwest Territories, Northwest Territories",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Northwest Territories, Northwest Territories",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+Nunavut,province,births,Men+,All ages,2024 / 2025,2024,2025,390.0
+Nunavut,province,births,Women+,All ages,2024 / 2025,2024,2025,369.0
+Nunavut,province,deaths,Men+,All ages,2024 / 2025,2024,2025,147.0
+Nunavut,province,deaths,Women+,All ages,2024 / 2025,2024,2025,116.0
+Nunavut,province,immigrants,Men+,All ages,2024 / 2025,2024,2025,36.0
+Nunavut,province,immigrants,Women+,All ages,2024 / 2025,2024,2025,37.0
+Nunavut,province,emigrants,Men+,All ages,2024 / 2025,2024,2025,0.0
+Nunavut,province,emigrants,Women+,All ages,2024 / 2025,2024,2025,0.0
+Nunavut,province,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,0.0
+Nunavut,province,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,0.0
+Nunavut,province,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+Nunavut,province,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+Nunavut,province,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-85.0
+Nunavut,province,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-151.0
+Nunavut,province,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,0.0
+Nunavut,province,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,0.0
+Nunavut,province,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,47.0
+Nunavut,province,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,40.0
+Nunavut,province,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+Nunavut,province,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+"Nunavut, Nunavut",economic_region,births,Men+,All ages,2024 / 2025,2024,2025,390.0
+"Nunavut, Nunavut",economic_region,births,Women+,All ages,2024 / 2025,2024,2025,369.0
+"Nunavut, Nunavut",economic_region,deaths,Men+,All ages,2024 / 2025,2024,2025,147.0
+"Nunavut, Nunavut",economic_region,deaths,Women+,All ages,2024 / 2025,2024,2025,116.0
+"Nunavut, Nunavut",economic_region,immigrants,Men+,All ages,2024 / 2025,2024,2025,36.0
+"Nunavut, Nunavut",economic_region,immigrants,Women+,All ages,2024 / 2025,2024,2025,37.0
+"Nunavut, Nunavut",economic_region,emigrants,Men+,All ages,2024 / 2025,2024,2025,0.0
+"Nunavut, Nunavut",economic_region,emigrants,Women+,All ages,2024 / 2025,2024,2025,0.0
+"Nunavut, Nunavut",economic_region,returning_emigrants,Men+,All ages,2024 / 2025,2024,2025,0.0
+"Nunavut, Nunavut",economic_region,returning_emigrants,Women+,All ages,2024 / 2025,2024,2025,0.0
+"Nunavut, Nunavut",economic_region,net_temporary_emigration,Men+,All ages,2024 / 2025,2024,2025,
+"Nunavut, Nunavut",economic_region,net_temporary_emigration,Women+,All ages,2024 / 2025,2024,2025,
+"Nunavut, Nunavut",economic_region,net_interprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,-85.0
+"Nunavut, Nunavut",economic_region,net_interprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,-151.0
+"Nunavut, Nunavut",economic_region,net_intraprovincial_migration,Men+,All ages,2024 / 2025,2024,2025,0.0
+"Nunavut, Nunavut",economic_region,net_intraprovincial_migration,Women+,All ages,2024 / 2025,2024,2025,0.0
+"Nunavut, Nunavut",economic_region,net_non_permanent_residents,Men+,All ages,2024 / 2025,2024,2025,47.0
+"Nunavut, Nunavut",economic_region,net_non_permanent_residents,Women+,All ages,2024 / 2025,2024,2025,40.0
+"Nunavut, Nunavut",economic_region,residual_deviation,Men+,All ages,2024 / 2025,2024,2025,
+"Nunavut, Nunavut",economic_region,residual_deviation,Women+,All ages,2024 / 2025,2024,2025,
+
