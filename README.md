@@ -88,26 +88,62 @@ python scripts/run_empirical_canada.py
 The bundled empirical example is a minimal real-data smoke run. It is **not** a full empirical validation of ACMF. Full validation requires richer panel data with demographic cohorts, institutional proxies, productivity, automation, fertility, migration, stress, and latent-state candidates.
 
 
-## Audit correction patch — 3.3.1.2-audit-corrected
+## Audit-corrected full package notes
 
-This deployment package includes the post-audit corrections applied to the executable `src/acmf` package:
+This package includes the integrated post-audit runtime extension:
 
-- Demographic mode separation is treated as nonlinear near the smoothing layer; `L_s / P` is **not** documented or tested as identically `0.6`.
-- The `V` equation now preserves both R channels: the indirect positive `R -> Education -> C -> Gap -> V` channel and the direct stabilizing `-beta12 * R * V` channel. Therefore `J[V,R]` is documented and tested as parameter/state dependent, not universal.
-- Feedback loop `L2` is tested as a negative feedback loop.
-- `K0` is retained for the `P_max` upper-bound argument; `K_min` is not used as the worst-case upper estimate.
-- `EI`, `Innovation`, and `StructuralLimits` now expose raw diagnostics (`*_raw`) while the deployed index values are bounded to `[0, 1]`.
-- Positive/bounded prior transforms are available in `src/acmf/priors.py`.
-- Audit regression tests are in `tests/test_audit_3_3_1_2_fixes.py`.
+- diagnostics for Jacobian signs, local spectrum, demographic decoupling, and P-invariance;
+- scenario RK4 solver for fast demos and visualization;
+- Phase II calibration scaffold using Differential Evolution, L-BFGS-B, and adaptive MCMC;
+- bounded deployed index values with raw diagnostics preserved;
+- explicit treatment of `J[V,R]` as parameter/state dependent.
 
-Validation command used for this package:
+Run the full test suite:
 
 ```bash
 PYTHONPATH=src pytest -q
 ```
 
-Expected result:
+Expected result for this package:
 
 ```text
-15 passed
+17 passed
+```
+
+Run demos:
+
+```bash
+PYTHONPATH=src python scripts/run_acmf.py
+PYTHONPATH=src python scripts/run_calibration_synthetic.py
+PYTHONPATH=src python scripts/run_empirical_canada.py
+PYTHONPATH=src python scripts/run_synthetic_tests.py
+```
+
+Important interpretation notes:
+
+- `adaptive_dynamics.py` remains a diagnostic extension, not a fully calibrated probability model.
+- `hypothesis_ladder.py` remains a statistical hypothesis-ladder scaffold and is not a substitute for ODE parameter calibration.
+- `calibration.py` provides the Phase II scaffold for ODE calibration, but full empirical validation still requires richer panel data and stronger measurement models.
+
+
+## Phase II/III benchmark and digital-twin extensions
+
+This package also includes:
+
+- benchmark econometric forecasters: Persistence/RandomWalk, LinearTrend, ARIMA(1,1,0), VAR(1);
+- Diebold-Mariano forecast-comparison utilities;
+- Ensemble Kalman Filter for latent-state estimation;
+- Digital Twin wrapper for assimilation and scenario forecasts.
+
+Run the additional demos:
+
+```bash
+PYTHONPATH=src python scripts/run_benchmark_dm.py
+PYTHONPATH=src python scripts/run_digital_twin.py
+```
+
+The full test suite for this archive is expected to report:
+
+```text
+17 passed
 ```

@@ -149,14 +149,12 @@ def algebraic_layer(x, params: ACMFParams | None = None):
     Cult = smin(1.0, smax(0.0, Cult_raw))
     C = smin(1.0, smax(0.0, p.c1 * Education + p.c2 * Cult))
     Gap = sigmoid(C - Ch)
-    Env = p.w1 * p.H + p.w2 * p.Sec + p.w3 * p.HC + p.w4 * Inst + p.w5 * p.FP
-    # Audit 3.3.1.2: EI is interpreted as a normalized index, so keep
-    # the raw diagnostic value while bounding the deployed index to [0, 1].
+    Env_raw = p.w1 * p.H + p.w2 * p.Sec + p.w3 * p.HC + p.w4 * Inst + p.w5 * p.FP
+    Env = smin(1.0, smax(0.0, Env_raw))
+
     EI_raw = p.e1 * p.Inf + p.e2 * (1.0 - p.Inc) + p.e3 * Unemployment
     EI = smin(1.0, smax(0.0, EI_raw))
 
-    # Audit 3.3.1.2: Innovation is used downstream as an index-like factor.
-    # Preserve Innovation_raw for diagnostics, but use a bounded deployed index.
     Innovation_raw = Inst * smax(0.0, 1.0 - A) * (1.0 + p.g_innov * G) * (1.0 + p.g_ch * Ch)
     Innovation = smin(1.0, smax(0.0, Innovation_raw))
     RoutineAuto = A * Prod
@@ -166,7 +164,6 @@ def algebraic_layer(x, params: ACMFParams | None = None):
     LabourScarcity = smax(0.0, (L_d - L_s) / smax(L_d + L_s, EPSILON))
     AutomationProfit = 1.0 - np.exp(-(p.p1 * LabourScarcity + p.p2 * Prod + p.p3 * Innovation * HCE))
     TechSaturation = A / smax(p.A_max, EPSILON)
-    # Audit 3.3.1.2: StructuralLimits is an index; keep raw plus bounded value.
     StructuralLimits_raw = p.l1 * (1.0 - Inst) + p.l2 * p.Inf
     StructuralLimits = smin(1.0, smax(0.0, StructuralLimits_raw))
     Corruption = smin(1.0, smax(0.0, (1.0 - Inst) * (1.0 - p.u_c * p.U_corr) * (1.0 + p.c_v * V - p.c_r * R)))
@@ -189,10 +186,6 @@ def rhs(x, params: ACMFParams | None = None):
     dx[2] = (p.alpha7 * a["Innovation"] * a["Hill"] + p.alpha8 * a["Comp"] + p.alpha9 * R + p.alpha10 * a["Education"]) * (1 - Ch) - (p.beta4 * a["RoutineAuto"] + p.beta5 * a["S"]) * Ch
     dx[3] = (p.alpha11 * Ch + p.alpha12 * G + p.alpha13 * R + p.alpha14 * Inst) * (1 - M) - (p.beta6 * V + p.beta7 * a["S"]) * M
     dx[4] = (p.alpha15 * M + p.alpha16 * Ch + p.alpha17 * p.LTG + p.alpha18 * a["Education"]) * (1 - G) - (p.beta8 * V + p.beta9 * p.IG + p.beta10 * a["S"]) * G
-    # Audit 3.3.1.2 refinement: the sign of J[V,R] is parameter/state dependent.
-    # R has a positive indirect channel through Education -> C -> Gap and a
-    # direct stabilizing loss channel -beta12 * R * V. Do not encode a universal
-    # sign for J[V,R] in the ODE itself; tests document both effects.
     dx[5] = (p.alpha19 * a["Gap"] + p.alpha20 * a["S"]) * (1 - V) - (p.beta11 * M + p.beta12 * R) * V
     dx[6] = p.alpha_pos * (R * a["SocialCapital"] + p.gamma_inst * M * G) * (1 - Inst) - (p.NaturalDecay + p.beta_neg * (a["Corruption"] * V + a["StructuralDecay"])) * Inst
     dx[7] = p.alpha_rec * a["RecoveryDriver"] * (1 - R) - p.beta_rec_stress * (V + a["S"]) * R
