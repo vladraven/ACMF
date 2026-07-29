@@ -1,0 +1,42 @@
+id,name,construct,level,source,column,selected,non_null,coverage_actual,coverage_expected,cost,oed_score
+POP,Population,Y,1,World Bank,Population,True,930,1.0,0.98,1.0,0.9309999999999999
+GDPC,GDP per Capita,Y,1,World Bank,GDP_per_capita,True,930,1.0,0.95,1.0,0.874
+GDPG,GDP Growth,Y,1,World Bank,GDP_growth,True,930,1.0,0.95,1.0,0.855
+LIFE,Life Expectancy,Y,1,World Bank,Life_expectancy,True,930,1.0,0.95,1.0,0.855
+INFL,Inflation,Y,1,World Bank / IMF,Inflation,True,930,1.0,0.92,1.0,0.782
+DEATH,Death Rate,Y,1,World Bank,Death_rate,True,930,1.0,0.95,1.0,0.6688000000000001
+BIRTH,Birth Rate,Y,1,World Bank,Birth_rate,True,930,1.0,0.95,1.0,0.6688000000000001
+URBAN,Urbanization Rate,Y,1,World Bank,Urbanization_pct,True,930,1.0,0.95,1.0,0.6080000000000001
+INTERNET,Internet Penetration,Y,1,World Bank / ITU,Internet_penetration,True,930,1.0,0.9,1.0,0.5616000000000001
+UNEMP,Unemployment Rate,M,1,World Bank / ILO,Unemployment,True,930,1.0,0.85,1.0,0.5576
+ELECTRICITY,Electricity Access,Y,1,World Bank,Electricity_access,True,930,1.0,0.9,1.0,0.54
+ENERGY_PC,Energy Use per Capita,Y,1,World Bank,Energy_consumption_per_capita,True,930,1.0,0.85,1.0,0.51
+CO2_PC,CO2 Emissions per Capita,Y,1,World Bank / CAIT,CO2_per_capita,True,930,1.0,0.85,1.0,0.476
+PATENTS,Patent Applications (Residents),Ch,3,World Bank / WIPO,Patent_activity,True,930,1.0,0.75,1.0,0.46799999999999997
+SCHOOL_ENROLL,Primary School Enrollment,Ch,1,World Bank / UNESCO,Primary_school_enrollment,True,900,0.967741935483871,0.85,1.0,0.36719999999999997
+MIGR,Net Migration,Y,1,World Bank,Net_migration,True,930,1.0,0.7,1.0,0.31499999999999995
+RD_EXP,R&D Expenditure (% of GDP),Ch,3,World Bank / UNESCO,RD_expenditure_pct_GDP,True,900,0.967741935483871,0.6,2.0,0.20400000000000001
+HDI,Human Development Index,M,3,UNDP,HDI,False,0,0.0,0.9,1.0,0.792
+FOREX_RESERVES,Foreign Exchange Reserves,R,3,IMF,FOREX_RESERVES,False,0,0.0,0.85,1.0,0.612
+RULELAW,Rule of Law,I,2,World Bank WGI,RULELAW,False,0,0.0,0.65,1.0,0.5850000000000001
+GOVEFF,Government Effectiveness,I,2,World Bank WGI,GOVEFF,False,0,0.0,0.65,1.0,0.5720000000000001
+LFPR,Labor Force Participation Rate,M,3,World Bank / ILO,LFPR,False,0,0.0,0.8,1.0,0.544
+YOUTH_UNEMP,Youth Unemployment,M,3,World Bank / ILO,YOUTH_UNEMP,False,0,0.0,0.8,1.0,0.5120000000000001
+GII,Global Innovation Index,Ch,3,WIPO,GII,False,0,0.0,0.55,1.0,0.5060000000000001
+WORKING_AGE_EMP,Working-Age Employment-to-Population,M,3,World Bank / ILO,WORKING_AGE_EMP,False,0,0.0,0.75,1.0,0.492
+POLSTAB,Political Stability,I,2,World Bank WGI,POLSTAB,False,0,0.0,0.65,1.0,0.442
+FISCAL_BUFFER,Fiscal Buffer (General Gov. Net Lending),R,3,IMF WEO,FISCAL_BUFFER,False,0,0.0,0.65,1.0,0.42640000000000006
+KNOWLEDGE_CREATION,Knowledge Creation (GII sub-index),Ch,3,WIPO GII,KNOWLEDGE_CREATION,False,0,0.0,0.5,1.0,0.41
+SCI_PAPERS,Scientific & Technical Journal Articles,Ch,3,World Bank / SCImago,SCI_PAPERS,False,0,0.0,0.65,1.0,0.39000000000000007
+EODB,Ease of Doing Business (legacy),G,3,World Bank (discontinued 2020),EODB,False,0,0.0,0.6,1.0,0.3744
+GINI,Gini Coefficient,V,3,World Bank,GINI,False,0,0.0,0.7,1.0,0.31499999999999995
+HIGHTECH_X,High-Technology Exports,Ch,3,World Bank,HIGHTECH_X,False,0,0.0,0.7,1.0,0.3024
+SELF_EMP,Self-Employment Rate,G,3,World Bank / ILO,SELF_EMP,False,0,0.0,0.75,1.0,0.29250000000000004
+CREATIVE_OUT,Creative Outputs (GII sub-index),Ch,3,WIPO GII,CREATIVE_OUT,False,0,0.0,0.5,1.0,0.272
+NEW_BUS,New Business Density,G,3,World Bank,NEW_BUS,False,0,0.0,0.6,2.0,0.20400000000000001
+RECOVERY_SPEED,Recovery Speed (GDP bounce-back),R,3,Calculated from WB GDP data,RECOVERY_SPEED,False,0,0.0,0.5,1.0,0.195
+BUSINESS_FORMATIONS,Business Formations (formal registrations),G,3,World Bank / UNCTAD,BUSINESS_FORMATIONS,False,0,0.0,0.55,2.0,0.1804
+RESEARCHERS,Researchers in R&D,Ch,3,UNESCO / OECD,RESEARCHERS,False,0,0.0,0.5,2.0,0.16000000000000003
+INST_CONTINUITY,Institutional Continuity (V-Dem),R,3,V-Dem Institute,INST_CONTINUITY,False,0,0.0,0.4,2.0,0.12480000000000002
+CITATIONS,"Citation Index (H-index, country-level)",Ch,3,SCImago / Web of Science,CITATIONS,False,0,0.0,0.45,3.0,0.084
+WVS_TRUST,Generalized Trust (World Values Survey),V,3,World Values Survey / European Values Study,WVS_TRUST,False,0,0.0,0.3,3.0,0.068

@@ -26,6 +26,10 @@ SCRIPT_TASKS = {
     'synthetic_ladder': ['scripts/run_synthetic_tests.py'],
     'world_profile': ['scripts/run_world_panel_profile.py'],
     'world_ident': ['scripts/run_identifiability_world_panel.py', '--top-n', '5'],
+    'data_list_indicators': ['scripts/build_panel_dataset.py', '--list-indicators'],
+    'data_fisher_rank': ['scripts/build_panel_dataset.py', '--fisher-rank'],
+    'data_build_minimal': ['scripts/build_panel_dataset.py', '--budget', 'minimal'],
+    'data_build_standard': ['scripts/build_panel_dataset.py', '--budget', 'standard'],
 }
 
 def run_task(task: str) -> int:

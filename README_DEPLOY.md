@@ -1,6 +1,6 @@
-# ACMF Clean Deployment
+# ACMF Clean Datafetch Deployment
 
-This package is a cleaned src-layout deployment bundle. The root-level stub package, PHP bundle helper, and obsolete generated text outputs have been removed. The canonical implementation lives only in `src/acmf/`.
+This package is a cleaned src-layout deployment bundle. The canonical implementation lives only in `src/acmf/`.
 
 ## Install
 
@@ -8,31 +8,46 @@ This package is a cleaned src-layout deployment bundle. The root-level stub pack
 python -m pip install -e .
 ```
 
-## Health check
-
-```bash
-python main.py --task health
-```
-
 ## Available tasks
 
 ```bash
+python main.py --task health
 python main.py --task empirical_canada
 python main.py --task synthetic_ladder
 python main.py --task world_profile
 python main.py --task world_ident
+python main.py --task data_list_indicators
+python main.py --task data_fisher_rank
+python main.py --task data_build_minimal
+python main.py --task data_build_standard
 python main.py --task v2_4_9
 ```
 
-Removed historical tasks `v2_4_7` and `v2_4_8` from the entrypoint because their modules are not present in this bundle. Only physically present, tested tasks are exposed.
+## Complete-year rule
 
-## World Bank data refresh
+Panel builds default to:
 
-```bash
-python scripts/download_world_data.py --start-year 1995 --end-year 2025 --output data/world_data_1995_2025.csv
+```text
+complete_data_year = current_calendar_year - 2
 ```
 
-## Optional API wrapper
+For 2026, the complete-data default is 2024.
+
+## Refresh World Bank data
+
+Requests backend:
+
+```bash
+python scripts/download_world_data.py --backend requests --start-year 1995 --end-year auto --output data/world_data_level1_1995_2025.csv
+```
+
+wbdata backend:
+
+```bash
+python scripts/download_world_data.py --backend wbdata --start-year 1995 --end-year auto --output data/world_data_level1_1995_2025.csv
+```
+
+## API wrapper
 
 ```bash
 export ACMF_API_TOKEN='change-me'
@@ -45,11 +60,9 @@ Then call:
 curl -X POST -H "Authorization: Bearer change-me" http://localhost:8000/run/health
 ```
 
-If `ACMF_API_TOKEN` is unset, `/run/{task}` remains open for local development only.
-
 ## Security notes
 
 - No `index.php` is shipped.
-- No root-level `acmf/` stub package is shipped.
+- No root-level `acmf/` stub is shipped.
 - No `ACMF_PROJECT_BUNDLE.txt` dump is shipped.
 - `/run/{task}` supports bearer-token protection through `ACMF_API_TOKEN`.

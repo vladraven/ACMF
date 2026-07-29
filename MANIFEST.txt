@@ -1,6 +1,6 @@
-# ACMF Clean Package Manifest
+# ACMF 3.3.1.3 Clean Datafetch Package Manifest
 
-File count: 129
+File count: 146
 
 MANIFEST.txt
 README.md
@@ -8,9 +8,14 @@ README_DEPLOY.md
 app.py
 data/canada_fred_manifest.json
 data/canada_fred_population_fertility_empirical.csv
+data/metadata/indicators.yaml
+data/processed/panel_dataset.csv
+data/processed/quality_report.csv
 data/world_data_1995_2025.csv
+data/world_data_level1_1995_2025.csv
 docs/ACMF_3_3_1_2_MATHEMATICAL_SPEC_RU.md
 docs/ADAPTIVE_DYNAMICS_MODULE.md
+docs/DATAFETCH_PANEL_BUILDER.md
 docs/DIRECTION_OF_CHANGES.md
 docs/EMPIRICAL_PROTOCOL.md
 docs/HYPOTHESIS_LADDER.md
@@ -101,6 +106,7 @@ pyproject.toml
 requirements.deploy.txt
 requirements.txt
 runtime.txt
+scripts/build_panel_dataset.py
 scripts/download_world_data.py
 scripts/run_empirical_canada.py
 scripts/run_identifiability_world_panel.py
@@ -112,20 +118,31 @@ src/acmf/aging_transition_matrix.py
 src/acmf/calibration.py
 src/acmf/core.py
 src/acmf/data/__init__.py
+src/acmf/data/indicators.yaml
 src/acmf/data/world_data_1995_2025.csv
+src/acmf/data/world_data_level1_1995_2025.csv
+src/acmf/data_fetchers/__init__.py
+src/acmf/data_fetchers/innovation.py
+src/acmf/data_fetchers/resilience.py
+src/acmf/data_fetchers/wgi.py
+src/acmf/data_fetchers/world_bank.py
+src/acmf/data_fetchers/world_values.py
 src/acmf/demography_age_structured.py
 src/acmf/empirical.py
 src/acmf/hypothesis_ladder.py
 src/acmf/identifiability.py
+src/acmf/panel_builder.py
 src/acmf/smoothing.py
 src/acmf/solver.py
 src/acmf/world_panel.py
 tests/test_adaptive.py
 tests/test_core.py
+tests/test_data_fetchers.py
 tests/test_empirical.py
 tests/test_hypothesis_ladder.py
 tests/test_identifiability.py
 tests/test_no_stubs.py
+tests/test_panel_builder.py
 tests/test_v2_1_package.py
 tests/test_v2_4_2_trace_audit.py
 tests/test_v2_4_3_real_aging_reestimation.py

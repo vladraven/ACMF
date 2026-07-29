@@ -2,5 +2,10 @@ numpy>=1.26,<3
 pandas>=2.0,<3
 scipy>=1.10,<2
 requests>=2.31,<3
+pyyaml>=6.0,<7
 fastapi>=0.110,<1
 uvicorn>=0.27,<1
+# Optional data-fetch extras
+wbdata>=0.3.0
+openpyxl>=3.1.0
+pyreadstat>=1.2.0
