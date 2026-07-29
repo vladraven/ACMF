@@ -1,11 +1,11 @@
-# ACMF 3.3.1.3 Clean Datafetch Package
+# ACMF 3.3.1.4 Clean Datacube Package
 
 Clean, single-source ACMF package using a strict `src/` layout.
 
 ## Version
 
 ```text
-3.3.1.3-clean-datafetch
+3.3.1.4-clean-datacube
 ```
 
 ## Canonical package
@@ -35,6 +35,8 @@ python main.py --task data_list_indicators
 python main.py --task data_fisher_rank
 python main.py --task data_build_minimal
 python main.py --task data_build_standard
+python main.py --task datacube_init
+python main.py --task datacube_build
 ```
 
 Direct builder calls:

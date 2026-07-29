@@ -20,6 +20,8 @@ python main.py --task data_list_indicators
 python main.py --task data_fisher_rank
 python main.py --task data_build_minimal
 python main.py --task data_build_standard
+python main.py --task datacube_init
+python main.py --task datacube_build
 python main.py --task v2_4_9
 ```
 

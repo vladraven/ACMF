@@ -30,6 +30,8 @@ SCRIPT_TASKS = {
     'data_fisher_rank': ['scripts/build_panel_dataset.py', '--fisher-rank'],
     'data_build_minimal': ['scripts/build_panel_dataset.py', '--budget', 'minimal'],
     'data_build_standard': ['scripts/build_panel_dataset.py', '--budget', 'standard'],
+    'datacube_init': ['scripts/build_data_cube.py', '--init-only'],
+    'datacube_build': ['scripts/build_data_cube.py'],
 }
 
 def run_task(task: str) -> int:
