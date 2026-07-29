@@ -1,11 +1,11 @@
-# ACMF 3.3.1.5 Clean Observation Designer Package
+# ACMF 3.3.1.6 Clean Real Identifiability Package
 
 Clean, single-source ACMF package using a strict `src/` layout.
 
 ## Version
 
 ```text
-3.3.1.5-clean-observation-designer
+3.3.1.6-clean-real-identifiability
 ```
 
 ## Canonical package
@@ -76,3 +76,12 @@ python main.py --task obs_design_world
 ```
 
 The Observation Designer answers: if we can add 1 or k observables, which ones improve practical identifiability the most? It uses rank gain, min-eigenvalue gain, logdet gain, and condition-number gain computed from the ACMF sensitivity/FIM layer.
+
+## Real Identifiability Lab
+
+```bash
+python main.py --task real_ident_canada
+python main.py --task real_ident_core5
+```
+
+The real-identifiability layer runs practical identifiability diagnostics on real country panel proxies, reporting rank, condition number, weak directions, correlated parameter pairs, observation-design gains, greedy designs, and minimal observation sets.

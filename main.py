@@ -34,6 +34,8 @@ SCRIPT_TASKS = {
     'datacube_build': ['scripts/build_data_cube.py'],
     'obs_design_synthetic': ['scripts/run_observation_designer_synthetic.py'],
     'obs_design_world': ['scripts/run_observation_designer_world_panel.py', '--countries', 'Canada', '--k', '2'],
+    'real_ident_canada': ['scripts/run_real_identifiability_world_panel.py', '--countries', 'Canada', '--design-k', '1'],
+    'real_ident_core5': ['scripts/run_real_identifiability_world_panel.py', '--countries', 'Canada', 'Germany', 'Japan', 'Korea, Rep.', 'Australia', '--start-year', '2015', '--design-k', '1'],
 }
 
 def run_task(task: str) -> int:

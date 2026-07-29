@@ -1,6 +1,6 @@
-# ACMF 3.3.1.5 Clean Observation Designer Package Manifest
+# ACMF 3.3.1.6 Clean Real Identifiability Package Manifest
 
-File count: 156
+File count: 160
 
 MANIFEST.txt
 README.md
@@ -22,6 +22,7 @@ docs/HYPOTHESIS_LADDER.md
 docs/OBSERVATION_DESIGNER.md
 docs/PHILOSOPHICAL_FOUNDATION_RU_EN.md
 docs/QUEBEC_70_74_ALPHA_SENSITIVITY.md
+docs/REAL_IDENTIFIABILITY.md
 docs/TRACE_AUDIT.md
 empirical/__init__.py
 empirical/processed/economic_region_components_2024_2025_long.csv
@@ -114,6 +115,7 @@ scripts/run_empirical_canada.py
 scripts/run_identifiability_world_panel.py
 scripts/run_observation_designer_synthetic.py
 scripts/run_observation_designer_world_panel.py
+scripts/run_real_identifiability_world_panel.py
 scripts/run_synthetic_tests.py
 scripts/run_world_panel_profile.py
 src/acmf/__init__.py
@@ -140,6 +142,7 @@ src/acmf/identifiability.py
 src/acmf/observation_designer.py
 src/acmf/panel_builder.py
 src/acmf/provenance.py
+src/acmf/real_identifiability.py
 src/acmf/smoothing.py
 src/acmf/solver.py
 src/acmf/world_panel.py
@@ -153,6 +156,7 @@ tests/test_identifiability.py
 tests/test_no_stubs.py
 tests/test_observation_designer.py
 tests/test_panel_builder.py
+tests/test_real_identifiability.py
 tests/test_v2_1_package.py
 tests/test_v2_4_2_trace_audit.py
 tests/test_v2_4_3_real_aging_reestimation.py
