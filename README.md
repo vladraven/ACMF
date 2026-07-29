@@ -88,62 +88,14 @@ python scripts/run_empirical_canada.py
 The bundled empirical example is a minimal real-data smoke run. It is **not** a full empirical validation of ACMF. Full validation requires richer panel data with demographic cohorts, institutional proxies, productivity, automation, fertility, migration, stress, and latent-state candidates.
 
 
-## Audit-corrected full package notes
+## Identifiability Program
 
-This package includes the integrated post-audit runtime extension:
-
-- diagnostics for Jacobian signs, local spectrum, demographic decoupling, and P-invariance;
-- scenario RK4 solver for fast demos and visualization;
-- Phase II calibration scaffold using Differential Evolution, L-BFGS-B, and adaptive MCMC;
-- bounded deployed index values with raw diagnostics preserved;
-- explicit treatment of `J[V,R]` as parameter/state dependent.
-
-Run the full test suite:
+The package now includes a numerical identifiability layer:
 
 ```bash
-PYTHONPATH=src pytest -q
+PYTHONPATH=src python scripts/run_identifiability_synthetic.py
 ```
 
-Expected result for this package:
+It computes sensitivity matrices, Fisher Information Matrices, FIM rank, condition number, weak directions, parameter correlation from the pseudo-inverse FIM, observation-design gain, and windowed identifiability.
 
-```text
-18 passed
-```
-
-Run demos:
-
-```bash
-PYTHONPATH=src python scripts/run_acmf.py
-PYTHONPATH=src python scripts/run_calibration_synthetic.py
-PYTHONPATH=src python scripts/run_empirical_canada.py
-PYTHONPATH=src python scripts/run_synthetic_tests.py
-```
-
-Important interpretation notes:
-
-- `adaptive_dynamics.py` remains a diagnostic extension, not a fully calibrated probability model.
-- `hypothesis_ladder.py` remains a statistical hypothesis-ladder scaffold and is not a substitute for ODE parameter calibration.
-- `calibration.py` provides the Phase II scaffold for ODE calibration, but full empirical validation still requires richer panel data and stronger measurement models.
-
-
-## Phase II/III benchmark and digital-twin extensions
-
-This package also includes:
-
-- benchmark econometric forecasters: Persistence/RandomWalk, LinearTrend, ARIMA(1,1,0), VAR(1);
-- Diebold-Mariano forecast-comparison utilities;
-- Ensemble Kalman Filter for latent-state estimation;
-- Digital Twin wrapper for assimilation and scenario forecasts.
-
-Run the additional demos:
-
-```bash
-PYTHONPATH=src python scripts/run_benchmark_dm.py
-PYTHONPATH=src python scripts/run_digital_twin.py
-```
-
-The full test suite for this archive is expected to report:
-
-```text
-18 passed
-```
+See `docs/IDENTIFIABILITY_PROGRAM.md`.

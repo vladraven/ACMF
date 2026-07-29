@@ -1,0 +1,1489 @@
+[
+  {
+    "label": "short_stable",
+    "rank": 12,
+    "condition_number": 442947335146523.6,
+    "min_eigenvalue": 2.0402784378913706e-09,
+    "weak_directions": [
+      {
+        "eigenvalue": 2.0402784378913706e-09,
+        "top_loadings": [
+          {
+            "parameter": "alpha7",
+            "loading": -0.8407013164771082,
+            "abs_loading": 0.8407013164771082
+          },
+          {
+            "parameter": "K_g",
+            "loading": -0.5414947639583904,
+            "abs_loading": 0.5414947639583904
+          },
+          {
+            "parameter": "Ch0",
+            "loading": 0.0018189139651026223,
+            "abs_loading": 0.0018189139651026223
+          },
+          {
+            "parameter": "R0",
+            "loading": -0.0008294234081261207,
+            "abs_loading": 0.0008294234081261207
+          },
+          {
+            "parameter": "NaturalDecay",
+            "loading": -0.0005803531146490806,
+            "abs_loading": 0.0005803531146490806
+          }
+        ]
+      },
+      {
+        "eigenvalue": 7.049948130726423e-05,
+        "top_loadings": [
+          {
+            "parameter": "Ch0",
+            "loading": 0.6842465834288495,
+            "abs_loading": 0.6842465834288495
+          },
+          {
+            "parameter": "K_g",
+            "loading": 0.5174528978896269,
+            "abs_loading": 0.5174528978896269
+          },
+          {
+            "parameter": "alpha7",
+            "loading": -0.3318751496871559,
+            "abs_loading": 0.3318751496871559
+          },
+          {
+            "parameter": "M0",
+            "loading": -0.2488631089593253,
+            "abs_loading": 0.2488631089593253
+          },
+          {
+            "parameter": "q3",
+            "loading": 0.17934802961126825,
+            "abs_loading": 0.17934802961126825
+          }
+        ]
+      },
+      {
+        "eigenvalue": 0.00025572766222730075,
+        "top_loadings": [
+          {
+            "parameter": "K_g",
+            "loading": -0.44896420831953926,
+            "abs_loading": 0.44896420831953926
+          },
+          {
+            "parameter": "Ch0",
+            "loading": 0.43038687256966024,
+            "abs_loading": 0.43038687256966024
+          },
+          {
+            "parameter": "M0",
+            "loading": -0.41541237751028987,
+            "abs_loading": 0.41541237751028987
+          },
+          {
+            "parameter": "R0",
+            "loading": -0.4142286578410953,
+            "abs_loading": 0.4142286578410953
+          },
+          {
+            "parameter": "NaturalDecay",
+            "loading": -0.3182050900969674,
+            "abs_loading": 0.3182050900969674
+          }
+        ]
+      }
+    ],
+    "top_correlated_pairs": [
+      {
+        "pair": [
+          "alpha7",
+          "K_g"
+        ],
+        "corr": 0.9999493055109754,
+        "abs_corr": 0.9999493055109754
+      },
+      {
+        "pair": [
+          "beta_neg",
+          "NaturalDecay"
+        ],
+        "corr": -0.9975062444987799,
+        "abs_corr": 0.9975062444987799
+      },
+      {
+        "pair": [
+          "NaturalDecay",
+          "R0"
+        ],
+        "corr": 0.9814274319826531,
+        "abs_corr": 0.9814274319826531
+      },
+      {
+        "pair": [
+          "q1",
+          "M0"
+        ],
+        "corr": -0.9810639033600913,
+        "abs_corr": 0.9810639033600913
+      },
+      {
+        "pair": [
+          "beta_neg",
+          "R0"
+        ],
+        "corr": -0.9728079672675561,
+        "abs_corr": 0.9728079672675561
+      },
+      {
+        "pair": [
+          "q1",
+          "q3"
+        ],
+        "corr": 0.8656440954329476,
+        "abs_corr": 0.8656440954329476
+      }
+    ],
+    "observation_design_gain": [
+      {
+        "added_observable": "Ch",
+        "rank": 12,
+        "condition_number": 345659023854.33325,
+        "min_eigenvalue": 2.6145300328636083e-06,
+        "condition_gain": 1281.4574611921296
+      },
+      {
+        "added_observable": "G",
+        "rank": 12,
+        "condition_number": 65668489182019.08,
+        "min_eigenvalue": 1.3762093649985803e-08,
+        "condition_gain": 6.7452036838972775
+      },
+      {
+        "added_observable": "M",
+        "rank": 12,
+        "condition_number": 77297212523095.75,
+        "min_eigenvalue": 1.1691701032794906e-08,
+        "condition_gain": 5.730443837339862
+      },
+      {
+        "added_observable": "V",
+        "rank": 12,
+        "condition_number": 175623421957793.16,
+        "min_eigenvalue": 5.145873409998122e-09,
+        "condition_gain": 2.5221427199669035
+      },
+      {
+        "added_observable": "R",
+        "rank": 12,
+        "condition_number": 311945766108276.44,
+        "min_eigenvalue": 2.8970930170009415e-09,
+        "condition_gain": 1.4199498222802502
+      }
+    ],
+    "windowed": {
+      "early": {
+        "rank": 11,
+        "condition_number": 124057529075.66742,
+        "min_eigenvalue": -1.5577903508033686e-11,
+        "weak_directions": [
+          {
+            "eigenvalue": -1.5577903508033686e-11,
+            "top_loadings": [
+              {
+                "parameter": "alpha7",
+                "loading": -0.8388028218500564,
+                "abs_loading": 0.8388028218500564
+              },
+              {
+                "parameter": "K_g",
+                "loading": -0.5444294639445612,
+                "abs_loading": 0.5444294639445612
+              },
+              {
+                "parameter": "Ch0",
+                "loading": -0.002524044520477371,
+                "abs_loading": 0.002524044520477371
+              },
+              {
+                "parameter": "G0",
+                "loading": 8.446095534276948e-05,
+                "abs_loading": 8.446095534276948e-05
+              },
+              {
+                "parameter": "q3",
+                "loading": 4.712975540402051e-05,
+                "abs_loading": 4.712975540402051e-05
+              }
+            ]
+          },
+          {
+            "eigenvalue": 1.7302175887105355e-06,
+            "top_loadings": [
+              {
+                "parameter": "R0",
+                "loading": 0.5889822551200992,
+                "abs_loading": 0.5889822551200992
+              },
+              {
+                "parameter": "M0",
+                "loading": -0.43561737043465365,
+                "abs_loading": 0.43561737043465365
+              },
+              {
+                "parameter": "NaturalDecay",
+                "loading": 0.38258602006384024,
+                "abs_loading": 0.38258602006384024
+              },
+              {
+                "parameter": "q3",
+                "loading": 0.3264857657429138,
+                "abs_loading": 0.3264857657429138
+              },
+              {
+                "parameter": "q1",
+                "loading": 0.26312017220729406,
+                "abs_loading": 0.26312017220729406
+              }
+            ]
+          },
+          {
+            "eigenvalue": 1.585286545826361e-05,
+            "top_loadings": [
+              {
+                "parameter": "Ch0",
+                "loading": 0.7630723545488962,
+                "abs_loading": 0.7630723545488962
+              },
+              {
+                "parameter": "K_g",
+                "loading": 0.5317645536017479,
+                "abs_loading": 0.5317645536017479
+              },
+              {
+                "parameter": "alpha7",
+                "loading": -0.347433780388137,
+                "abs_loading": 0.347433780388137
+              },
+              {
+                "parameter": "R0",
+                "loading": -0.07695319322806699,
+                "abs_loading": 0.07695319322806699
+              },
+              {
+                "parameter": "NaturalDecay",
+                "loading": -0.06003565080003708,
+                "abs_loading": 0.06003565080003708
+              }
+            ]
+          },
+          {
+            "eigenvalue": 0.0002006249514389916,
+            "top_loadings": [
+              {
+                "parameter": "M0",
+                "loading": -0.6441305654354196,
+                "abs_loading": 0.6441305654354196
+              },
+              {
+                "parameter": "K_g",
+                "loading": -0.37827358444274706,
+                "abs_loading": 0.37827358444274706
+              },
+              {
+                "parameter": "q1",
+                "loading": 0.31630846897106024,
+                "abs_loading": 0.31630846897106024
+              },
+              {
+                "parameter": "R0",
+                "loading": -0.2858000336480388,
+                "abs_loading": 0.2858000336480388
+              },
+              {
+                "parameter": "Ch0",
+                "loading": 0.2779840549996478,
+                "abs_loading": 0.2779840549996478
+              }
+            ]
+          },
+          {
+            "eigenvalue": 0.0010570572767219816,
+            "top_loadings": [
+              {
+                "parameter": "Ch0",
+                "loading": 0.5372606009932764,
+                "abs_loading": 0.5372606009932764
+              },
+              {
+                "parameter": "K_g",
+                "loading": -0.4624664819639542,
+                "abs_loading": 0.4624664819639542
+              },
+              {
+                "parameter": "R0",
+                "loading": 0.3974230033537538,
+                "abs_loading": 0.3974230033537538
+              },
+              {
+                "parameter": "alpha7",
+                "loading": 0.29849436957026465,
+                "abs_loading": 0.29849436957026465
+              },
+              {
+                "parameter": "G0",
+                "loading": -0.2881803320463762,
+                "abs_loading": 0.2881803320463762
+              }
+            ]
+          }
+        ]
+      },
+      "late": {
+        "rank": 12,
+        "condition_number": 6461134251411148.0,
+        "min_eigenvalue": 1.28853371905039e-10,
+        "weak_directions": [
+          {
+            "eigenvalue": 1.28853371905039e-10,
+            "top_loadings": [
+              {
+                "parameter": "alpha7",
+                "loading": -0.8399157396243211,
+                "abs_loading": 0.8399157396243211
+              },
+              {
+                "parameter": "K_g",
+                "loading": -0.5425984417029357,
+                "abs_loading": 0.5425984417029357
+              },
+              {
+                "parameter": "Ch0",
+                "loading": 0.0094894773341277,
+                "abs_loading": 0.0094894773341277
+              },
+              {
+                "parameter": "R0",
+                "loading": -0.004757834006750481,
+                "abs_loading": 0.004757834006750481
+              },
+              {
+                "parameter": "NaturalDecay",
+                "loading": -0.002866463308975588,
+                "abs_loading": 0.002866463308975588
+              }
+            ]
+          },
+          {
+            "eigenvalue": 3.6058552717874423e-07,
+            "top_loadings": [
+              {
+                "parameter": "K_g",
+                "loading": -0.6327149262930045,
+                "abs_loading": 0.6327149262930045
+              },
+              {
+                "parameter": "R0",
+                "loading": -0.5069599766763024,
+                "abs_loading": 0.5069599766763024
+              },
+              {
+                "parameter": "alpha7",
+                "loading": 0.4146774317760853,
+                "abs_loading": 0.4146774317760853
+              },
+              {
+                "parameter": "NaturalDecay",
+                "loading": -0.3193600901879378,
+                "abs_loading": 0.3193600901879378
+              },
+              {
+                "parameter": "beta_neg",
+                "loading": 0.195968282258218,
+                "abs_loading": 0.195968282258218
+              }
+            ]
+          },
+          {
+            "eigenvalue": 2.642194231028606e-06,
+            "top_loadings": [
+              {
+                "parameter": "Ch0",
+                "loading": -0.8037867831701847,
+                "abs_loading": 0.8037867831701847
+              },
+              {
+                "parameter": "G0",
+                "loading": 0.38476711402071206,
+                "abs_loading": 0.38476711402071206
+              },
+              {
+                "parameter": "K_g",
+                "loading": -0.2820601038626386,
+                "abs_loading": 0.2820601038626386
+              },
+              {
+                "parameter": "q3",
+                "loading": 0.18029892912396317,
+                "abs_loading": 0.18029892912396317
+              },
+              {
+                "parameter": "R0",
+                "loading": 0.1713320574063269,
+                "abs_loading": 0.1713320574063269
+              }
+            ]
+          },
+          {
+            "eigenvalue": 3.982346877394164e-05,
+            "top_loadings": [
+              {
+                "parameter": "M0",
+                "loading": 0.7309858031454618,
+                "abs_loading": 0.7309858031454618
+              },
+              {
+                "parameter": "q1",
+                "loading": -0.36494991085376993,
+                "abs_loading": 0.36494991085376993
+              },
+              {
+                "parameter": "q3",
+                "loading": -0.3616258478047105,
+                "abs_loading": 0.3616258478047105
+              },
+              {
+                "parameter": "Ch0",
+                "loading": -0.3559077674525006,
+                "abs_loading": 0.3559077674525006
+              },
+              {
+                "parameter": "G0",
+                "loading": -0.23811628742461388,
+                "abs_loading": 0.23811628742461388
+              }
+            ]
+          },
+          {
+            "eigenvalue": 0.00016026327183382415,
+            "top_loadings": [
+              {
+                "parameter": "q3",
+                "loading": 0.5456856037006464,
+                "abs_loading": 0.5456856037006464
+              },
+              {
+                "parameter": "M0",
+                "loading": 0.5273046855173591,
+                "abs_loading": 0.5273046855173591
+              },
+              {
+                "parameter": "G0",
+                "loading": 0.5135866131570201,
+                "abs_loading": 0.5135866131570201
+              },
+              {
+                "parameter": "Ch0",
+                "loading": 0.3207761685622288,
+                "abs_loading": 0.3207761685622288
+              },
+              {
+                "parameter": "R0",
+                "loading": 0.1281614112577299,
+                "abs_loading": 0.1281614112577299
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "label": "long_stable",
+    "rank": 12,
+    "condition_number": 5837500629889.903,
+    "min_eigenvalue": 1.2248816898122862e-05,
+    "weak_directions": [
+      {
+        "eigenvalue": 1.2248816898122862e-05,
+        "top_loadings": [
+          {
+            "parameter": "alpha7",
+            "loading": -0.8589276099261572,
+            "abs_loading": 0.8589276099261572
+          },
+          {
+            "parameter": "K_g",
+            "loading": -0.5014121617926544,
+            "abs_loading": 0.5014121617926544
+          },
+          {
+            "parameter": "Ch0",
+            "loading": 0.10181683647192506,
+            "abs_loading": 0.10181683647192506
+          },
+          {
+            "parameter": "G0",
+            "loading": -0.015974170963956154,
+            "abs_loading": 0.015974170963956154
+          },
+          {
+            "parameter": "R0",
+            "loading": 0.010666166374228687,
+            "abs_loading": 0.010666166374228687
+          }
+        ]
+      },
+      {
+        "eigenvalue": 0.001701348973952885,
+        "top_loadings": [
+          {
+            "parameter": "Ch0",
+            "loading": -0.8889170372432746,
+            "abs_loading": 0.8889170372432746
+          },
+          {
+            "parameter": "K_g",
+            "loading": -0.3987616462736815,
+            "abs_loading": 0.3987616462736815
+          },
+          {
+            "parameter": "G0",
+            "loading": 0.15952277825713837,
+            "abs_loading": 0.15952277825713837
+          },
+          {
+            "parameter": "alpha7",
+            "loading": 0.12326725292188064,
+            "abs_loading": 0.12326725292188064
+          },
+          {
+            "parameter": "R0",
+            "loading": -0.07118961967493381,
+            "abs_loading": 0.07118961967493381
+          }
+        ]
+      },
+      {
+        "eigenvalue": 0.025111097162831247,
+        "top_loadings": [
+          {
+            "parameter": "R0",
+            "loading": 0.6946732761218934,
+            "abs_loading": 0.6946732761218934
+          },
+          {
+            "parameter": "NaturalDecay",
+            "loading": 0.4587958990050782,
+            "abs_loading": 0.4587958990050782
+          },
+          {
+            "parameter": "G0",
+            "loading": -0.3980718120694198,
+            "abs_loading": 0.3980718120694198
+          },
+          {
+            "parameter": "beta_neg",
+            "loading": -0.2901282938093353,
+            "abs_loading": 0.2901282938093353
+          },
+          {
+            "parameter": "Ch0",
+            "loading": -0.18304254203346454,
+            "abs_loading": 0.18304254203346454
+          }
+        ]
+      }
+    ],
+    "top_correlated_pairs": [
+      {
+        "pair": [
+          "alpha7",
+          "K_g"
+        ],
+        "corr": 0.9962841967654977,
+        "abs_corr": 0.9962841967654977
+      },
+      {
+        "pair": [
+          "beta_neg",
+          "NaturalDecay"
+        ],
+        "corr": -0.9948910990631289,
+        "abs_corr": 0.9948910990631289
+      },
+      {
+        "pair": [
+          "NaturalDecay",
+          "R0"
+        ],
+        "corr": 0.994232552319352,
+        "abs_corr": 0.994232552319352
+      },
+      {
+        "pair": [
+          "beta_neg",
+          "R0"
+        ],
+        "corr": -0.9895132550306457,
+        "abs_corr": 0.9895132550306457
+      },
+      {
+        "pair": [
+          "q1",
+          "q3"
+        ],
+        "corr": 0.956550821394631,
+        "abs_corr": 0.956550821394631
+      }
+    ],
+    "observation_design_gain": [
+      {
+        "added_observable": "Ch",
+        "rank": 12,
+        "condition_number": 216101464729.1554,
+        "min_eigenvalue": 0.0003308745567688349,
+        "condition_gain": 27.012776786155374
+      },
+      {
+        "added_observable": "M",
+        "rank": 12,
+        "condition_number": 1810566108831.4133,
+        "min_eigenvalue": 3.949177884896915e-05,
+        "condition_gain": 3.224130067063709
+      },
+      {
+        "added_observable": "G",
+        "rank": 12,
+        "condition_number": 2054527778387.045,
+        "min_eigenvalue": 3.480238968374802e-05,
+        "condition_gain": 2.841285813362314
+      },
+      {
+        "added_observable": "V",
+        "rank": 12,
+        "condition_number": 2451804637913.844,
+        "min_eigenvalue": 2.9163202994920486e-05,
+        "condition_gain": 2.3808995788738008
+      },
+      {
+        "added_observable": "R",
+        "rank": 12,
+        "condition_number": 4158380386721.089,
+        "min_eigenvalue": 1.7194789728402364e-05,
+        "condition_gain": 1.4037918821786317
+      }
+    ],
+    "windowed": {
+      "early": {
+        "rank": 12,
+        "condition_number": 4606953892749.047,
+        "min_eigenvalue": 6.549127601563474e-06,
+        "weak_directions": [
+          {
+            "eigenvalue": 6.549127601563474e-06,
+            "top_loadings": [
+              {
+                "parameter": "alpha7",
+                "loading": -0.8382431220300458,
+                "abs_loading": 0.8382431220300458
+              },
+              {
+                "parameter": "K_g",
+                "loading": -0.542458082088551,
+                "abs_loading": 0.542458082088551
+              },
+              {
+                "parameter": "Ch0",
+                "loading": 0.05258926325790324,
+                "abs_loading": 0.05258926325790324
+              },
+              {
+                "parameter": "R0",
+                "loading": -0.011751145857995797,
+                "abs_loading": 0.011751145857995797
+              },
+              {
+                "parameter": "NaturalDecay",
+                "loading": -0.007320069581958355,
+                "abs_loading": 0.007320069581958355
+              }
+            ]
+          },
+          {
+            "eigenvalue": 0.00044557805957954553,
+            "top_loadings": [
+              {
+                "parameter": "Ch0",
+                "loading": 0.7393024922807138,
+                "abs_loading": 0.7393024922807138
+              },
+              {
+                "parameter": "K_g",
+                "loading": 0.5232840765991452,
+                "abs_loading": 0.5232840765991452
+              },
+              {
+                "parameter": "alpha7",
+                "loading": -0.2967146427213396,
+                "abs_loading": 0.2967146427213396
+              },
+              {
+                "parameter": "R0",
+                "loading": 0.21263811261951482,
+                "abs_loading": 0.21263811261951482
+              },
+              {
+                "parameter": "NaturalDecay",
+                "loading": 0.14476734637417726,
+                "abs_loading": 0.14476734637417726
+              }
+            ]
+          },
+          {
+            "eigenvalue": 0.008034399630688494,
+            "top_loadings": [
+              {
+                "parameter": "Ch0",
+                "loading": -0.5924960826357951,
+                "abs_loading": 0.5924960826357951
+              },
+              {
+                "parameter": "R0",
+                "loading": 0.5101109194342914,
+                "abs_loading": 0.5101109194342914
+              },
+              {
+                "parameter": "K_g",
+                "loading": 0.3564530215657622,
+                "abs_loading": 0.3564530215657622
+              },
+              {
+                "parameter": "NaturalDecay",
+                "loading": 0.3545280241717086,
+                "abs_loading": 0.3545280241717086
+              },
+              {
+                "parameter": "alpha7",
+                "loading": -0.27965984078871703,
+                "abs_loading": 0.27965984078871703
+              }
+            ]
+          },
+          {
+            "eigenvalue": 0.021002581921150756,
+            "top_loadings": [
+              {
+                "parameter": "G0",
+                "loading": -0.6705070055571143,
+                "abs_loading": 0.6705070055571143
+              },
+              {
+                "parameter": "K_g",
+                "loading": -0.4117736346163783,
+                "abs_loading": 0.4117736346163783
+              },
+              {
+                "parameter": "R0",
+                "loading": 0.40719974988968727,
+                "abs_loading": 0.40719974988968727
+              },
+              {
+                "parameter": "alpha7",
+                "loading": 0.2700893675707241,
+                "abs_loading": 0.2700893675707241
+              },
+              {
+                "parameter": "NaturalDecay",
+                "loading": 0.25318332023428436,
+                "abs_loading": 0.25318332023428436
+              }
+            ]
+          },
+          {
+            "eigenvalue": 0.10289691765324534,
+            "top_loadings": [
+              {
+                "parameter": "G0",
+                "loading": 0.5322911162696784,
+                "abs_loading": 0.5322911162696784
+              },
+              {
+                "parameter": "q3",
+                "loading": 0.4823621143135165,
+                "abs_loading": 0.4823621143135165
+              },
+              {
+                "parameter": "R0",
+                "loading": 0.35152165837746363,
+                "abs_loading": 0.35152165837746363
+              },
+              {
+                "parameter": "K_g",
+                "loading": -0.3213620908210228,
+                "abs_loading": 0.3213620908210228
+              },
+              {
+                "parameter": "q1",
+                "loading": 0.25503996679248103,
+                "abs_loading": 0.25503996679248103
+              }
+            ]
+          }
+        ]
+      },
+      "late": {
+        "rank": 10,
+        "condition_number": 3295097394068113.0,
+        "min_eigenvalue": 1.0367204138533957e-11,
+        "weak_directions": [
+          {
+            "eigenvalue": 1.0367204138533957e-11,
+            "top_loadings": [
+              {
+                "parameter": "Ch0",
+                "loading": 0.8603625244442787,
+                "abs_loading": 0.8603625244442787
+              },
+              {
+                "parameter": "G0",
+                "loading": -0.383055419271185,
+                "abs_loading": 0.383055419271185
+              },
+              {
+                "parameter": "M0",
+                "loading": -0.33448702290311816,
+                "abs_loading": 0.33448702290311816
+              },
+              {
+                "parameter": "NaturalDecay",
+                "loading": -0.02821168643411457,
+                "abs_loading": 0.02821168643411457
+              },
+              {
+                "parameter": "beta_neg",
+                "loading": 0.01591147235049657,
+                "abs_loading": 0.01591147235049657
+              }
+            ]
+          },
+          {
+            "eigenvalue": 1.3786295627313542e-11,
+            "top_loadings": [
+              {
+                "parameter": "M0",
+                "loading": -0.8453001603120975,
+                "abs_loading": 0.8453001603120975
+              },
+              {
+                "parameter": "G0",
+                "loading": 0.5165118610127853,
+                "abs_loading": 0.5165118610127853
+              },
+              {
+                "parameter": "Ch0",
+                "loading": -0.09862655722878493,
+                "abs_loading": 0.09862655722878493
+              },
+              {
+                "parameter": "R0",
+                "loading": 0.0943480436292582,
+                "abs_loading": 0.0943480436292582
+              },
+              {
+                "parameter": "NaturalDecay",
+                "loading": -0.006378632468830319,
+                "abs_loading": 0.006378632468830319
+              }
+            ]
+          },
+          {
+            "eigenvalue": 1.300088686602246e-08,
+            "top_loadings": [
+              {
+                "parameter": "alpha7",
+                "loading": 0.868496533923793,
+                "abs_loading": 0.868496533923793
+              },
+              {
+                "parameter": "K_g",
+                "loading": 0.49398683286055917,
+                "abs_loading": 0.49398683286055917
+              },
+              {
+                "parameter": "R0",
+                "loading": -0.03354535125761805,
+                "abs_loading": 0.03354535125761805
+              },
+              {
+                "parameter": "NaturalDecay",
+                "loading": -0.015029885359186652,
+                "abs_loading": 0.015029885359186652
+              },
+              {
+                "parameter": "Ch0",
+                "loading": -0.011425954537898188,
+                "abs_loading": 0.011425954537898188
+              }
+            ]
+          },
+          {
+            "eigenvalue": 2.9614787090175087e-07,
+            "top_loadings": [
+              {
+                "parameter": "G0",
+                "loading": -0.7505988057700088,
+                "abs_loading": 0.7505988057700088
+              },
+              {
+                "parameter": "Ch0",
+                "loading": -0.48785346364679494,
+                "abs_loading": 0.48785346364679494
+              },
+              {
+                "parameter": "M0",
+                "loading": -0.382206313567656,
+                "abs_loading": 0.382206313567656
+              },
+              {
+                "parameter": "R0",
+                "loading": 0.16255132247005957,
+                "abs_loading": 0.16255132247005957
+              },
+              {
+                "parameter": "NaturalDecay",
+                "loading": -0.13773141049190293,
+                "abs_loading": 0.13773141049190293
+              }
+            ]
+          },
+          {
+            "eigenvalue": 8.998895142981956e-06,
+            "top_loadings": [
+              {
+                "parameter": "K_g",
+                "loading": -0.7334468598709806,
+                "abs_loading": 0.7334468598709806
+              },
+              {
+                "parameter": "R0",
+                "loading": -0.4549377794588465,
+                "abs_loading": 0.4549377794588465
+              },
+              {
+                "parameter": "alpha7",
+                "loading": 0.3953871323860084,
+                "abs_loading": 0.3953871323860084
+              },
+              {
+                "parameter": "q3",
+                "loading": -0.2278286520815782,
+                "abs_loading": 0.2278286520815782
+              },
+              {
+                "parameter": "NaturalDecay",
+                "loading": -0.15903196214239468,
+                "abs_loading": 0.15903196214239468
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "label": "long_with_synthetic_v_shift",
+    "rank": 12,
+    "condition_number": 5837500629889.903,
+    "min_eigenvalue": 1.2248816898122862e-05,
+    "weak_directions": [
+      {
+        "eigenvalue": 1.2248816898122862e-05,
+        "top_loadings": [
+          {
+            "parameter": "alpha7",
+            "loading": -0.8589276099261572,
+            "abs_loading": 0.8589276099261572
+          },
+          {
+            "parameter": "K_g",
+            "loading": -0.5014121617926544,
+            "abs_loading": 0.5014121617926544
+          },
+          {
+            "parameter": "Ch0",
+            "loading": 0.10181683647192506,
+            "abs_loading": 0.10181683647192506
+          },
+          {
+            "parameter": "G0",
+            "loading": -0.015974170963956154,
+            "abs_loading": 0.015974170963956154
+          },
+          {
+            "parameter": "R0",
+            "loading": 0.010666166374228687,
+            "abs_loading": 0.010666166374228687
+          }
+        ]
+      },
+      {
+        "eigenvalue": 0.001701348973952885,
+        "top_loadings": [
+          {
+            "parameter": "Ch0",
+            "loading": -0.8889170372432746,
+            "abs_loading": 0.8889170372432746
+          },
+          {
+            "parameter": "K_g",
+            "loading": -0.3987616462736815,
+            "abs_loading": 0.3987616462736815
+          },
+          {
+            "parameter": "G0",
+            "loading": 0.15952277825713837,
+            "abs_loading": 0.15952277825713837
+          },
+          {
+            "parameter": "alpha7",
+            "loading": 0.12326725292188064,
+            "abs_loading": 0.12326725292188064
+          },
+          {
+            "parameter": "R0",
+            "loading": -0.07118961967493381,
+            "abs_loading": 0.07118961967493381
+          }
+        ]
+      },
+      {
+        "eigenvalue": 0.025111097162831247,
+        "top_loadings": [
+          {
+            "parameter": "R0",
+            "loading": 0.6946732761218934,
+            "abs_loading": 0.6946732761218934
+          },
+          {
+            "parameter": "NaturalDecay",
+            "loading": 0.4587958990050782,
+            "abs_loading": 0.4587958990050782
+          },
+          {
+            "parameter": "G0",
+            "loading": -0.3980718120694198,
+            "abs_loading": 0.3980718120694198
+          },
+          {
+            "parameter": "beta_neg",
+            "loading": -0.2901282938093353,
+            "abs_loading": 0.2901282938093353
+          },
+          {
+            "parameter": "Ch0",
+            "loading": -0.18304254203346454,
+            "abs_loading": 0.18304254203346454
+          }
+        ]
+      }
+    ],
+    "top_correlated_pairs": [
+      {
+        "pair": [
+          "alpha7",
+          "K_g"
+        ],
+        "corr": 0.9962841967654977,
+        "abs_corr": 0.9962841967654977
+      },
+      {
+        "pair": [
+          "beta_neg",
+          "NaturalDecay"
+        ],
+        "corr": -0.9948910990631289,
+        "abs_corr": 0.9948910990631289
+      },
+      {
+        "pair": [
+          "NaturalDecay",
+          "R0"
+        ],
+        "corr": 0.994232552319352,
+        "abs_corr": 0.994232552319352
+      },
+      {
+        "pair": [
+          "beta_neg",
+          "R0"
+        ],
+        "corr": -0.9895132550306457,
+        "abs_corr": 0.9895132550306457
+      },
+      {
+        "pair": [
+          "q1",
+          "q3"
+        ],
+        "corr": 0.956550821394631,
+        "abs_corr": 0.956550821394631
+      }
+    ],
+    "observation_design_gain": [
+      {
+        "added_observable": "Ch",
+        "rank": 12,
+        "condition_number": 216101464729.1554,
+        "min_eigenvalue": 0.0003308745567688349,
+        "condition_gain": 27.012776786155374
+      },
+      {
+        "added_observable": "M",
+        "rank": 12,
+        "condition_number": 1810566108831.4133,
+        "min_eigenvalue": 3.949177884896915e-05,
+        "condition_gain": 3.224130067063709
+      },
+      {
+        "added_observable": "G",
+        "rank": 12,
+        "condition_number": 2054527778387.045,
+        "min_eigenvalue": 3.480238968374802e-05,
+        "condition_gain": 2.841285813362314
+      },
+      {
+        "added_observable": "V",
+        "rank": 12,
+        "condition_number": 2451804637913.844,
+        "min_eigenvalue": 2.9163202994920486e-05,
+        "condition_gain": 2.3808995788738008
+      },
+      {
+        "added_observable": "R",
+        "rank": 12,
+        "condition_number": 4158380386721.089,
+        "min_eigenvalue": 1.7194789728402364e-05,
+        "condition_gain": 1.4037918821786317
+      }
+    ],
+    "windowed": {
+      "early": {
+        "rank": 12,
+        "condition_number": 4606953892749.047,
+        "min_eigenvalue": 6.549127601563474e-06,
+        "weak_directions": [
+          {
+            "eigenvalue": 6.549127601563474e-06,
+            "top_loadings": [
+              {
+                "parameter": "alpha7",
+                "loading": -0.8382431220300458,
+                "abs_loading": 0.8382431220300458
+              },
+              {
+                "parameter": "K_g",
+                "loading": -0.542458082088551,
+                "abs_loading": 0.542458082088551
+              },
+              {
+                "parameter": "Ch0",
+                "loading": 0.05258926325790324,
+                "abs_loading": 0.05258926325790324
+              },
+              {
+                "parameter": "R0",
+                "loading": -0.011751145857995797,
+                "abs_loading": 0.011751145857995797
+              },
+              {
+                "parameter": "NaturalDecay",
+                "loading": -0.007320069581958355,
+                "abs_loading": 0.007320069581958355
+              }
+            ]
+          },
+          {
+            "eigenvalue": 0.00044557805957954553,
+            "top_loadings": [
+              {
+                "parameter": "Ch0",
+                "loading": 0.7393024922807138,
+                "abs_loading": 0.7393024922807138
+              },
+              {
+                "parameter": "K_g",
+                "loading": 0.5232840765991452,
+                "abs_loading": 0.5232840765991452
+              },
+              {
+                "parameter": "alpha7",
+                "loading": -0.2967146427213396,
+                "abs_loading": 0.2967146427213396
+              },
+              {
+                "parameter": "R0",
+                "loading": 0.21263811261951482,
+                "abs_loading": 0.21263811261951482
+              },
+              {
+                "parameter": "NaturalDecay",
+                "loading": 0.14476734637417726,
+                "abs_loading": 0.14476734637417726
+              }
+            ]
+          },
+          {
+            "eigenvalue": 0.008034399630688494,
+            "top_loadings": [
+              {
+                "parameter": "Ch0",
+                "loading": -0.5924960826357951,
+                "abs_loading": 0.5924960826357951
+              },
+              {
+                "parameter": "R0",
+                "loading": 0.5101109194342914,
+                "abs_loading": 0.5101109194342914
+              },
+              {
+                "parameter": "K_g",
+                "loading": 0.3564530215657622,
+                "abs_loading": 0.3564530215657622
+              },
+              {
+                "parameter": "NaturalDecay",
+                "loading": 0.3545280241717086,
+                "abs_loading": 0.3545280241717086
+              },
+              {
+                "parameter": "alpha7",
+                "loading": -0.27965984078871703,
+                "abs_loading": 0.27965984078871703
+              }
+            ]
+          },
+          {
+            "eigenvalue": 0.021002581921150756,
+            "top_loadings": [
+              {
+                "parameter": "G0",
+                "loading": -0.6705070055571143,
+                "abs_loading": 0.6705070055571143
+              },
+              {
+                "parameter": "K_g",
+                "loading": -0.4117736346163783,
+                "abs_loading": 0.4117736346163783
+              },
+              {
+                "parameter": "R0",
+                "loading": 0.40719974988968727,
+                "abs_loading": 0.40719974988968727
+              },
+              {
+                "parameter": "alpha7",
+                "loading": 0.2700893675707241,
+                "abs_loading": 0.2700893675707241
+              },
+              {
+                "parameter": "NaturalDecay",
+                "loading": 0.25318332023428436,
+                "abs_loading": 0.25318332023428436
+              }
+            ]
+          },
+          {
+            "eigenvalue": 0.10289691765324534,
+            "top_loadings": [
+              {
+                "parameter": "G0",
+                "loading": 0.5322911162696784,
+                "abs_loading": 0.5322911162696784
+              },
+              {
+                "parameter": "q3",
+                "loading": 0.4823621143135165,
+                "abs_loading": 0.4823621143135165
+              },
+              {
+                "parameter": "R0",
+                "loading": 0.35152165837746363,
+                "abs_loading": 0.35152165837746363
+              },
+              {
+                "parameter": "K_g",
+                "loading": -0.3213620908210228,
+                "abs_loading": 0.3213620908210228
+              },
+              {
+                "parameter": "q1",
+                "loading": 0.25503996679248103,
+                "abs_loading": 0.25503996679248103
+              }
+            ]
+          }
+        ]
+      },
+      "late": {
+        "rank": 10,
+        "condition_number": 3295097394068113.0,
+        "min_eigenvalue": 1.0367204138533957e-11,
+        "weak_directions": [
+          {
+            "eigenvalue": 1.0367204138533957e-11,
+            "top_loadings": [
+              {
+                "parameter": "Ch0",
+                "loading": 0.8603625244442787,
+                "abs_loading": 0.8603625244442787
+              },
+              {
+                "parameter": "G0",
+                "loading": -0.383055419271185,
+                "abs_loading": 0.383055419271185
+              },
+              {
+                "parameter": "M0",
+                "loading": -0.33448702290311816,
+                "abs_loading": 0.33448702290311816
+              },
+              {
+                "parameter": "NaturalDecay",
+                "loading": -0.02821168643411457,
+                "abs_loading": 0.02821168643411457
+              },
+              {
+                "parameter": "beta_neg",
+                "loading": 0.01591147235049657,
+                "abs_loading": 0.01591147235049657
+              }
+            ]
+          },
+          {
+            "eigenvalue": 1.3786295627313542e-11,
+            "top_loadings": [
+              {
+                "parameter": "M0",
+                "loading": -0.8453001603120975,
+                "abs_loading": 0.8453001603120975
+              },
+              {
+                "parameter": "G0",
+                "loading": 0.5165118610127853,
+                "abs_loading": 0.5165118610127853
+              },
+              {
+                "parameter": "Ch0",
+                "loading": -0.09862655722878493,
+                "abs_loading": 0.09862655722878493
+              },
+              {
+                "parameter": "R0",
+                "loading": 0.0943480436292582,
+                "abs_loading": 0.0943480436292582
+              },
+              {
+                "parameter": "NaturalDecay",
+                "loading": -0.006378632468830319,
+                "abs_loading": 0.006378632468830319
+              }
+            ]
+          },
+          {
+            "eigenvalue": 1.300088686602246e-08,
+            "top_loadings": [
+              {
+                "parameter": "alpha7",
+                "loading": 0.868496533923793,
+                "abs_loading": 0.868496533923793
+              },
+              {
+                "parameter": "K_g",
+                "loading": 0.49398683286055917,
+                "abs_loading": 0.49398683286055917
+              },
+              {
+                "parameter": "R0",
+                "loading": -0.03354535125761805,
+                "abs_loading": 0.03354535125761805
+              },
+              {
+                "parameter": "NaturalDecay",
+                "loading": -0.015029885359186652,
+                "abs_loading": 0.015029885359186652
+              },
+              {
+                "parameter": "Ch0",
+                "loading": -0.011425954537898188,
+                "abs_loading": 0.011425954537898188
+              }
+            ]
+          },
+          {
+            "eigenvalue": 2.9614787090175087e-07,
+            "top_loadings": [
+              {
+                "parameter": "G0",
+                "loading": -0.7505988057700088,
+                "abs_loading": 0.7505988057700088
+              },
+              {
+                "parameter": "Ch0",
+                "loading": -0.48785346364679494,
+                "abs_loading": 0.48785346364679494
+              },
+              {
+                "parameter": "M0",
+                "loading": -0.382206313567656,
+                "abs_loading": 0.382206313567656
+              },
+              {
+                "parameter": "R0",
+                "loading": 0.16255132247005957,
+                "abs_loading": 0.16255132247005957
+              },
+              {
+                "parameter": "NaturalDecay",
+                "loading": -0.13773141049190293,
+                "abs_loading": 0.13773141049190293
+              }
+            ]
+          },
+          {
+            "eigenvalue": 8.998895142981956e-06,
+            "top_loadings": [
+              {
+                "parameter": "K_g",
+                "loading": -0.7334468598709806,
+                "abs_loading": 0.7334468598709806
+              },
+              {
+                "parameter": "R0",
+                "loading": -0.4549377794588465,
+                "abs_loading": 0.4549377794588465
+              },
+              {
+                "parameter": "alpha7",
+                "loading": 0.3953871323860084,
+                "abs_loading": 0.3953871323860084
+              },
+              {
+                "parameter": "q3",
+                "loading": -0.2278286520815782,
+                "abs_loading": 0.2278286520815782
+              },
+              {
+                "parameter": "NaturalDecay",
+                "loading": -0.15903196214239468,
+                "abs_loading": 0.15903196214239468
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+]

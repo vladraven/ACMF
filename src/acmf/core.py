@@ -151,10 +151,8 @@ def algebraic_layer(x, params: ACMFParams | None = None):
     Gap = sigmoid(C - Ch)
     Env_raw = p.w1 * p.H + p.w2 * p.Sec + p.w3 * p.HC + p.w4 * Inst + p.w5 * p.FP
     Env = smin(1.0, smax(0.0, Env_raw))
-
     EI_raw = p.e1 * p.Inf + p.e2 * (1.0 - p.Inc) + p.e3 * Unemployment
     EI = smin(1.0, smax(0.0, EI_raw))
-
     Innovation_raw = Inst * smax(0.0, 1.0 - A) * (1.0 + p.g_innov * G) * (1.0 + p.g_ch * Ch)
     Innovation = smin(1.0, smax(0.0, Innovation_raw))
     RoutineAuto = A * Prod
