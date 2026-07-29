@@ -1,0 +1,861 @@
+# =============================================================================
+# ACMF DATA PROJECT — INDICATOR METADATA
+# =============================================================================
+# Each indicator is tagged with:
+#   - level:         1=Core ACMF, 2=Institutions, 3=Observation Design
+#   - construct:     Which ACMF+ latent variable it proxies (Ch, M, G, V, R, Y, I, etc.)
+#   - coverage:      Expected % of countries/years available (0-1)
+#   - cost:          Relative cost of acquisition (1=free API, 5=manual/paid)
+#   - ovi:           Observed Variable Importance — expected Fisher info gain
+#   - source:        Primary data source
+#   - api_code:      Machine-readable API identifier
+#   - frequency:     Annual / Biennial / Quinquennial
+#   - lag:           Typical publication lag in months
+#   - quality:       Data quality score (1-5, 5=best)
+#   - proxy_for:     Which theoretical construct this proxies
+# =============================================================================
+
+indicators:
+
+  # ===========================================================================
+  # LEVEL 1 — Core ACMF (Observable State Vector)
+  # ===========================================================================
+
+  - id: POP
+    name: Population
+    level: 1
+    construct: Y
+    coverage: 0.98
+    cost: 1
+    ovi: 0.95
+    source: World Bank
+    api_code: SP.POP.TOTL
+    frequency: Annual
+    lag: 6
+    quality: 5
+    proxy_for: Demographic scale
+    unit: persons
+    notes: UN DESA + national census projections
+
+  - id: BIRTH
+    name: Birth Rate
+    level: 1
+    construct: Y
+    coverage: 0.95
+    cost: 1
+    ovi: 0.88
+    source: World Bank
+    api_code: SP.DYN.CBRT.IN
+    frequency: Annual
+    lag: 12
+    quality: 4
+    proxy_for: Fertility / generational renewal
+    unit: per 1000
+    notes: Vital registration systems
+
+  - id: DEATH
+    name: Death Rate
+    level: 1
+    construct: Y
+    coverage: 0.95
+    cost: 1
+    ovi: 0.88
+    source: World Bank
+    api_code: SP.DYN.CDRT.IN
+    frequency: Annual
+    lag: 12
+    quality: 4
+    proxy_for: Mortality / health system stress
+    unit: per 1000
+    notes: Vital registration systems
+
+  - id: MIGR
+    name: Net Migration
+    level: 1
+    construct: Y
+    coverage: 0.70
+    cost: 1
+    ovi: 0.75
+    source: World Bank
+    api_code: SM.POP.NETM
+    frequency: Annual
+    lag: 24
+    quality: 3
+    proxy_for: Demographic attractiveness / push-pull dynamics
+    unit: persons
+    notes: Often modelled, not directly observed
+
+  - id: GDPC
+    name: GDP per Capita
+    level: 1
+    construct: Y
+    coverage: 0.95
+    cost: 1
+    ovi: 0.92
+    source: World Bank
+    api_code: NY.GDP.PCAP.KD
+    frequency: Annual
+    lag: 6
+    quality: 5
+    proxy_for: Economic output per person
+    unit: constant 2015 USD
+    notes: PPP-adjusted also available
+
+  - id: GDPG
+    name: GDP Growth
+    level: 1
+    construct: Y
+    coverage: 0.95
+    cost: 1
+    ovi: 0.90
+    source: World Bank
+    api_code: NY.GDP.MKTP.KD.ZG
+    frequency: Annual
+    lag: 6
+    quality: 5
+    proxy_for: Economic momentum
+    unit: % change
+    notes: Subject to revision
+
+  - id: INFL
+    name: Inflation
+    level: 1
+    construct: Y
+    coverage: 0.92
+    cost: 1
+    ovi: 0.85
+    source: World Bank / IMF
+    api_code: FP.CPI.TOTL.ZG
+    frequency: Annual
+    lag: 3
+    quality: 5
+    proxy_for: Monetary stability
+    unit: % change
+    notes: CPI-based
+
+  - id: UNEMP
+    name: Unemployment Rate
+    level: 1
+    construct: M
+    coverage: 0.85
+    cost: 1
+    ovi: 0.82
+    source: World Bank / ILO
+    api_code: SL.UEM.TOTL.ZS
+    frequency: Annual
+    lag: 6
+    quality: 4
+    proxy_for: Labor underutilization / motivational stress
+    unit: % of labor force
+    notes: ILO modelled estimates; definitions vary
+
+  - id: LIFE
+    name: Life Expectancy
+    level: 1
+    construct: Y
+    coverage: 0.95
+    cost: 1
+    ovi: 0.90
+    source: World Bank
+    api_code: SP.DYN.LE00.IN
+    frequency: Annual
+    lag: 12
+    quality: 5
+    proxy_for: Health system / human capital stock
+    unit: years
+    notes: UN DESA projections
+
+  # ===========================================================================
+  # LEVEL 2 — Institutions (Governance)
+  # ===========================================================================
+
+  - id: GOVEFF
+    name: Government Effectiveness
+    level: 2
+    construct: I
+    coverage: 0.65
+    cost: 1
+    ovi: 0.88
+    source: World Bank WGI
+    api_code: GE.EST
+    frequency: Biennial
+    lag: 18
+    quality: 5
+    proxy_for: Bureaucratic capacity / institutional quality
+    unit: Standard normal (-2.5 to +2.5)
+    notes: Perception-based composite
+
+  - id: RULELAW
+    name: Rule of Law
+    level: 2
+    construct: I
+    coverage: 0.65
+    cost: 1
+    ovi: 0.90
+    source: World Bank WGI
+    api_code: RL.EST
+    frequency: Biennial
+    lag: 18
+    quality: 5
+    proxy_for: Contract enforcement / property rights
+    unit: Standard normal (-2.5 to +2.5)
+    notes: Perception-based composite
+
+  - id: POLSTAB
+    name: Political Stability
+    level: 2
+    construct: I
+    coverage: 0.65
+    cost: 1
+    ovi: 0.85
+    source: World Bank WGI
+    api_code: PV.EST
+    frequency: Biennial
+    lag: 18
+    quality: 4
+    proxy_for: Absence of violence / terrorism / instability
+    unit: Standard normal (-2.5 to +2.5)
+    notes: Includes terrorism and conflict proxies
+
+  # ===========================================================================
+  # LEVEL 3 — Observation Design (Latent Construct Proxies)
+  # ===========================================================================
+  #
+  # Ch — Creativity / Human Potential
+  # ---------------------------------------------------------------------------
+
+  - id: GII
+    name: Global Innovation Index
+    level: 3
+    construct: Ch
+    coverage: 0.55
+    cost: 1
+    ovi: 0.92
+    source: WIPO
+    api_code: gii_overall
+    frequency: Annual
+    lag: 12
+    quality: 5
+    proxy_for: Aggregate innovation capacity
+    unit: Index (0-100)
+    notes: 80+ sub-indicators; best single proxy for Ch
+
+  - id: PATENTS
+    name: Patent Applications (Residents)
+    level: 3
+    construct: Ch
+    coverage: 0.75
+    cost: 1
+    ovi: 0.78
+    source: World Bank / WIPO
+    api_code: IP.PAT.RESD
+    frequency: Annual
+    lag: 18
+    quality: 4
+    proxy_for: Formalized knowledge creation
+    unit: Count
+    notes: Quality varies by patent office; per-capita preferred
+
+  - id: RD_EXP
+    name: R&D Expenditure (% of GDP)
+    level: 3
+    construct: Ch
+    coverage: 0.60
+    cost: 2
+    ovi: 0.85
+    source: World Bank / UNESCO
+    api_code: GB.XPD.RSDV.GD.ZS
+    frequency: Annual
+    lag: 24
+    quality: 4
+    proxy_for: Investment in knowledge production
+    unit: % of GDP
+    notes: OECD and UNESCO harmonized
+
+  - id: RESEARCHERS
+    name: Researchers in R&D
+    level: 3
+    construct: Ch
+    coverage: 0.50
+    cost: 2
+    ovi: 0.80
+    source: UNESCO / OECD
+    api_code: SP.POP.SCIE.RD.P6
+    frequency: Annual
+    lag: 24
+    quality: 4
+    proxy_for: Human capital in knowledge production
+    unit: Per million people
+    notes: FTE definitions vary
+
+  - id: HIGHTECH_X
+    name: High-Technology Exports
+    level: 3
+    construct: Ch
+    coverage: 0.70
+    cost: 1
+    ovi: 0.72
+    source: World Bank
+    api_code: TX.VAL.TECH.CD
+    frequency: Annual
+    lag: 12
+    quality: 3
+    proxy_for: Commercialization of knowledge
+    unit: Current USD
+    notes: Includes re-exports; % of manufactured exports preferred
+
+  - id: SCI_PAPERS
+    name: Scientific & Technical Journal Articles
+    level: 3
+    construct: Ch
+    coverage: 0.65
+    cost: 1
+    ovi: 0.75
+    source: World Bank / SCImago
+    api_code: IP.JRN.ARTC.SC
+    frequency: Annual
+    lag: 18
+    quality: 4
+    proxy_for: Codified scientific output
+    unit: Count
+    notes: Scopus / Web of Science coverage biases
+
+  - id: CITATIONS
+    name: Citation Index (H-index, country-level)
+    level: 3
+    construct: Ch
+    coverage: 0.45
+    cost: 3
+    ovi: 0.70
+    source: SCImago / Web of Science
+    api_code: scimago_h_index
+    frequency: Annual
+    lag: 24
+    quality: 4
+    proxy_for: Impact / quality of scientific output
+    unit: H-index
+    notes: Lagged due to citation accumulation
+
+  - id: CREATIVE_OUT
+    name: Creative Outputs (GII sub-index)
+    level: 3
+    construct: Ch
+    coverage: 0.50
+    cost: 1
+    ovi: 0.68
+    source: WIPO GII
+    api_code: gii_creative_outputs
+    frequency: Annual
+    lag: 12
+    quality: 4
+    proxy_for: Intangible / cultural creativity
+    unit: Index
+    notes: Trademarks, industrial designs, creative goods
+
+  - id: KNOWLEDGE_CREATION
+    name: Knowledge Creation (GII sub-index)
+    level: 3
+    construct: Ch
+    coverage: 0.50
+    cost: 1
+    ovi: 0.82
+    source: WIPO GII
+    api_code: gii_knowledge_creation
+    frequency: Annual
+    lag: 12
+    quality: 5
+    proxy_for: Patent families + scientific publications
+    unit: Index
+    notes: More stable than raw patent counts
+
+  # ---------------------------------------------------------------------------
+  # M — Motivation / Labor Force Engagement
+  # ---------------------------------------------------------------------------
+
+  - id: LFPR
+    name: Labor Force Participation Rate
+    level: 3
+    construct: M
+    coverage: 0.80
+    cost: 1
+    ovi: 0.85
+    source: World Bank / ILO
+    api_code: SL.TLF.CACT.ZS
+    frequency: Annual
+    lag: 6
+    quality: 4
+    proxy_for: Economic engagement / willingness to work
+    unit: % of working-age population
+    notes: Gender-disaggregated available
+
+  - id: YOUTH_UNEMP
+    name: Youth Unemployment
+    level: 3
+    construct: M
+    coverage: 0.80
+    cost: 1
+    ovi: 0.80
+    source: World Bank / ILO
+    api_code: SL.UEM.1524.ZS
+    frequency: Annual
+    lag: 6
+    quality: 4
+    proxy_for: Intergenerational motivational fracture
+    unit: % of youth labor force
+    notes: Critical for demographic dividend analysis
+
+  - id: HDI
+    name: Human Development Index
+    level: 3
+    construct: M
+    coverage: 0.90
+    cost: 1
+    ovi: 0.88
+    source: UNDP
+    api_code: UNDP_HDI
+    frequency: Annual
+    lag: 12
+    quality: 5
+    proxy_for: Capabilities / expanded opportunities
+    unit: Index (0-1)
+    notes: Composite: health, education, income
+
+  - id: WORKING_AGE_EMP
+    name: Working-Age Employment-to-Population
+    level: 3
+    construct: M
+    coverage: 0.75
+    cost: 1
+    ovi: 0.82
+    source: World Bank / ILO
+    api_code: SL.EMP.TOTL.SP.ZS
+    frequency: Annual
+    lag: 6
+    quality: 4
+    proxy_for: Actual labor market absorption
+    unit: % of population 15+
+    notes: Broader than unemployment
+
+  - id: JOB_SATISFACTION
+    name: Job Satisfaction / Quality of Employment
+    level: 3
+    construct: M
+    coverage: 0.15
+    cost: 4
+    ovi: 0.75
+    source: Gallup World Poll / Eurofound
+    api_code: gallup_job_satisfaction
+    frequency: Annual
+    lag: 12
+    quality: 3
+    proxy_for: Subjective motivational state
+    unit: Index
+    notes: Sparse coverage outside OECD; survey-based
+
+  # ---------------------------------------------------------------------------
+  # G — Agency / Entrepreneurship
+  # ---------------------------------------------------------------------------
+
+  - id: NEW_BUS
+    name: New Business Density
+    level: 3
+    construct: G
+    coverage: 0.60
+    cost: 2
+    ovi: 0.85
+    source: World Bank
+    api_code: IC.BUS.NDNS.ZS
+    frequency: Annual
+    lag: 18
+    quality: 4
+    proxy_for: Entrepreneurial dynamism
+    unit: Per 1000 people age 15-64
+    notes: Doing Business / GEM harmonized
+
+  - id: VC_INVEST
+    name: Venture Capital Investment
+    level: 3
+    construct: G
+    coverage: 0.25
+    cost: 4
+    ovi: 0.80
+    source: OECD / PitchBook / EMPEA
+    api_code: oecd_vc_investment
+    frequency: Annual
+    lag: 12
+    quality: 3
+    proxy_for: Risk capital availability for agency
+    unit: % of GDP or USD per capita
+    notes: Very sparse for developing countries
+
+  - id: EODB
+    name: Ease of Doing Business (legacy)
+    level: 3
+    construct: G
+    coverage: 0.60
+    cost: 1
+    ovi: 0.78
+    source: World Bank (discontinued 2020)
+    api_code: IC.BUS.EASE.XQ
+    frequency: Annual
+    lag: 12
+    quality: 4
+    proxy_for: Regulatory friction against agency
+    unit: Rank / Score
+    notes: Discontinued; use B-READY after 2024
+
+  - id: SELF_EMP
+    name: Self-Employment Rate
+    level: 3
+    construct: G
+    coverage: 0.75
+    cost: 1
+    ovi: 0.65
+    source: World Bank / ILO
+    api_code: SL.EMP.SELF.ZS
+    frequency: Annual
+    lag: 6
+    quality: 3
+    proxy_for: Necessity vs. opportunity entrepreneurship
+    unit: % of employment
+    notes: High in informal economies; ambiguous signal
+
+  - id: BUSINESS_FORMATIONS
+    name: Business Formations (formal registrations)
+    level: 3
+    construct: G
+    coverage: 0.55
+    cost: 2
+    ovi: 0.82
+    source: World Bank / UNCTAD
+    api_code: IC.BUS.NREG
+    frequency: Annual
+    lag: 18
+    quality: 4
+    proxy_for: Formal institutionalization of agency
+    unit: Count
+    notes: Per-capita normalization required
+
+  # ---------------------------------------------------------------------------
+  # V — Values / Social Cohesion
+  # ---------------------------------------------------------------------------
+
+  - id: WVS_TRUST
+    name: Generalized Trust (World Values Survey)
+    level: 3
+    construct: V
+    coverage: 0.30
+    cost: 3
+    ovi: 0.85
+    source: World Values Survey / European Values Study
+    api_code: wvs_trust
+    frequency: Quinquennial
+    lag: 36
+    quality: 4
+    proxy_for: Social capital / cohesion
+    unit: % "most people can be trusted"
+    notes: Interpolated between waves
+
+  - id: WVS_RELIGIOSITY
+    name: Religiosity Index
+    level: 3
+    construct: V
+    coverage: 0.30
+    cost: 3
+    ovi: 0.60
+    source: World Values Survey / Pew
+    api_code: wvs_religiosity
+    frequency: Quinquennial
+    lag: 36
+    quality: 3
+    proxy_for: Traditional values strength
+    unit: Composite index
+    notes: Declining in most developed countries
+
+  - id: TOLERANCE_INDEX
+    name: Tolerance Index (GSS / ESS / WVS)
+    level: 3
+    construct: V
+    coverage: 0.25
+    cost: 3
+    ovi: 0.70
+    source: WVS / ESS / GSS
+    api_code: wvs_tolerance
+    frequency: Quinquennial
+    lag: 36
+    quality: 3
+    proxy_for: Openness to diversity / liberal values
+    unit: Composite index
+    notes: Cross-cultural comparability issues
+
+  - id: CIVIC_PART
+    name: Civic Participation Rate
+    level: 3
+    construct: V
+    coverage: 0.35
+    cost: 3
+    ovi: 0.72
+    source: OECD / WVS
+    api_code: civic_participation
+    frequency: Biennial
+    lag: 24
+    quality: 3
+    proxy_for: Active citizenship / social engagement
+    unit: % participating in voluntary activities
+    notes: OECD countries only; sparse elsewhere
+
+  - id: GINI
+    name: Gini Coefficient
+    level: 3
+    construct: V
+    coverage: 0.70
+    cost: 1
+    ovi: 0.75
+    source: World Bank
+    api_code: SI.POV.GINI
+    frequency: Annual
+    lag: 24
+    quality: 3
+    proxy_for: Distributional values / equity
+    unit: 0-100
+    notes: Survey-based; harmonization across sources
+
+  # ---------------------------------------------------------------------------
+  # R — Resilience / Institutional Buffers
+  # ---------------------------------------------------------------------------
+
+  - id: FISCAL_BUFFER
+    name: Fiscal Buffer (General Gov. Net Lending)
+    level: 3
+    construct: R
+    coverage: 0.65
+    cost: 1
+    ovi: 0.82
+    source: IMF WEO
+    api_code: GC.NLD.TOTL.GD.ZS
+    frequency: Annual
+    lag: 6
+    quality: 4
+    proxy_for: Fiscal space for shocks
+    unit: % of GDP
+    notes: IMF Article IV data preferred
+
+  - id: GOV_RESILIENCE
+    name: Government Resilience Index
+    level: 3
+    construct: R
+    coverage: 0.20
+    cost: 4
+    ovi: 0.75
+    source: OECD / Bertelsmann
+    api_code: oecd_resilience_index
+    frequency: Annual
+    lag: 18
+    quality: 3
+    proxy_for: Adaptive capacity of public administration
+    unit: Index
+    notes: OECD only; developing country proxies needed
+
+  - id: DISASTER_PREP
+    name: Disaster Preparedness Index
+    level: 3
+    construct: R
+    coverage: 0.40
+    cost: 3
+    ovi: 0.70
+    source: UNDRR / INFORM
+    api_code: inform_risk
+    frequency: Annual
+    lag: 12
+    quality: 3
+    proxy_for: Risk reduction capacity
+    unit: Index
+    notes: INFORM Risk covers hazards + vulnerability
+
+  - id: RECOVERY_SPEED
+    name: Recovery Speed (GDP bounce-back)
+    level: 3
+    construct: R
+    coverage: 0.50
+    cost: 1
+    ovi: 0.65
+    source: Calculated from WB GDP data
+    api_code: calculated_recovery_speed
+    frequency: Annual
+    lag: 12
+    quality: 3
+    proxy_for: Economic resilience to shocks
+    unit: Years to recover pre-crisis GDP
+    notes: Requires crisis dating; endogenous
+
+  - id: INST_CONTINUITY
+    name: Institutional Continuity (V-Dem)
+    level: 3
+    construct: R
+    coverage: 0.40
+    cost: 2
+    ovi: 0.78
+    source: V-Dem Institute
+    api_code: v2xnp_regcorr
+    frequency: Annual
+    lag: 12
+    quality: 4
+    proxy_for: Absence of executive turnover / coups
+    unit: Index
+    notes: V-Dem v13+ required
+
+  - id: FOREX_RESERVES
+    name: Foreign Exchange Reserves
+    level: 3
+    construct: R
+    coverage: 0.85
+    cost: 1
+    ovi: 0.72
+    source: IMF
+    api_code: FI.RES.TOTL.CD
+    frequency: Monthly → Annual
+    lag: 3
+    quality: 5
+    proxy_for: External buffer against currency crises
+    unit: USD
+    notes: Months of imports coverage preferred
+
+  # ===========================================================================
+  # Ancillary / Control Variables
+  # ===========================================================================
+
+  - id: URBAN
+    name: Urbanization Rate
+    level: 1
+    construct: Y
+    coverage: 0.95
+    cost: 1
+    ovi: 0.80
+    source: World Bank
+    api_code: SP.URB.TOTL.IN.ZS
+    frequency: Annual
+    lag: 12
+    quality: 4
+    proxy_for: Structural transformation
+    unit: % of total population
+    notes: UN World Urbanization Prospects
+
+  - id: ENERGY_PC
+    name: Energy Use per Capita
+    level: 1
+    construct: Y
+    coverage: 0.85
+    cost: 1
+    ovi: 0.75
+    source: World Bank
+    api_code: EG.USE.PCAP.KG.OE
+    frequency: Annual
+    lag: 24
+    quality: 4
+    proxy_for: Industrialization / development stage
+    unit: kg of oil equivalent
+    notes: IEA harmonized
+
+  - id: CO2_PC
+    name: CO2 Emissions per Capita
+    level: 1
+    construct: Y
+    coverage: 0.85
+    cost: 1
+    ovi: 0.70
+    source: World Bank / CAIT
+    api_code: EN.GHG.CO2.PC.CE.AR5
+    frequency: Annual
+    lag: 24
+    quality: 4
+    proxy_for: Production technology / environmental load
+    unit: Metric tons
+    notes: AR5 methodology
+
+  - id: INTERNET
+    name: Internet Penetration
+    level: 1
+    construct: Y
+    coverage: 0.90
+    cost: 1
+    ovi: 0.78
+    source: World Bank / ITU
+    api_code: IT.NET.USER.ZS
+    frequency: Annual
+    lag: 12
+    quality: 4
+    proxy_for: Digital infrastructure / connectivity
+    unit: % of population
+    notes: ITU estimates
+
+  - id: ELECTRICITY
+    name: Electricity Access
+    level: 1
+    construct: Y
+    coverage: 0.90
+    cost: 1
+    ovi: 0.75
+    source: World Bank
+    api_code: EG.ELC.ACCS.ZS
+    frequency: Annual
+    lag: 12
+    quality: 4
+    proxy_for: Basic infrastructure coverage
+    unit: % of population
+    notes: Tracking SDG7
+
+  - id: SCHOOL_ENROLL
+    name: Primary School Enrollment
+    level: 1
+    construct: Ch
+    coverage: 0.85
+    cost: 1
+    ovi: 0.72
+    source: World Bank / UNESCO
+    api_code: SE.PRM.TENR
+    frequency: Annual
+    lag: 24
+    quality: 3
+    proxy_for: Educational foundation
+    unit: Gross %
+    notes: Can exceed 100% due to over-age students
+
+# =============================================================================
+# OPTIMAL EXPERIMENTAL DESIGN PARAMETERS
+# =============================================================================
+# Budget constraint: total_cost <= B
+# Objective: maximize total Fisher Information I(theta; data)
+# Where I = sum over indicators of ovi_i * coverage_i * quality_i / cost_i
+#
+# Greedy selection algorithm:
+#   1. Compute info_gain = ovi * coverage * quality / cost for each indicator
+#   2. Sort descending
+#   3. Select until budget exhausted
+#   4. Ensure at least one indicator per construct (Ch, M, G, V, R, Y, I)
+# =============================================================================
+
+experimental_design:
+  budget_scenarios:
+    - name: "Minimal"
+      total_budget: 20
+      description: "Core ACMF only, free APIs"
+    - name: "Standard"
+      total_budget: 50
+      description: "Core + Institutions + major Level-3 proxies"
+    - name: "Comprehensive"
+      total_budget: 100
+      description: "Full panel including surveys and proprietary data"
+    - name: "Unlimited"
+      total_budget: 999
+      description: "All available indicators"
+
+  constraints:
+    min_indicators_per_construct: 1
+    max_missing_per_country_year: 0.40
+    require_level_1: true
+    require_level_2: false
+    interpolation_allowed: true
+    interpolation_methods:
+      annual: "linear"
+      biennial: "spline"
+      quinquennial: "locf_then_linear"
