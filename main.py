@@ -32,6 +32,8 @@ SCRIPT_TASKS = {
     'data_build_standard': ['scripts/build_panel_dataset.py', '--budget', 'standard'],
     'datacube_init': ['scripts/build_data_cube.py', '--init-only'],
     'datacube_build': ['scripts/build_data_cube.py'],
+    'obs_design_synthetic': ['scripts/run_observation_designer_synthetic.py'],
+    'obs_design_world': ['scripts/run_observation_designer_world_panel.py', '--countries', 'Canada', '--k', '2'],
 }
 
 def run_task(task: str) -> int:

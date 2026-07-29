@@ -1,11 +1,11 @@
-# ACMF 3.3.1.4 Clean Datacube Package
+# ACMF 3.3.1.5 Clean Observation Designer Package
 
 Clean, single-source ACMF package using a strict `src/` layout.
 
 ## Version
 
 ```text
-3.3.1.4-clean-datacube
+3.3.1.5-clean-observation-designer
 ```
 
 ## Canonical package
@@ -67,3 +67,12 @@ PYTHONPATH=src pytest -q
 ## Deployment
 
 See `README_DEPLOY.md`.
+
+## Observation Designer
+
+```bash
+python main.py --task obs_design_synthetic
+python main.py --task obs_design_world
+```
+
+The Observation Designer answers: if we can add 1 or k observables, which ones improve practical identifiability the most? It uses rank gain, min-eigenvalue gain, logdet gain, and condition-number gain computed from the ACMF sensitivity/FIM layer.

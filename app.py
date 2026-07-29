@@ -9,7 +9,7 @@ from fastapi import FastAPI, Header, HTTPException
 
 ROOT=Path(__file__).resolve().parent
 SRC=ROOT/'src'
-TASKS={'health','v2_4_9','empirical_canada','synthetic_ladder','world_profile','world_ident','data_list_indicators','data_fisher_rank','data_build_minimal','data_build_standard','datacube_init','datacube_build'}
+TASKS={'health','v2_4_9','empirical_canada','synthetic_ladder','world_profile','world_ident','data_list_indicators','data_fisher_rank','data_build_minimal','data_build_standard','datacube_init','datacube_build','obs_design_synthetic','obs_design_world'}
 app=FastAPI(title='ACMF Runner')
 
 def _authorize(authorization: str | None):

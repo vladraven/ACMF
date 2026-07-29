@@ -1,6 +1,6 @@
-# ACMF 3.3.1.4 Clean Datacube Package Manifest
+# ACMF 3.3.1.5 Clean Observation Designer Package Manifest
 
-File count: 151
+File count: 156
 
 MANIFEST.txt
 README.md
@@ -19,6 +19,7 @@ docs/DATAFETCH_PANEL_BUILDER.md
 docs/DIRECTION_OF_CHANGES.md
 docs/EMPIRICAL_PROTOCOL.md
 docs/HYPOTHESIS_LADDER.md
+docs/OBSERVATION_DESIGNER.md
 docs/PHILOSOPHICAL_FOUNDATION_RU_EN.md
 docs/QUEBEC_70_74_ALPHA_SENSITIVITY.md
 docs/TRACE_AUDIT.md
@@ -111,6 +112,8 @@ scripts/build_panel_dataset.py
 scripts/download_world_data.py
 scripts/run_empirical_canada.py
 scripts/run_identifiability_world_panel.py
+scripts/run_observation_designer_synthetic.py
+scripts/run_observation_designer_world_panel.py
 scripts/run_synthetic_tests.py
 scripts/run_world_panel_profile.py
 src/acmf/__init__.py
@@ -134,6 +137,7 @@ src/acmf/demography_age_structured.py
 src/acmf/empirical.py
 src/acmf/hypothesis_ladder.py
 src/acmf/identifiability.py
+src/acmf/observation_designer.py
 src/acmf/panel_builder.py
 src/acmf/provenance.py
 src/acmf/smoothing.py
@@ -147,6 +151,7 @@ tests/test_empirical.py
 tests/test_hypothesis_ladder.py
 tests/test_identifiability.py
 tests/test_no_stubs.py
+tests/test_observation_designer.py
 tests/test_panel_builder.py
 tests/test_v2_1_package.py
 tests/test_v2_4_2_trace_audit.py

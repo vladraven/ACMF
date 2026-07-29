@@ -22,6 +22,8 @@ python main.py --task data_build_minimal
 python main.py --task data_build_standard
 python main.py --task datacube_init
 python main.py --task datacube_build
+python main.py --task obs_design_synthetic
+python main.py --task obs_design_world
 python main.py --task v2_4_9
 ```
 

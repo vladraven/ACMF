@@ -7,7 +7,7 @@ from acmf.provenance import load_provenance
 
 
 def test_version_incremented_to_datacube():
-    assert __version__ == '3.3.1.4-clean-datacube'
+    assert __version__ == '3.3.1.5-clean-observation-designer'
 
 
 def test_init_data_cube_schema(tmp_path):
