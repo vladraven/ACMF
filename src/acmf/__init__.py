@@ -21,7 +21,7 @@ from .diebold_mariano import dm_test, compare_acmf_vs_benchmarks
 from .enkf import ACMFEnKF
 from .digital_twin import DigitalTwin
 from .calibration import (
-    LossConfig, ACMFObjective, CalibrationResult, huber_loss, compute_derivative,
+    PriorSpec, default_prior_specs, LossConfig, ACMFObjective, CalibrationResult, huber_loss, compute_derivative,
     differential_evolution_fit, lbfgsb_refinement, estimate_covariance, dram_mcmc,
     model_adequacy, run_calibration_pipeline,
 )
@@ -36,7 +36,7 @@ __all__ = [
     "check_P_invariance", "spectrum_analysis", "feedback_loops_summary",
     "rk4_step", "simulate", "scenario_run", "project_state",
     "LogNormalPrior", "UnitIntervalPrior", "BoundedPrior",
-    "LossConfig", "ACMFObjective", "CalibrationResult", "huber_loss", "compute_derivative",
+    "PriorSpec", "default_prior_specs", "LossConfig", "ACMFObjective", "CalibrationResult", "huber_loss", "compute_derivative",
     "differential_evolution_fit", "lbfgsb_refinement", "estimate_covariance", "dram_mcmc",
     "model_adequacy", "run_calibration_pipeline",
     "random_walk_forecast", "linear_trend_fit", "linear_trend_forecast",

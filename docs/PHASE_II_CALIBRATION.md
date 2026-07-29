@@ -25,3 +25,19 @@ PYTHONPATH=src python scripts/run_calibration_synthetic.py
 ## Notes
 
 The demo intentionally uses small iteration counts for speed. Production calibration should increase `de_maxiter`, `popsize`, `mcmc_samples`, and use richer empirical data.
+
+
+## Priors integration
+
+`calibration.py` now integrates weak probabilistic priors directly into `ACMFObjective` through `PriorSpec`, `default_prior_specs`, `LossConfig.lambda_prior`, and `ACMFObjective.prior_penalty(theta)`.
+
+Hard bounds remain the support constraints for Differential Evolution, L-BFGS-B, and MCMC proposals. Priors add an explicit negative-log-prior penalty to the objective, so they influence DE, local refinement, and MCMC acceptance through the same objective value.
+
+Supported prior kinds:
+
+- `uniform`
+- `normal`
+- `lognormal`
+- `beta` on bounded intervals
+
+This keeps the pipeline practical while making the prior layer operational rather than merely defined.

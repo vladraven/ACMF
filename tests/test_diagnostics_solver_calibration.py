@@ -89,3 +89,21 @@ def test_calibration_objective_and_short_pipeline_components():
     samples, acc = dram_mcmc(objective, theta0, n_samples=20, burn_in=5, seed=1)
     assert samples.shape[1] == len(theta0)
     assert 0.0 <= acc <= 1.0
+
+
+def test_calibration_priors_are_integrated_into_objective():
+    from acmf import PriorSpec
+    t = np.linspace(0.0, 1.0, 3)
+    data = {"t": t, "P": np.array([500.0, 499.0, 498.0]), "A": np.array([0.3, 0.31, 0.32])}
+    base_theta = np.array([0.3, 0.4, 0.2, 0.04, 0.15, 0.3, 0.4, 0.04, 0.5, 0.5, 0.5, 0.5])
+    config_no_prior = LossConfig(observed_vars=["P", "A"], lambda_deriv=0.1, lambda_prior=0.0)
+    obj_no_prior = ACMFObjective(data, config_no_prior)
+    config_with_prior = LossConfig(
+        observed_vars=["P", "A"],
+        lambda_deriv=0.1,
+        lambda_prior=1.0,
+        priors={"alpha7": PriorSpec(kind="normal", mu=10.0, sigma=0.1, weight=1.0)},
+    )
+    obj_with_prior = ACMFObjective(data, config_with_prior)
+    assert obj_with_prior.prior_penalty(base_theta) > 0.0
+    assert obj_with_prior(base_theta) > obj_no_prior(base_theta)

@@ -22,6 +22,8 @@
 
 ### Fixed / refined
 
+- Calibration priors are now operational: `PriorSpec` and `default_prior_specs` are integrated into `ACMFObjective` via `LossConfig.lambda_prior`, so DE, L-BFGS-B, and MCMC use the prior-augmented objective while retaining hard bounds as support constraints.
+
 - `Env`, `EI`, `Innovation`, and `StructuralLimits` now expose bounded deployed values in `[0, 1]` and raw diagnostic values:
   - `Env_raw`
   - `EI_raw`
@@ -34,7 +36,7 @@
 
 ### Validation
 
-- `PYTHONPATH=src pytest -q` -> `17 passed`.
+- `PYTHONPATH=src pytest -q` -> `18 passed`.
 - `examples/basic_usage.py` -> pass.
 - `scripts/run_empirical_canada.py` -> pass.
 - `scripts/run_synthetic_tests.py` -> pass.

@@ -39,11 +39,82 @@ def compute_derivative(y, t):
     return dydt
 
 
+
+
+@dataclass(frozen=True)
+class PriorSpec:
+    """Weak prior penalty for calibration parameters.
+
+    Hard bounds remain the support constraints used by DE/L-BFGS-B/MCMC. This
+    prior is an additional negative-log-prior penalty inside ACMFObjective.
+    Supported kinds:
+    - uniform: no penalty inside bounds;
+    - normal: 0.5*((theta-mu)/sigma)^2;
+    - lognormal: 0.5*((log(theta)-mu)/sigma)^2 + log(theta);
+    - beta: on the parameter's bounded interval [lower, upper].
+    """
+
+    kind: str = "uniform"
+    mu: float = 0.0
+    sigma: float = 1.0
+    a: float = 2.0
+    b: float = 2.0
+    weight: float = 1.0
+
+    def penalty(self, value: float, lower: float | None = None, upper: float | None = None) -> float:
+        x = float(value)
+        kind = self.kind.lower()
+        if kind == "uniform":
+            return 0.0
+        if self.sigma <= 0:
+            raise ValueError("sigma must be positive")
+        if kind == "normal":
+            return float(self.weight * 0.5 * ((x - self.mu) / self.sigma) ** 2)
+        if kind == "lognormal":
+            if x <= 0:
+                return 1e12
+            z = (np.log(x) - self.mu) / self.sigma
+            # Use a non-negative weak log-scale penalty. The hard lower bound
+            # supplies support; constants/Jacobian terms are omitted because
+            # this objective is used for optimization/comparison, not exact
+            # normalized posterior density evaluation.
+            return float(self.weight * 0.5 * z**2)
+        if kind == "beta":
+            if lower is None or upper is None or upper <= lower:
+                return 1e12
+            u = (x - lower) / (upper - lower)
+            u = float(np.clip(u, 1e-12, 1.0 - 1e-12))
+            return float(self.weight * (-(self.a - 1.0) * np.log(u) - (self.b - 1.0) * np.log(1.0 - u)))
+        raise ValueError(f"Unsupported prior kind: {self.kind}")
+
+
+def default_prior_specs(theta_names=None) -> Dict[str, PriorSpec]:
+    """Default weak priors for the compact Phase II calibration subset."""
+    names = theta_names or ACMFObjective.THETA_NAMES if "ACMFObjective" in globals() else []
+    priors = {
+        "alpha7": PriorSpec("lognormal", mu=np.log(0.5), sigma=0.8, weight=0.2),
+        "K_g": PriorSpec("lognormal", mu=np.log(0.4), sigma=0.6, weight=0.2),
+        "beta_neg": PriorSpec("lognormal", mu=np.log(0.2), sigma=0.6, weight=0.2),
+        "NaturalDecay": PriorSpec("lognormal", mu=np.log(0.04), sigma=0.7, weight=0.2),
+        "q1": PriorSpec("beta", a=2.0, b=2.0, weight=0.05),
+        "q3": PriorSpec("beta", a=2.0, b=2.0, weight=0.05),
+        "alpha1": PriorSpec("lognormal", mu=np.log(0.4), sigma=0.8, weight=0.2),
+        "b1": PriorSpec("lognormal", mu=np.log(0.04), sigma=0.8, weight=0.2),
+        "Ch0": PriorSpec("beta", a=2.0, b=2.0, weight=0.05),
+        "M0": PriorSpec("beta", a=2.0, b=2.0, weight=0.05),
+        "G0": PriorSpec("beta", a=2.0, b=2.0, weight=0.05),
+        "R0": PriorSpec("beta", a=2.0, b=2.0, weight=0.05),
+    }
+    return {k: v for k, v in priors.items() if not names or k in names}
+
+
 @dataclass
 class LossConfig:
     observed_vars: List[str] = field(default_factory=lambda: ["P", "Prod", "A", "Inst", "F"])
     lambda_deriv: float = 0.5
     delta_huber: float = 1.0
+    lambda_prior: float = 0.01
+    priors: Dict[str, PriorSpec] = field(default_factory=dict)
     var_index: Dict[str, int] = field(default_factory=lambda: {
         "A": 0, "Prod": 1, "Ch": 2, "M": 3, "G": 4,
         "V": 5, "Inst": 6, "R": 7, "F": 8, "P": 9,
@@ -69,6 +140,8 @@ class ACMFObjective:
             raise ValueError("data['t'] must contain at least two time points")
         self.data = {k: np.asarray(v, dtype=float) for k, v in data.items() if k != "t"}
         self.config = config or LossConfig()
+        if not self.config.priors:
+            self.config.priors = default_prior_specs(self.THETA_NAMES)
         self.var_scale = {}
         for var in self.config.observed_vars:
             if var in self.data:
@@ -123,6 +196,17 @@ class ACMFObjective:
             traj_interp[:, j] = interp1d(t_sim, traj[:, j], kind="linear", fill_value="extrapolate")(self.t)
         return traj_interp
 
+    def prior_penalty(self, theta) -> float:
+        theta = np.asarray(theta, dtype=float)
+        total = 0.0
+        for i, name in enumerate(self.THETA_NAMES):
+            spec = self.config.priors.get(name)
+            if spec is None:
+                continue
+            lo, hi = self.BOUNDS[i]
+            total += spec.penalty(theta[i], lo, hi)
+        return float(total)
+
     def __call__(self, theta):
         try:
             traj = self._integrate(theta)
@@ -145,7 +229,8 @@ class ACMFObjective:
             loss_derivs = huber_loss((dy_obs - dy_sim) / scale, self.config.delta_huber)
             loss_total += loss_levels + self.config.lambda_deriv * loss_derivs
             n_vars += 1
-        return float(loss_total / max(n_vars, 1))
+        data_loss = float(loss_total / max(n_vars, 1))
+        return data_loss + self.config.lambda_prior * self.prior_penalty(theta)
 
 
 @dataclass

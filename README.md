@@ -107,7 +107,7 @@ PYTHONPATH=src pytest -q
 Expected result for this package:
 
 ```text
-17 passed
+18 passed
 ```
 
 Run demos:
@@ -145,5 +145,5 @@ PYTHONPATH=src python scripts/run_digital_twin.py
 The full test suite for this archive is expected to report:
 
 ```text
-17 passed
+18 passed
 ```
