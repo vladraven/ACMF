@@ -1,0 +1,9 @@
+Decision:
+{'model': 'A_const', 'supported_hypothesis': 'H0_constant_parameters_sufficient', 'n_parameters': 2, 'test_rmse': 0.004667248125312499, 'test_bic_like': -219.33275232020242}
+
+Metrics:
+            model                     supported_hypothesis  n_parameters  test_rmse  test_bic_like
+          A_const        H0_constant_parameters_sufficient             2   0.004667    -219.332752
+ B_expanded_state      H2_incomplete_state_space_supported             3   0.004498    -217.838954
+         C_regime H1_regime_dependent_parameters_supported             3   0.004539    -217.456578
+D_functional_form  H3_incomplete_functional_form_supported             3   0.004966    -213.684380

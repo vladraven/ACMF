@@ -1,0 +1,5 @@
+dx/dt:
+[ 0.30589713  0.01956085  0.17631961  0.0891123   0.0346123   0.22010112
+ -0.10212    -0.05186895 -0.32655082  3.31458631]
+adaptive dynamics:
+{'demographic_inertia': 0.9999999991919886, 'institutional_inertia': 0.5759999998444051, 'cultural_persistence': 0.3270822488696729, 'infrastructure_inertia': 0.23000000152456235, 'inertial_potential': 0.5332705623576572, 'transformational_potential': 0.491983507604919, 'adaptive_capacity': 0.525, 'time_scale_mismatch': 0.9371114422070007, 'criticality_raw': 0.5203594161621732, 'criticality': 0.5203594161213868, 'dcriticality': 0.0, 'phase_transition_probability': 0.4251149977536755}
