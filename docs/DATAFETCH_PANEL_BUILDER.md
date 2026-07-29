@@ -1,6 +1,6 @@
 # ACMF Data Fetch and Panel Builder
 
-Version line: `3.3.1.6-clean-real-identifiability`.
+Version line: `3.3.1.7-clean-multiscale`.
 
 ## Complete-data year rule
 

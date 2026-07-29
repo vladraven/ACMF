@@ -1,11 +1,11 @@
-# ACMF 3.3.1.6 Clean Real Identifiability Package
+# ACMF 3.3.1.7 Clean Multiscale Package
 
 Clean, single-source ACMF package using a strict `src/` layout.
 
 ## Version
 
 ```text
-3.3.1.6-clean-real-identifiability
+3.3.1.7-clean-multiscale
 ```
 
 ## Canonical package
@@ -85,3 +85,11 @@ python main.py --task real_ident_core5
 ```
 
 The real-identifiability layer runs practical identifiability diagnostics on real country panel proxies, reporting rank, condition number, weak directions, correlated parameter pairs, observation-design gains, greedy designs, and minimal observation sets.
+
+## Multi-Scale Framework
+
+```bash
+python main.py --task multiscale_build
+```
+
+The multiscale layer introduces `ScaleNode`, `ScaleEdge`, and `MultiScaleFrame` so ACMF can represent World → Country → Province → City → District as one model with changing aggregation level.

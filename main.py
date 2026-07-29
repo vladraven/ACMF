@@ -36,7 +36,9 @@ SCRIPT_TASKS = {
     'obs_design_world': ['scripts/run_observation_designer_world_panel.py', '--countries', 'Canada', '--k', '2'],
     'real_ident_canada': ['scripts/run_real_identifiability_world_panel.py', '--countries', 'Canada', '--design-k', '1'],
     'real_ident_core5': ['scripts/run_real_identifiability_world_panel.py', '--countries', 'Canada', 'Germany', 'Japan', 'Korea, Rep.', 'Australia', '--start-year', '2015', '--design-k', '1'],
+    'multiscale_build': ['scripts/build_multiscale_frame.py', '--countries', 'Canada', 'Germany', 'Japan', 'Korea, Rep.', 'Australia', '--start-year', '2015'],
 }
+
 
 def run_task(task: str) -> int:
     if task == 'health':

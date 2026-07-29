@@ -5,7 +5,7 @@ from acmf.real_identifiability import analyze_country_identifiability, build_rea
 
 
 def test_version_incremented_to_real_identifiability():
-    assert __version__ == '3.3.1.6-clean-real-identifiability'
+    assert __version__ == '3.3.1.7-clean-multiscale'
 
 
 def test_analyze_country_identifiability_canada_short_window():

@@ -14,7 +14,7 @@ def synthetic_data():
 
 
 def test_version_incremented_to_observation_designer():
-    assert __version__ == '3.3.1.6-clean-real-identifiability'
+    assert __version__ == '3.3.1.7-clean-multiscale'
 
 
 def test_score_candidate_observables():

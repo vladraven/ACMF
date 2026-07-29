@@ -26,6 +26,7 @@ python main.py --task obs_design_synthetic
 python main.py --task obs_design_world
 python main.py --task real_ident_canada
 python main.py --task real_ident_core5
+python main.py --task multiscale_build
 python main.py --task v2_4_9
 ```
 
