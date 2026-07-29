@@ -24,3 +24,4 @@ def parse_generic_wide(path: str | Path, header_rows: dict, row_start: int, row_
                 ys, ye=parse_period(rec["period"]); rec["start_year"]=ys; rec["end_year"]=ye
             records.append(rec)
     return pd.DataFrame(records)
+

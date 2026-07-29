@@ -7,3 +7,4 @@ def test_canada_dataset_loads():
     df = load_research_csv(path)
     assert len(df) >= 40
     assert {"t", "dy", "x"}.issubset(df.columns)
+

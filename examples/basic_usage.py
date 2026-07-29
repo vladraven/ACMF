@@ -9,3 +9,4 @@ print(rhs(x, params))
 
 print("adaptive dynamics:")
 print(adaptive_dynamics_layer(x, params))
+

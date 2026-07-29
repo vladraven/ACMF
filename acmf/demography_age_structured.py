@@ -52,3 +52,4 @@ def apply_observed_components(pop_start: pd.DataFrame, components: pd.DataFrame)
     out["signed_value"] = out["signed_value"].fillna(0.0)
     out["population_next"] = out["population"] + out["signed_value"]
     return out
+

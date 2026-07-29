@@ -36,3 +36,4 @@ Pr(Transition by t + h) =
 ## Status
 
 These definitions are `DEFINED / UNVERIFIED-NUM`. They are testable hypotheses, not established forecasting laws.
+

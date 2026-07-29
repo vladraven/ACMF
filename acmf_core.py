@@ -12,3 +12,4 @@ def rhs_acmf(t,y,p,D):
     d[:,10]=p.get('gamma1',1/15)*P1-(p.get('mu2',.005)+p.get('gamma2',1/48))*P2
     d[:,11]=p.get('gamma2',1/48)*P2-p.get('mu3',.035)*P3
     return d.ravel()
+

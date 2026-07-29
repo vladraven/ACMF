@@ -27,3 +27,4 @@ def parse_period(p: str):
     m = re.match(r"(\d{4}) / (\d{4})", str(p))
     if not m: return None, None
     return int(m.group(1)), int(m.group(2))
+

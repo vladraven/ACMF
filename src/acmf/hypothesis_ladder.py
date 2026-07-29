@@ -75,3 +75,4 @@ def evaluate_hypothesis_ladder(df, train_frac=0.67):
     metrics = pd.DataFrame(rows).sort_values("test_bic_like") if rows else pd.DataFrame()
     decision = metrics.iloc[0].to_dict() if not metrics.empty else None
     return metrics, decision
+

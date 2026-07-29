@@ -31,3 +31,4 @@ def run_task(task: str):
     cmd = [sys.executable, str(root_dir / "main.py"), "--task", task]
     proc = subprocess.run(cmd, cwd=root_dir, text=True, capture_output=True, timeout=600)
     return {"task": task, "returncode": proc.returncode, "stdout": proc.stdout[-4000:], "stderr": proc.stderr[-4000:]}
+

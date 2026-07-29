@@ -156,3 +156,4 @@ def main():
     (REP/'v2_4_9_quebec_70_74_alpha_sensitivity_report.md').write_text('\n'.join(lines),encoding='utf-8')
     print(json.dumps({'status':report['status'],'findings':findings,'best':report['best_grid_row']},indent=2))
 if __name__=='__main__': main()
+

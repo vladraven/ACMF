@@ -26,3 +26,4 @@ Recommended full ACMF validation requires panel data with:
 - institutional proxies;
 - stress proxies;
 - latent-state candidates such as trust or institutional memory.
+

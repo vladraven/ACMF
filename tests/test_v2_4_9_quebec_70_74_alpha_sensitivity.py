@@ -16,3 +16,4 @@ def main():
     result={'status':'PASS' if not failures else 'FAIL','failures':failures}; (ROOT/'empirical/reports/v2_4_9_test_report.json').write_text(json.dumps(result,indent=2)); print(json.dumps(result,indent=2))
     if failures: raise SystemExit(1)
 if __name__=='__main__': main()
+

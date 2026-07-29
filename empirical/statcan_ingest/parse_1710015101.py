@@ -40,3 +40,4 @@ def province_vs_er_reconciliation(df):
         for c in sorted(set(prow.index)|set(er.index)):
             pv=float(prow.get(c,0.0)); ev=float(er.get(c,0.0)); rows.append({"province":prov,"component":c,"province_value":pv,"economic_region_sum":ev,"difference":pv-ev})
     return pd.DataFrame(rows)
+

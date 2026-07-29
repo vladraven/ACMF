@@ -22,3 +22,4 @@ def run_empirical_csv(path):
     df = load_research_csv(path)
     metrics, decision = evaluate_hypothesis_ladder(df)
     return {"metrics": metrics, "decision": decision}
+

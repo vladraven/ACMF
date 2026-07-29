@@ -21,3 +21,4 @@ age_group,source,last_single_age,bin_population,last_age_population,outflow_frac
 95 to 99 years,9810002301_single_age_2021,99.0,68405.0,5945.0,0.08690885169212777,0.2,-0.11309114830787224
 -1 year,fixed_non_state,,,,0.0,0.0,0.0
 100 years and older,open_interval_retained,100.0,9530.0,9530.0,0.0,0.2,-0.2
+

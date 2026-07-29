@@ -125,3 +125,4 @@ def estimate_alpha(pop,deaths,intl,inp,growth,births):
             if val<best[0]: best=(val,float(g))
         alpha[age]=best[1]
     return alpha
+

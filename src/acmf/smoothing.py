@@ -18,3 +18,4 @@ def smin(x, y, epsilon=EPSILON):
 def sigmoid(z):
     z = np.asarray(z)
     return np.where(z >= 0, 1.0 / (1.0 + np.exp(-z)), np.exp(z) / (1.0 + np.exp(z)))
+

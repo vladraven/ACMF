@@ -86,3 +86,28 @@ python scripts/run_empirical_canada.py
 ## Important limitation
 
 The bundled empirical example is a minimal real-data smoke run. It is **not** a full empirical validation of ACMF. Full validation requires richer panel data with demographic cohorts, institutional proxies, productivity, automation, fertility, migration, stress, and latent-state candidates.
+
+
+## Audit correction patch — 3.3.1.2-audit-corrected
+
+This deployment package includes the post-audit corrections applied to the executable `src/acmf` package:
+
+- Demographic mode separation is treated as nonlinear near the smoothing layer; `L_s / P` is **not** documented or tested as identically `0.6`.
+- The `V` equation now preserves both R channels: the indirect positive `R -> Education -> C -> Gap -> V` channel and the direct stabilizing `-beta12 * R * V` channel. Therefore `J[V,R]` is documented and tested as parameter/state dependent, not universal.
+- Feedback loop `L2` is tested as a negative feedback loop.
+- `K0` is retained for the `P_max` upper-bound argument; `K_min` is not used as the worst-case upper estimate.
+- `EI`, `Innovation`, and `StructuralLimits` now expose raw diagnostics (`*_raw`) while the deployed index values are bounded to `[0, 1]`.
+- Positive/bounded prior transforms are available in `src/acmf/priors.py`.
+- Audit regression tests are in `tests/test_audit_3_3_1_2_fixes.py`.
+
+Validation command used for this package:
+
+```bash
+PYTHONPATH=src pytest -q
+```
+
+Expected result:
+
+```text
+15 passed
+```

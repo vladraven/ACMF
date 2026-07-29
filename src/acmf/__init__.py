@@ -3,6 +3,7 @@
 from .smoothing import smax, smin, sigmoid
 from .core import default_params, algebraic_layer, rhs
 from .adaptive_dynamics import adaptive_dynamics_layer
+from .priors import LogNormalPrior, UnitIntervalPrior, BoundedPrior
 
 __version__ = "3.3.1.2"
 
@@ -14,4 +15,8 @@ __all__ = [
     "algebraic_layer",
     "rhs",
     "adaptive_dynamics_layer",
+    "LogNormalPrior",
+    "UnitIntervalPrior",
+    "BoundedPrior",
 ]
+

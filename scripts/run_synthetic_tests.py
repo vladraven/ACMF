@@ -20,3 +20,4 @@ for name, df in SCENARIOS.items():
     print("\n", name)
     print(decision)
     print(metrics.to_string(index=False))
+

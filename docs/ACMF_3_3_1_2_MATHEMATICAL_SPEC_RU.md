@@ -33,3 +33,4 @@ States -> Dynamics -> Adaptive Dynamics Layer -> Criticality Index -> Phase Tran
 ```
 
 The extension is diagnostic by default. It does not automatically feed back into the ODE until empirical validation supports that step.
+

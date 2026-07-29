@@ -23,3 +23,4 @@ Regime change is interpreted as an endogenous consequence of criticality, not as
 ## Final statement
 
 A civilization does not survive because it avoids entropy. It survives because it continuously creates enough order, knowledge, cooperation, trust, and meaning to overcome it.
+

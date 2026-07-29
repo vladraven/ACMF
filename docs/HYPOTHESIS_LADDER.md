@@ -51,3 +51,4 @@ C1: Criticality explains parameter drift.
 C2: Criticality predicts regime switches.
 C3: TimeScaleMismatch is a leading indicator.
 ```
+

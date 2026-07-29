@@ -19,3 +19,4 @@
 ## Scientific rule
 
 No historical demographic model is considered validated unless it beats cohort-persistence/last-slope baselines on rolling windows.
+

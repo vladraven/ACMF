@@ -40,3 +40,4 @@ age_from,age_to,probability
 95 to 99 years,95 to 99 years,0.8
 95 to 99 years,100 years and older,0.2
 100 years and older,100 years and older,1.0
+

@@ -80,3 +80,4 @@ def main():
     (REP/'v2_4_2_trace_audit_report.md').write_text('\n'.join(md),encoding='utf-8')
     print(json.dumps({'status':report['status'],'findings':findings,'alpha_operator_changed':operator_changed,'stage_predictions_changed':stage_changed},indent=2))
 if __name__=='__main__': main()
+

@@ -24,3 +24,4 @@ def test_algebraic_layer_keys():
     a = algebraic_layer(x)
     for k in ["Innovation", "S", "Gap", "K_pop", "BirthRate", "DeathRate"]:
         assert k in a
+

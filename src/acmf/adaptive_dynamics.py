@@ -105,3 +105,4 @@ def adaptive_dynamics_layer(x, params: ACMFParams | None = None, weights: Adapti
         "dcriticality": float(dcriticality),
         "phase_transition_probability": float(phase_transition_probability),
     }
+

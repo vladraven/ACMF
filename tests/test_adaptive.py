@@ -10,3 +10,4 @@ def test_adaptive_layer_outputs_are_finite_and_bounded_core_probs():
     assert 0.0 <= out["criticality"] <= 1.0
     assert 0.0 <= out["phase_transition_probability"] <= 1.0
     assert out["adaptive_capacity"] >= 0.0
+
