@@ -1,3 +1,4 @@
+"""ACMF 3.3.1.2 — ядро ОДУ и алгебраический слой (с исправлениями)."""
 from __future__ import annotations
 from dataclasses import dataclass, asdict
 import numpy as np
@@ -8,6 +9,7 @@ STATE_NAMES = ["A", "Prod", "Ch", "M", "G", "V", "Inst", "R", "F", "P"]
 
 @dataclass
 class ACMFParams:
+    # --- alpha ---
     alpha1: float = 0.4
     alpha2: float = 0.3
     alpha3: float = 0.2
@@ -33,6 +35,8 @@ class ACMFParams:
     alpha_rec: float = 0.25
     alpha_fert: float = 0.25
     alpha_fert_env: float = 0.25
+
+    # --- beta ---
     beta1: float = 0.2
     beta2: float = 0.2
     beta3: float = 0.2
@@ -50,6 +54,8 @@ class ACMFParams:
     beta_rec_stress: float = 0.2
     beta_fert_stress: float = 0.2
     beta_fert_inc: float = 0.2
+
+    # --- алгебраические коэффициенты ---
     q1: float = 0.15
     q2: float = 0.6
     q3: float = 0.3
@@ -91,9 +97,9 @@ class ACMFParams:
     p3: float = 0.4
     K_min: float = 0.2
     K0: float = 1000.0
-    k1: float = 1 / 3
-    k2: float = 1 / 3
-    k3: float = 1 / 3
+    k1: float = 1.0 / 3.0
+    k2: float = 1.0 / 3.0
+    k3: float = 1.0 / 3.0
     b0: float = 0.01
     b1: float = 0.04
     d0: float = 0.005
@@ -104,6 +110,8 @@ class ACMFParams:
     P_target: float = 500.0
     K_g: float = 0.4
     n: float = 2.0
+
+    # --- внешние воздействия ---
     H: float = 0.5
     Sec: float = 0.5
     Com: float = 0.5
@@ -134,60 +142,106 @@ def unpack_state(x):
 
 
 def algebraic_layer(x, params: ACMFParams | None = None):
+    """Алгебраический слой ACMF."""
     p = params or default_params()
     A, Prod, Ch, M, G, V, Inst, R, F, P = unpack_state(x)
+
     P_safe = smax(P, EPSILON)
     L_s = 0.6 * P_safe
     L_d = P * smax(0.0, p.q1 + p.q2 * Prod - p.q3 * A)
     Emp = smin(L_s, L_d)
     Unemployment = smax(0.0, 1.0 - Emp / smax(L_s, EPSILON))
     S = sigmoid(p.s1 * Unemployment + p.s2 * p.Inf)
+
     Education = smin(1.0, smax(0.0, p.we1 * Inst + p.we2 * R))
     RecoveryDriver = smin(1.0, smax(0.0, p.wr1 * Inst + p.wr2 * Education + p.wr3 * p.Com))
     SocialCapital = smax(0.0, Inst * R * (1.0 + p.g_sc * M))
+
     Cult_raw = (p.cu1 * SocialCapital + p.cu2 * Education + p.cu3 * p.LTG) * np.exp(-(p.cu4 * p.IG + p.cu5 * V + p.cu6 * S))
     Cult = smin(1.0, smax(0.0, Cult_raw))
     C = smin(1.0, smax(0.0, p.c1 * Education + p.c2 * Cult))
     Gap = sigmoid(C - Ch)
-    Env_raw = p.w1 * p.H + p.w2 * p.Sec + p.w3 * p.HC + p.w4 * Inst + p.w5 * p.FP
-    Env = smin(1.0, smax(0.0, Env_raw))
-    EI_raw = p.e1 * p.Inf + p.e2 * (1.0 - p.Inc) + p.e3 * Unemployment
-    EI = smin(1.0, smax(0.0, EI_raw))
-    Innovation_raw = Inst * smax(0.0, 1.0 - A) * (1.0 + p.g_innov * G) * (1.0 + p.g_ch * Ch)
-    Innovation = smin(1.0, smax(0.0, Innovation_raw))
+
+    # [REVISED] Ограничение [0,1] для Env, EI, StructuralLimits
+    Env = smin(1.0, smax(0.0, p.w1 * p.H + p.w2 * p.Sec + p.w3 * p.HC + p.w4 * Inst + p.w5 * p.FP))
+    EI = smin(1.0, smax(0.0, p.e1 * p.Inf + p.e2 * (1.0 - p.Inc) + p.e3 * Unemployment))
+
+    Innovation = Inst * smax(0.0, 1.0 - A) * (1.0 + p.g_innov * G) * (1.0 + p.g_ch * Ch)
     RoutineAuto = A * Prod
     Aging = smax(0.0, 1.0 - F / 4.0)
     Comp = smax(0.0, 1.0 - Inst)
     HCE = M * (1.0 - S)
-    LabourScarcity = smax(0.0, (L_d - L_s) / smax(L_d + L_s, EPSILON))
+    denom_labour = smax(L_d + L_s, EPSILON)
+    with np.errstate(divide="ignore", invalid="ignore", over="ignore"):
+        scarcity_ratio = np.nan_to_num((L_d - L_s) / denom_labour, nan=0.0, posinf=1e6, neginf=-1e6)
+    LabourScarcity = smax(0.0, scarcity_ratio)
     AutomationProfit = 1.0 - np.exp(-(p.p1 * LabourScarcity + p.p2 * Prod + p.p3 * Innovation * HCE))
     TechSaturation = A / smax(p.A_max, EPSILON)
-    StructuralLimits_raw = p.l1 * (1.0 - Inst) + p.l2 * p.Inf
-    StructuralLimits = smin(1.0, smax(0.0, StructuralLimits_raw))
+
+    # [REVISED] Ограничение [0,1]
+    StructuralLimits = smin(1.0, smax(0.0, p.l1 * (1.0 - Inst) + p.l2 * p.Inf))
+
     Corruption = smin(1.0, smax(0.0, (1.0 - Inst) * (1.0 - p.u_c * p.U_corr) * (1.0 + p.c_v * V - p.c_r * R)))
     StructuralDecay = smin(1.0, smax(0.0, (1.0 - Inst * R) * (1.0 + p.sd_a * RoutineAuto)))
     K_pop = smax(p.K_min, p.K0 * (p.k1 * Prod + p.k2 * HCE + p.k3 * Inst))
+
     Hill = G ** p.n / (smax(p.K_g, EPSILON) ** p.n + G ** p.n)
     BirthRate = smax(0.5 * np.sqrt(EPSILON), p.b0 + p.b1 * (F / 4.0))
     DeathRate = smax(0.0, p.d0 + p.d1 * Aging + p.d2 * (1.0 - HCE))
     Migration = p.M_max * sigmoid(p.k_mig * (p.P_target - P))
-    return locals()
+
+    return {
+        "P_safe": P_safe, "L_s": L_s, "L_d": L_d, "Emp": Emp,
+        "Unemployment": Unemployment, "S": S, "Education": Education,
+        "RecoveryDriver": RecoveryDriver, "SocialCapital": SocialCapital,
+        "Cult_raw": Cult_raw, "Cult": Cult, "C": C, "Gap": Gap,
+        "Env": Env, "EI": EI, "Innovation": Innovation,
+        "RoutineAuto": RoutineAuto, "Aging": Aging, "Comp": Comp,
+        "HCE": HCE, "LabourScarcity": LabourScarcity,
+        "AutomationProfit": AutomationProfit, "TechSaturation": TechSaturation,
+        "StructuralLimits": StructuralLimits, "Corruption": Corruption,
+        "StructuralDecay": StructuralDecay, "K_pop": K_pop,
+        "Hill": Hill, "BirthRate": BirthRate, "DeathRate": DeathRate,
+        "Migration": Migration,
+    }
 
 
 def rhs(x, params: ACMFParams | None = None):
+    """Правая часть ОДУ ACMF (10 состояний)."""
     p = params or default_params()
     A, Prod, Ch, M, G, V, Inst, R, F, P = unpack_state(x)
     a = algebraic_layer(x, p)
-    dx = np.zeros(10, dtype=float)
-    dx[0] = (p.alpha1 * a["Innovation"] + p.alpha2 * a["LabourScarcity"] + p.alpha3 * a["AutomationProfit"]) * (1 - A) - p.beta1 * A * (0.5 + 0.5 * Inst)
-    dx[1] = (p.alpha4 * A + p.alpha5 * a["Innovation"] * a["HCE"] + p.alpha6 * Inst) * (1 - Prod) - (p.beta2 * a["TechSaturation"] + p.beta3 * a["StructuralLimits"]) * Prod
-    dx[2] = (p.alpha7 * a["Innovation"] * a["Hill"] + p.alpha8 * a["Comp"] + p.alpha9 * R + p.alpha10 * a["Education"]) * (1 - Ch) - (p.beta4 * a["RoutineAuto"] + p.beta5 * a["S"]) * Ch
-    dx[3] = (p.alpha11 * Ch + p.alpha12 * G + p.alpha13 * R + p.alpha14 * Inst) * (1 - M) - (p.beta6 * V + p.beta7 * a["S"]) * M
-    dx[4] = (p.alpha15 * M + p.alpha16 * Ch + p.alpha17 * p.LTG + p.alpha18 * a["Education"]) * (1 - G) - (p.beta8 * V + p.beta9 * p.IG + p.beta10 * a["S"]) * G
-    dx[5] = (p.alpha19 * a["Gap"] + p.alpha20 * a["S"]) * (1 - V) - (p.beta11 * M + p.beta12 * R) * V
-    dx[6] = p.alpha_pos * (R * a["SocialCapital"] + p.gamma_inst * M * G) * (1 - Inst) - (p.NaturalDecay + p.beta_neg * (a["Corruption"] * V + a["StructuralDecay"])) * Inst
-    dx[7] = p.alpha_rec * a["RecoveryDriver"] * (1 - R) - p.beta_rec_stress * (V + a["S"]) * R
-    dx[8] = (p.alpha_fert * M * G + p.alpha_fert_env * a["Env"]) * (4 - F) - (p.beta_fert_stress * a["S"] + p.beta_fert_inc * a["EI"]) * F
-    dx[9] = (a["BirthRate"] * (1 - P / a["K_pop"]) - a["DeathRate"]) * P + a["Migration"]
-    return dx
 
+    dx = np.zeros(10, dtype=float)
+
+    # 1. A — Automation
+    dx[0] = (p.alpha1 * a["Innovation"] + p.alpha2 * a["LabourScarcity"] + p.alpha3 * a["AutomationProfit"]) * (1.0 - A) - p.beta1 * A * (0.5 + 0.5 * Inst)
+
+    # 2. Prod — Productivity
+    dx[1] = (p.alpha4 * A + p.alpha5 * a["Innovation"] * a["HCE"] + p.alpha6 * Inst) * (1.0 - Prod) - (p.beta2 * a["TechSaturation"] + p.beta3 * a["StructuralLimits"]) * Prod
+
+    # 3. Ch — Creativity
+    dx[2] = (p.alpha7 * a["Innovation"] * a["Hill"] + p.alpha8 * a["Comp"] + p.alpha9 * R + p.alpha10 * a["Education"]) * (1.0 - Ch) - (p.beta4 * a["RoutineAuto"] + p.beta5 * a["S"]) * Ch
+
+    # 4. M — Mental Health
+    dx[3] = (p.alpha11 * Ch + p.alpha12 * G + p.alpha13 * R + p.alpha14 * Inst) * (1.0 - M) - (p.beta6 * V + p.beta7 * a["S"]) * M
+
+    # 5. G — Agency / Subjectivity
+    dx[4] = (p.alpha15 * M + p.alpha16 * Ch + p.alpha17 * p.LTG + p.alpha18 * a["Education"]) * (1.0 - G) - (p.beta8 * V + p.beta9 * p.IG + p.beta10 * a["S"]) * G
+
+    # 6. V — Vulnerability / Crisis
+    dx[5] = (p.alpha19 * a["Gap"] + p.alpha20 * a["S"]) * (1.0 - V) - (p.beta11 * M + p.beta12 * R) * V
+
+    # 7. Inst — Institutions
+    dx[6] = p.alpha_pos * (R * a["SocialCapital"] + p.gamma_inst * M * G) * (1.0 - Inst) - (p.NaturalDecay + p.beta_neg * (a["Corruption"] * V + a["StructuralDecay"])) * Inst
+
+    # 8. R — Recovery / Resilience
+    dx[7] = p.alpha_rec * a["RecoveryDriver"] * (1.0 - R) - p.beta_rec_stress * (V + a["S"]) * R
+
+    # 9. F — Fertility
+    dx[8] = (p.alpha_fert * M * G + p.alpha_fert_env * a["Env"]) * (4.0 - F) - (p.beta_fert_stress * a["S"] + p.beta_fert_inc * a["EI"]) * F
+
+    # 10. P — Population
+    dx[9] = (a["BirthRate"] * (1.0 - P / a["K_pop"]) - a["DeathRate"]) * P + a["Migration"]
+
+    return dx

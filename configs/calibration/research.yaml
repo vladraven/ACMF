@@ -1,0 +1,7 @@
+profile: research
+purpose: Reproducible empirical research runs.
+max_nfev: 300
+seeds: [0, 1, 2, 3, 4]
+min_mcmc_samples: 10000
+min_mcmc_burn_in: 2000
+notes: Use this or stricter profiles for reported empirical results.

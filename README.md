@@ -1,95 +1,48 @@
-# ACMF 3.3.1.7 Clean Multiscale Package
+# ACMF 3.3.1.9-clean-quality-hardening
 
-Clean, single-source ACMF package using a strict `src/` layout.
+This release withdraws the weak `3.3.1.8` line and ships a quality-hardening package focused on explicit contracts, configuration, anti-stub tests and safer task execution.
 
-## Version
+## What is hardened
 
-```text
-3.3.1.7-clean-multiscale
-```
+- Calibration parameters are loaded from YAML configuration with bounds validation.
+- Calibration profiles separate smoke and research settings.
+- Manual-only data sources now raise explicit `ManualDownloadRequired` errors instead of silently returning empty `DataFrame`s.
+- World Bank fetcher supports strict mode and raises `SourceUnavailableError` on API failures by default.
+- Age-structure modules contain real transition and aggregation behavior.
+- `cohort_label()` raises an error for unsupported ages instead of returning `None`.
+- API task execution truncates stdout/stderr and supports bearer-token protection through `ACMF_API_TOKEN`.
+- Anti-stub tests scan for empty `DataFrame` placeholders, `return locals()`, and broad exception silencing.
 
-## Canonical package
-
-The only canonical Python package is:
-
-```text
-src/acmf/
-```
-
-No root `acmf/` stub, no `index.php`, no repo-dump bundle.
-
-## Quick start
+## Tasks
 
 ```bash
 python main.py --task health
-python main.py --task empirical_canada
-python main.py --task synthetic_ladder
-python main.py --task world_profile
-python main.py --task world_ident
+python main.py --task empirical_validate_canada
+python main.py --task empirical_validate_core5
+python main.py --task empirical_indicator_ablation
+python main.py --task empirical_backtest_2008
 ```
 
-## Datafetch and panel builder
+## Research run
 
 ```bash
-python main.py --task data_list_indicators
-python main.py --task data_fisher_rank
-python main.py --task data_build_minimal
-python main.py --task data_build_standard
-python main.py --task datacube_init
-python main.py --task datacube_build
+python scripts/run_empirical_validation.py \
+  --mode core5 \
+  --countries Canada Germany Japan Australia "Korea, Rep." \
+  --train-start 1995 \
+  --train-end 2015 \
+  --validation-start 2016 \
+  --validation-end 2024 \
+  --seeds 0 1 2 \
+  --max-nfev 300
 ```
 
-Direct builder calls:
+## Configuration
 
-```bash
-python scripts/build_panel_dataset.py --list-indicators
-python scripts/build_panel_dataset.py --fisher-rank
-python scripts/build_panel_dataset.py --budget standard --years 1995:auto
+```text
+configs/params/baseline.yaml
+configs/calibration/smoke.yaml
+configs/calibration/research.yaml
 ```
 
-`auto` means `current_calendar_year - 2`. In 2026, this resolves to 2024.
-
-## World Bank downloaders
-
-Two backends are available:
-
-```bash
-python scripts/download_world_data.py --backend requests --start-year 1995 --end-year auto
-python scripts/download_world_data.py --backend wbdata --start-year 1995 --end-year auto
-```
-
-## Tests
-
-```bash
-PYTHONPATH=src pytest -q
-```
-
-## Deployment
-
-See `README_DEPLOY.md`.
-
-## Observation Designer
-
-```bash
-python main.py --task obs_design_synthetic
-python main.py --task obs_design_world
-```
-
-The Observation Designer answers: if we can add 1 or k observables, which ones improve practical identifiability the most? It uses rank gain, min-eigenvalue gain, logdet gain, and condition-number gain computed from the ACMF sensitivity/FIM layer.
-
-## Real Identifiability Lab
-
-```bash
-python main.py --task real_ident_canada
-python main.py --task real_ident_core5
-```
-
-The real-identifiability layer runs practical identifiability diagnostics on real country panel proxies, reporting rank, condition number, weak directions, correlated parameter pairs, observation-design gains, greedy designs, and minimal observation sets.
-
-## Multi-Scale Framework
-
-```bash
-python main.py --task multiscale_build
-```
-
-The multiscale layer introduces `ScaleNode`, `ScaleEdge`, and `MultiScaleFrame` so ACMF can represent World → Country → Province → City → District as one model with changing aggregation level.
+Smoke settings are for CI only and are not valid for scientific claims.

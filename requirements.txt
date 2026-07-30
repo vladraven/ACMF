@@ -1,9 +1,17 @@
-numpy>=1.26,<3
-pandas>=2.0,<3
-scipy>=1.10,<2
-requests>=2.31,<3
-pyyaml>=6.0,<7
-# Optional backend/manual-file readers
+# Core dependencies
+pandas>=2.0.0
+numpy>=1.24.0
+pyyaml>=6.0
+requests>=2.31.0
+
+# World Bank API
 wbdata>=0.3.0
+
+# Optional: for reading Stata/Excel survey files
 openpyxl>=3.1.0
 pyreadstat>=1.2.0
+
+# Optional: for advanced interpolation
+scipy>=1.11.0
+
+flask

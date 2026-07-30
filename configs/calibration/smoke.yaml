@@ -1,0 +1,5 @@
+profile: smoke
+purpose: Fast CI and deployment smoke tests only.
+max_nfev: 25
+seeds: [0]
+notes: Not valid for scientific claims.
