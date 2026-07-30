@@ -8,7 +8,7 @@ app=Flask(__name__)
 
 @app.get('/')
 def index():
-    return jsonify({'app':'ACMF','version':'3.3.1.9-clean-quality-hardening','tasks':available_tasks()})
+    return jsonify({'app':'ACMF','version':'3.3.1.10-clean-empirical-validation','tasks':available_tasks()})
 
 @app.post('/run/<task>')
 def run(task):

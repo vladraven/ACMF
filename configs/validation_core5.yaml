@@ -1,0 +1,20 @@
+profile: core5_empirical_validation
+countries:
+  - Canada
+  - Germany
+  - Japan
+  - Australia
+  - Korea, Rep.
+train_start: 1995
+train_end: 2015
+validation_start: 2016
+validation_end: 2024
+observables: [P, Prod, A, Inst, F]
+calibration_profile: research
+outputs:
+  metrics: core5_validation_metrics.csv
+  dynamic_errors: dynamic_errors_by_year.csv
+  parameters: country_parameter_estimates.csv
+  parameter_stability: parameter_stability_map.csv
+  identifiability: identifiability_map.csv
+  report: empirical_validation_report.json

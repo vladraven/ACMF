@@ -9,4 +9,4 @@ from .config import load_calibration_profile, load_parameter_config
 from .exceptions import ACMFError, ManualDownloadRequired, SourceUnavailableError
 from .aging_transition_matrix import transition_matrix, apply_transition
 from .demography_age_structured import cohort_label, aggregate_age_counts
-__version__ = "3.3.1.9-clean-quality-hardening"
+__version__ = "3.3.1.10-clean-empirical-validation"

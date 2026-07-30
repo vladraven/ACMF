@@ -1,4 +1,4 @@
-# ACMF 3.3.1.9-clean-quality-hardening
+# ACMF 3.3.1.10-clean-empirical-validation
 
 This release withdraws the weak `3.3.1.8` line and ships a quality-hardening package focused on explicit contracts, configuration, anti-stub tests and safer task execution.
 

@@ -1,6 +1,6 @@
-# ACMF 3.3.1.9 Clean Quality Hardening Package Manifest
+# ACMF 3.3.1.10 Clean Empirical Validation Package Manifest
 
-File count: 38
+File count: 39
 
 MANIFEST.txt
 README.md
@@ -8,6 +8,7 @@ app.py
 configs/calibration/research.yaml
 configs/calibration/smoke.yaml
 configs/params/baseline.yaml
+configs/validation_core5.yaml
 data/world_data_level1_1995_2025.csv
 docs/EMPIRICAL_VALIDATION.md
 docs/QUALITY_HARDENING.md

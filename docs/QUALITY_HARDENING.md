@@ -1,6 +1,6 @@
 # ACMF Quality Hardening
 
-Version: `3.3.1.9-clean-quality-hardening`.
+Version: `3.3.1.10-clean-empirical-validation`.
 
 ## Quality gates
 

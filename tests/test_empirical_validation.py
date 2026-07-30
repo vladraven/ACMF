@@ -8,7 +8,7 @@ from acmf.enkf import enkf_assimilate
 
 
 def test_version():
-    assert __version__ == '3.3.1.9-clean-quality-hardening'
+    assert __version__ == '3.3.1.10-clean-empirical-validation'
 
 
 def test_world_panel_proxy():
