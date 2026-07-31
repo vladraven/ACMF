@@ -16,6 +16,10 @@ TASKS = {
     'empirical_validate_core5': TaskSpec('empirical_validate_core5', ('scripts/run_empirical_validation.py','--mode','core5','--countries','Canada','Germany','Japan','Australia','Korea, Rep.','--seeds','0','--train-start','2010','--train-end','2015','--validation-start','2016','--validation-end','2020','--max-nfev','25')),
     'empirical_indicator_ablation': TaskSpec('empirical_indicator_ablation', ('scripts/run_empirical_validation.py','--mode','ablation','--country','Canada','--seeds','0','--train-start','2010','--train-end','2015','--validation-start','2016','--validation-end','2020')),
     'empirical_backtest_2008': TaskSpec('empirical_backtest_2008', ('scripts/run_empirical_validation.py','--mode','backtest-2008','--country','Canada','--seeds','0')),
+    'synthetic_forecast_benchmark_volatility': TaskSpec('synthetic_forecast_benchmark_volatility', ('scripts/run_synthetic_forecast_benchmark.py','--scenario','high_volatility','--seed','42','--horizon','30')),
+    'synthetic_forecast_benchmark_trend': TaskSpec('synthetic_forecast_benchmark_trend', ('scripts/run_synthetic_forecast_benchmark.py','--scenario','low_stress_trend','--seed','42','--horizon','30')),
+    'synthetic_forecast_benchmark_regime': TaskSpec('synthetic_forecast_benchmark_regime', ('scripts/run_synthetic_forecast_benchmark.py','--scenario','regime_switch','--seed','42','--horizon','30')),
+    'synthetic_forecast_benchmark_nonlinear': TaskSpec('synthetic_forecast_benchmark_nonlinear', ('scripts/run_synthetic_forecast_benchmark.py','--scenario','nonlinear_transform','--seed','42','--horizon','30')),
 }
 
 def available_tasks():
