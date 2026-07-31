@@ -4,6 +4,7 @@ import json
 import numpy as np
 import pandas as pd
 from .world_panel import load_world_panel, make_acmf_proxy_panel, OBSERVED_CORE, ALL_OBSERVABLES
+from .model_levels import observed_vars_for_level
 from .calibration import calibrate_country_proxy, predict_from_theta, CALIBRATION_PARAMS
 from .validation_metrics import metrics_dataframe
 from .identifiability import simple_fim_diagnostics as fim_diagnostics
@@ -47,10 +48,10 @@ def forecast_validation(data_full, theta, validation_start, validation_end, vari
             yearly.append({'Year':int(y),'variable':v,'observed':float(obs[v][i]),'predicted':float(pred[v][i]),'error':float(pred[v][i]-obs[v][i])})
     return metrics, pd.DataFrame(yearly), pred
 
-def run_country_validation(country: str, train_start=1995, train_end=2015, validation_start=2016, validation_end=2024, seeds=(0,1,2), variables=None, max_nfev=60, data_path=None):
-    variables=list(variables or OBSERVED_CORE)
+def run_country_validation(country: str, train_start=1995, train_end=2015, validation_start=2016, validation_end=2024, seeds=(0,1,2), variables=None, max_nfev=60, data_path=None, model_level: str='R5'):
+    variables=list(variables or observed_vars_for_level(model_level))
     panel=load_world_panel(data_path)
-    full=make_acmf_proxy_panel(panel,country,train_start, validation_end)
+    full=make_acmf_proxy_panel(panel,country,train_start, validation_end, fit_end_year=train_end)
     train=_subset_by_year(full, train_start, train_end)
     runs=[]
     for seed in seeds:
@@ -100,21 +101,21 @@ def identifiability_map(runs_df: pd.DataFrame):
         rows.append({'country':country,'rank':int(best['rank']),'condition_number':float(best['condition_number']),'stable_parameters':int(stable),'weak_parameters':int(weak),'non_identifiable_parameters':int(non)})
     return pd.DataFrame(rows)
 
-def indicator_ablation_study(country='Canada', variables=None, train_start=1995, train_end=2015, validation_start=2016, validation_end=2024, seed=0):
-    variables=list(variables or OBSERVED_CORE)
+def indicator_ablation_study(country='Canada', variables=None, train_start=1995, train_end=2015, validation_start=2016, validation_end=2024, seed=0, model_level: str='R5'):
+    variables=list(variables or observed_vars_for_level(model_level))
     base=run_country_validation(country,train_start,train_end,validation_start,validation_end,seeds=(seed,),variables=variables,max_nfev=40)
     base_rmse=float(base['best_metrics']['RMSE'].mean()); base_cond=float(base['runs'].iloc[0]['condition_number'])
     rows=[]
     for removed in variables:
         keep=[v for v in variables if v!=removed]
         if not keep: continue
-        rep=run_country_validation(country,train_start,train_end,validation_start,validation_end,seeds=(seed,),variables=keep,max_nfev=40)
+        rep=run_country_validation(country,train_start,train_end,validation_start,validation_end,seeds=(seed,),variables=keep,max_nfev=40, model_level=model_level)
         rmse=float(rep['best_metrics']['RMSE'].mean()); cond=float(rep['runs'].iloc[0]['condition_number'])
         rows.append({'country':country,'removed_indicator':removed,'baseline_rmse':base_rmse,'ablation_rmse':rmse,'delta_rmse_pct':100*(rmse-base_rmse)/max(base_rmse,1e-12),'baseline_condition_number':base_cond,'ablation_condition_number':cond,'delta_condition_number_pct':100*(cond-base_cond)/max(base_cond,1e-12)})
     return pd.DataFrame(rows)
 
-def backtest_2008(country='Canada', seed=0):
-    return run_country_validation(country,train_start=1995,train_end=2007,validation_start=2008,validation_end=2015,seeds=(seed,),variables=OBSERVED_CORE,max_nfev=50)
+def backtest_2008(country='Canada', seed=0, model_level: str='R5'):
+    return run_country_validation(country,train_start=1995,train_end=2007,validation_start=2008,validation_end=2015,seeds=(seed,),variables=observed_vars_for_level(model_level),max_nfev=50, model_level=model_level)
 
 def write_validation_outputs(report: dict, output_dir='output/empirical_validation'):
     out=Path(output_dir); out.mkdir(parents=True, exist_ok=True)

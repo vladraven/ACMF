@@ -130,10 +130,6 @@ def default_prior_specs(theta_names=None):
         'q3': PriorSpec('beta', a=2, b=2, weight=0.05),
         'alpha1': PriorSpec('lognormal', mu=np.log(0.4), sigma=0.8, weight=0.2),
         'b1': PriorSpec('lognormal', mu=np.log(0.04), sigma=0.8, weight=0.2),
-        'Ch0': PriorSpec('beta', a=2, b=2, weight=0.05),
-        'M0': PriorSpec('beta', a=2, b=2, weight=0.05),
-        'G0': PriorSpec('beta', a=2, b=2, weight=0.05),
-        'R0': PriorSpec('beta', a=2, b=2, weight=0.05),
     }
     return {k: v for k, v in priors.items() if theta_names is None or k in theta_names}
 
@@ -149,8 +145,15 @@ class LossConfig:
 
 
 class ACMFObjective:
-    THETA_NAMES = ['alpha7', 'K_g', 'beta_neg', 'NaturalDecay', 'q1', 'q3', 'alpha1', 'b1', 'Ch0', 'M0', 'G0', 'R0']
-    BOUNDS = [(0.05, 2.0), (0.1, 0.9), (0.05, 0.5), (0.01, 0.20), (0, 1), (0, 1), (0.05, 1.0), (0, 0.1), (0, 1), (0, 1), (0, 1), (0, 1)]
+    """Objective for practical identifiability and observation-design checks.
+
+    V4 uses observed/measured initial conditions from the proxy panel. Initial
+    states are no longer free parameters. This avoids hidden trajectory fitting
+    via Ch0/M0/G0/R0 and keeps calibration focused on dynamic parameters.
+    """
+    THETA_NAMES = CALIBRATION_PARAMS.copy()
+    BOUNDS = list(zip(LOWER.tolist(), UPPER.tolist()))
+    REQUIRED_INITIAL_STATES = ['A', 'Prod', 'Ch', 'M', 'G', 'V', 'Inst', 'R', 'F', 'P']
 
     def __init__(self, data, config=None):
         self.t = np.asarray(data['t'], dtype=float)
@@ -159,6 +162,7 @@ class ACMFObjective:
         if not self.config.priors:
             self.config.priors = default_prior_specs(self.THETA_NAMES)
         self.var_scale = {v: (float(np.std(self.data[v])) if v in self.data and np.std(self.data[v]) > 1e-12 else 1.0) for v in self.config.observed_vars}
+        self.initial_state_source = self._initial_state_source()
 
     def _theta_to_params(self, theta):
         p = default_params()
@@ -166,10 +170,16 @@ class ACMFObjective:
         p.q1, p.q3, p.alpha1, p.b1 = theta[4], theta[5], theta[6], theta[7]
         return p
 
-    def _initial_state(self, theta):
+    def _initial_state_source(self):
+        missing = [v for v in self.REQUIRED_INITIAL_STATES if v not in self.data]
+        if missing:
+            raise ValueError(f'Missing observed/measured initial state variables: {missing}')
+        return {v: 'observed_proxy_t0' for v in self.REQUIRED_INITIAL_STATES}
+
+    def _initial_state(self):
         return np.array([
-            self.data.get('A', [0.3])[0], self.data.get('Prod', [0.4])[0], theta[8], theta[9], theta[10], 0.3,
-            self.data.get('Inst', [0.6])[0], theta[11], self.data.get('F', [2.0])[0], self.data.get('P', [500.0])[0],
+            self.data['A'][0], self.data['Prod'][0], self.data['Ch'][0], self.data['M'][0], self.data['G'][0], self.data['V'][0],
+            self.data['Inst'][0], self.data['R'][0], self.data['F'][0], self.data['P'][0],
         ], dtype=float)
 
     @staticmethod
@@ -182,7 +192,7 @@ class ACMFObjective:
 
     def _integrate(self, theta):
         p = self._theta_to_params(theta)
-        x0 = self._project(self._initial_state(theta))
+        x0 = self._project(self._initial_state())
         t0, tf = float(self.t[0]), float(self.t[-1])
         dt = min(0.5, (tf - t0) / max(len(self.t) * 2, 10))
         n = int(np.ceil((tf - t0) / dt)) + 1

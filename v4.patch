@@ -1,0 +1,990 @@
+diff --git a/MANIFEST.txt b/MANIFEST.txt
+index f4ff346..3887bef 100644
+--- a/MANIFEST.txt
++++ b/MANIFEST.txt
+@@ -1,45 +1,218 @@
+-# ACMF 3.3.1.10 Clean Empirical Validation Package Manifest
++# ACMF 4.0.0 stable baseline manifest
+ 
+-File count: 39
++File count: 214
+ 
++ACMF 3.3.1.2.md
++ACMF_3_3_1_1_EN_final.docx
++ACMF_3_3_1_1_RU_final.docx
++ACMF_Philosophical_Foundation.md
++ACMF_adaptive_dynamics_RU.docx
++ACMF_philosophical_foundation_expanded_RU_EN.docx
++Adaptive Civilizational Metabolism Framework.md
++Clean package report.md
++FIX_CHANGELOG.md
+ MANIFEST.txt
+ README.md
+ README_DEPLOY.md
+-data/world_data_1995_2025.csv
++acmf_33110_clean_empirical_validation_report.md
++acmf_3313_clean_datafetch_report.md
++acmf_3314_clean_datacube_report.md
++acmf_3315_clean_observation_designer_report.md
++acmf_3316_clean_real_identifiability_report.md
++acmf_3317_clean_multiscale_report.md
++acmf_3319_clean_quality_hardening_report.md
++acmf_clean_package_report.md
++acmf_data_project/acmf_data_project/README.md
++acmf_data_project/acmf_data_project/build_panel_dataset.py
++acmf_data_project/acmf_data_project/data/metadata/indicators.yaml
++acmf_data_project/acmf_data_project/data/processed/world_data_level1_1995_2025.csv
++acmf_data_project/acmf_data_project/fetchers/__init__.py
++acmf_data_project/acmf_data_project/fetchers/fetch_innovation.py
++acmf_data_project/acmf_data_project/fetchers/fetch_resilience.py
++acmf_data_project/acmf_data_project/fetchers/fetch_wgi.py
++acmf_data_project/acmf_data_project/fetchers/fetch_world_bank.py
++acmf_data_project/acmf_data_project/fetchers/fetch_world_values.py
++acmf_data_project/acmf_data_project/requirements.txt
+ app.py
+ configs/calibration/research.yaml
+ configs/calibration/smoke.yaml
+ configs/params/baseline.yaml
+ configs/validation_core5.yaml
++data/canada_fred_manifest.json
++data/canada_fred_population_fertility_empirical.csv
++data/metadata/indicators.yaml
++data/processed/panel_dataset.csv
++data/processed/quality_report.csv
++data/world_data_1995_2025.csv
+ data/world_data_level1_1995_2025.csv
++docs/ACMF_3_3_1_2_MATHEMATICAL_SPEC_RU.md
++docs/ADAPTIVE_DYNAMICS_MODULE.md
++docs/DATAFETCH_PANEL_BUILDER.md
++docs/DIRECTION_OF_CHANGES.md
++docs/EMPIRICAL_PROTOCOL.md
+ docs/EMPIRICAL_VALIDATION.md
++docs/HYPOTHESIS_LADDER.md
++docs/MULTISCALE.md
++docs/OBSERVATION_DESIGNER.md
++docs/PHILOSOPHICAL_FOUNDATION_RU_EN.md
+ docs/QUALITY_HARDENING.md
++docs/QUEBEC_70_74_ALPHA_SENSITIVITY.md
++docs/REAL_IDENTIFIABILITY.md
++docs/TRACE_AUDIT.md
++empirical/__init__.py
++empirical/processed/economic_region_components_2024_2025_long.csv
++empirical/processed/province_components_2024_2025_summary.csv
++empirical/processed/province_vs_economic_region_reconciliation.csv
++empirical/processed/v2_4_2_aging_operator_diff.csv
++empirical/processed/v2_4_2_component_ablation_metrics.csv
++empirical/processed/v2_4_2_component_delta_rmse.csv
++empirical/processed/v2_4_2_full_stage_trace_age_gender.csv
++empirical/processed/v2_4_2_full_stage_trace_p123.csv
++empirical/processed/v2_4_2_p_tot_forecast_vs_accounting.csv
++empirical/processed/v2_4_2_stage_prediction_diff.csv
++empirical/processed/v2_4_2_transition_matrix.csv
++empirical/processed/v2_4_3_component_ablation_metrics.csv
++empirical/processed/v2_4_3_component_delta_rmse.csv
++empirical/processed/v2_4_3_fixed20_transition_matrix.csv
++empirical/processed/v2_4_3_prediction_diff_real_vs_fixed20.csv
++empirical/processed/v2_4_3_predictions_fixed20_p123.csv
++empirical/processed/v2_4_3_predictions_real_aging_p123.csv
++empirical/processed/v2_4_3_real_aging_outflow_fractions.csv
++empirical/processed/v2_4_3_real_aging_transition_matrix.csv
++empirical/processed/v2_4_3_single_age_2021_clean.csv
++empirical/processed/v2_4_3_stage_prediction_diff.csv
++empirical/processed/v2_4_3_stage_trace_age_gender.csv
++empirical/processed/v2_4_3_stage_trace_p123.csv
++empirical/processed/v2_4_9_quebec_70_74_alpha_grid.csv
++empirical/processed/v2_4_9_quebec_70_74_alpha_models_summary.csv
++empirical/processed/v2_4_9_quebec_70_74_alpha_real_focus.csv
++empirical/processed/v2_4_9_quebec_70_74_gender_component_trace_by_model.csv
++empirical/processed/v2_4_9_quebec_70_74_yearly_predictions_by_model.csv
++empirical/raw/statcan/1310042901-eng.csv
++empirical/raw/statcan/1710000501-eng (1).csv
++empirical/raw/statcan/1710000501-eng.csv
++empirical/raw/statcan/1710000601-eng.csv
++empirical/raw/statcan/1710000801-eng.csv
++empirical/raw/statcan/1710001401-eng.csv
++empirical/raw/statcan/1710001501-eng (1).csv
++empirical/raw/statcan/1710001501-eng (2).csv
++empirical/raw/statcan/1710001501-eng.csv
++empirical/raw/statcan/17100020.csv
++empirical/raw/statcan/1710002001-eng.csv
++empirical/raw/statcan/1710004001-eng.csv
++empirical/raw/statcan/1710015101-eng (1).csv
++empirical/raw/statcan/1710015101-eng.csv
++empirical/raw/statcan/9810002301-eng.csv
++empirical/raw/statcan/population_cohorts_2000_2024.csv
++empirical/reports/architecture_change_contract.json
++empirical/reports/build_stdout.txt
++empirical/reports/core_test_report.json
++empirical/reports/core_test_stdout.txt
++empirical/reports/package_test_stdout.txt
++empirical/reports/v2_1_build_report.json
++empirical/reports/v2_1_build_report.md
++empirical/reports/v2_1_package_test_report.json
++empirical/reports/v2_4_2_stdout.txt
++empirical/reports/v2_4_2_test_report.json
++empirical/reports/v2_4_2_test_stdout.txt
++empirical/reports/v2_4_2_trace_audit_report.json
++empirical/reports/v2_4_2_trace_audit_report.md
++empirical/reports/v2_4_3_real_aging_reestimation_report.json
++empirical/reports/v2_4_3_real_aging_reestimation_report.md
++empirical/reports/v2_4_3_stdout.txt
++empirical/reports/v2_4_3_test_report.json
++empirical/reports/v2_4_3_test_stdout.txt
++empirical/reports/v2_4_9_quebec_70_74_alpha_sensitivity_report.json
++empirical/reports/v2_4_9_quebec_70_74_alpha_sensitivity_report.md
++empirical/reports/v2_4_9_stdout.txt
++empirical/reports/v2_4_9_test_report.json
++empirical/reports/v2_4_9_test_stdout.txt
++empirical/scripts/__init__.py
++empirical/scripts/build_full_package.py
++empirical/scripts/pipeline.py
++empirical/scripts/run_real_aging_operator_reestimation_v2_4_3.py
++empirical/scripts/run_trace_audit_v2_4_2.py
++empirical/scripts/run_v2_4_9_quebec_70_74_alpha_sensitivity.py
++empirical/statcan_ingest/__init__.py
++empirical/statcan_ingest/common.py
++empirical/statcan_ingest/parse_1710015101.py
++empirical/statcan_ingest/parse_wide_component_tables.py
++examples/basic_usage.py
+ main.py
+ pyproject.toml
++pytest.ini
++requirements.deploy.txt
+ requirements.txt
++runtime.txt
++scripts/build_data_cube.py
++scripts/build_multiscale_frame.py
++scripts/build_panel_dataset.py
++scripts/download_world_data.py
++scripts/run_empirical_canada.py
+ scripts/run_empirical_validation.py
++scripts/run_identifiability_world_panel.py
++scripts/run_observation_designer_synthetic.py
++scripts/run_observation_designer_world_panel.py
++scripts/run_real_identifiability_world_panel.py
++scripts/run_synthetic_tests.py
++scripts/run_world_panel_profile.py
+ src/acmf/__init__.py
++src/acmf/adaptive_dynamics.py
+ src/acmf/aging_transition_matrix.py
+ src/acmf/calibration.py
+ src/acmf/config.py
+ src/acmf/core.py
++src/acmf/data/__init__.py
++src/acmf/data/indicators.yaml
++src/acmf/data/world_data_1995_2025.csv
++src/acmf/data/world_data_level1_1995_2025.csv
++src/acmf/data_cube.py
+ src/acmf/data_fetchers/__init__.py
+ src/acmf/data_fetchers/innovation.py
+ src/acmf/data_fetchers/manual_sources.py
+ src/acmf/data_fetchers/resilience.py
++src/acmf/data_fetchers/wgi.py
+ src/acmf/data_fetchers/world_bank.py
+ src/acmf/data_fetchers/world_values.py
++src/acmf/data_quality.py
+ src/acmf/demography_age_structured.py
++src/acmf/empirical.py
+ src/acmf/empirical_validation.py
+ src/acmf/enkf.py
+ src/acmf/exceptions.py
++src/acmf/hypothesis_ladder.py
+ src/acmf/identifiability.py
++src/acmf/model_levels.py
+ src/acmf/multiscale.py
+ src/acmf/observation_designer.py
++src/acmf/panel_builder.py
++src/acmf/provenance.py
++src/acmf/real_identifiability.py
+ src/acmf/smoothing.py
+ src/acmf/solver.py
+ src/acmf/task_runner.py
+ src/acmf/validation_metrics.py
+ src/acmf/world_panel.py
++tests/README.md
++tests/test_adaptive.py
++tests/test_core.py
++tests/test_data_cube.py
++tests/test_data_fetchers.py
++tests/test_empirical.py
+ tests/test_empirical_validation.py
++tests/test_hypothesis_ladder.py
++tests/test_identifiability.py
++tests/test_multiscale.py
++tests/test_no_stubs.py
++tests/test_observation_designer.py
++tests/test_panel_builder.py
+ tests/test_quality_hardening.py
++tests/test_real_identifiability.py
++tests/test_v2_1_package.py
++tests/test_v2_4_2_trace_audit.py
++tests/test_v2_4_3_real_aging_reestimation.py
++tests/test_v2_4_9_quebec_70_74_alpha_sensitivity.py
++tests/test_v4_baseline.py
++tests/test_world_panel.py
++world_data_1995_2025.csv
++Философское обоснование и описание системы ACMF 3.3.1.2.md
+diff --git a/README.md b/README.md
+index 0c2678d..ec56184 100644
+--- a/README.md
++++ b/README.md
+@@ -1,4 +1,4 @@
+-# ACMF 3.3.1.10-clean-empirical-validation
++# ACMF 4.0.0-stable-baseline
+ 
+ This release withdraws the weak `3.3.1.8` line and ships a quality-hardening package focused on explicit contracts, configuration, anti-stub tests and safer task execution.
+ 
+@@ -46,3 +46,24 @@ configs/calibration/research.yaml
+ ```
+ 
+ Smoke settings are for CI only and are not valid for scientific claims.
++
++## V4 stability policy
++
++Default `pytest -q` runs the fast/local suite only. Computationally expensive tests are marked `slow` and are excluded by default in `pytest.ini`.
++
++Run slow scientific checks explicitly:
++
++```bash
++pytest -q -m slow
++```
++
++The empirical validation pipeline now fits scaling parameters on the train window only by passing `fit_end_year=train_end` into `make_acmf_proxy_panel(...)`. Initial conditions for the identifiability objective are observed/measured proxy values at `t0`, not free calibration parameters.
++
++Reduced observation levels are available:
++
++```text
++R3      P, Prod, Inst
++R5      P, Prod, A, Inst, F
++R7      P, Prod, A, Inst, F, M, R
++FULL10  P, Prod, A, Inst, F, Ch, M, G, V, R
++```
+diff --git a/docs/QUALITY_HARDENING.md b/docs/QUALITY_HARDENING.md
+index b59e490..f7fb0e4 100644
+--- a/docs/QUALITY_HARDENING.md
++++ b/docs/QUALITY_HARDENING.md
+@@ -1,6 +1,6 @@
+ # ACMF Quality Hardening
+ 
+-Version: `3.3.1.10-clean-empirical-validation`.
++Version: `4.0.0-stable-baseline`.
+ 
+ ## Quality gates
+ 
+diff --git a/pyproject.toml b/pyproject.toml
+index e9177f4..70358fa 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
+ 
+ [project]
+ name = "acmf"
+-version = "3.3.1.10"
+-description = "ACMF clean empirical validation research platform package"
++version = "4.0.0"
++description = "ACMF stable baseline research platform package"
+ requires-python = ">=3.10"
+ dependencies = ["numpy", "pandas", "scipy", "flask", "pyyaml", "requests"]
+ 
+diff --git a/pytest.ini b/pytest.ini
+new file mode 100644
+index 0000000..30b93f4
+--- /dev/null
++++ b/pytest.ini
+@@ -0,0 +1,7 @@
++[pytest]
++pythonpath = src
++markers =
++    slow: computationally expensive tests (identifiability, calibration, observation design, empirical validation)
++    network: tests requiring external network access
++    manual_data: tests requiring manually downloaded data
++addopts = -m "not slow and not network and not manual_data"
+diff --git a/scripts/run_empirical_validation.py b/scripts/run_empirical_validation.py
+old mode 100644
+new mode 100755
+index 13b4201..2cf2dfb
+--- a/scripts/run_empirical_validation.py
++++ b/scripts/run_empirical_validation.py
+@@ -4,6 +4,7 @@ import argparse, json, sys
+ from pathlib import Path
+ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'src'))
+ from acmf.empirical_validation import run_country_validation, run_core5_validation, write_validation_outputs, indicator_ablation_study, backtest_2008, CORE5, _safe
++from acmf.model_levels import available_model_levels
+ 
+ def main():
+     p=argparse.ArgumentParser(description='Run ACMF empirical validation')
+@@ -16,26 +17,27 @@ def main():
+     p.add_argument('--validation-end', type=int, default=2024)
+     p.add_argument('--seeds', nargs='*', type=int, default=[0,1,2])
+     p.add_argument('--max-nfev', type=int, default=60)
++    p.add_argument('--model-level', default='R5', choices=available_model_levels())
+     p.add_argument('--output-dir', default='output/empirical_validation')
+     args=p.parse_args()
+     if args.mode=='country':
+-        r=run_country_validation(args.country,args.train_start,args.train_end,args.validation_start,args.validation_end,seeds=args.seeds,max_nfev=args.max_nfev)
++        r=run_country_validation(args.country,args.train_start,args.train_end,args.validation_start,args.validation_end,seeds=args.seeds,max_nfev=args.max_nfev, model_level=args.model_level)
+         report={'country_reports':[r],'runs':r['runs'],'metrics':r['best_metrics'],'yearly_errors':r['yearly_errors']}
+         from acmf.empirical_validation import parameter_stability_report, identifiability_map
+         report['parameter_stability']=parameter_stability_report(report['runs']); report['identifiability_map']=identifiability_map(report['runs'])
+         out=write_validation_outputs(report,args.output_dir)
+-        print(json.dumps(_safe({'output_dir':str(out),'country':args.country,'mean_RMSE':float(report['metrics']['RMSE'].mean())}), indent=2))
++        print(json.dumps(_safe({'output_dir':str(out),'country':args.country,'model_level':args.model_level,'mean_RMSE':float(report['metrics']['RMSE'].mean())}), indent=2))
+     elif args.mode=='core5':
+-        r=run_core5_validation(args.countries, train_start=args.train_start, train_end=args.train_end, validation_start=args.validation_start, validation_end=args.validation_end, seeds=args.seeds, max_nfev=args.max_nfev)
++        r=run_core5_validation(args.countries, train_start=args.train_start, train_end=args.train_end, validation_start=args.validation_start, validation_end=args.validation_end, seeds=args.seeds, max_nfev=args.max_nfev, model_level=args.model_level)
+         out=write_validation_outputs(r,args.output_dir)
+-        print(json.dumps(_safe({'output_dir':str(out),'countries':args.countries,'mean_RMSE':float(r['metrics']['RMSE'].mean()),'identifiability_map':r['identifiability_map'].to_dict(orient='records')}), indent=2))
++        print(json.dumps(_safe({'output_dir':str(out),'countries':args.countries,'model_level':args.model_level,'mean_RMSE':float(r['metrics']['RMSE'].mean()),'identifiability_map':r['identifiability_map'].to_dict(orient='records')}), indent=2))
+     elif args.mode=='ablation':
+-        df=indicator_ablation_study(country=args.country, train_start=args.train_start, train_end=args.train_end, validation_start=args.validation_start, validation_end=args.validation_end, seed=args.seeds[0])
++        df=indicator_ablation_study(country=args.country, train_start=args.train_start, train_end=args.train_end, validation_start=args.validation_start, validation_end=args.validation_end, seed=args.seeds[0], model_level=args.model_level)
+         out=Path(args.output_dir); out.mkdir(parents=True, exist_ok=True); df.to_csv(out/'ablation_results.csv', index=False)
+-        print(json.dumps(_safe({'output':str(out/'ablation_results.csv'),'rows':len(df)}), indent=2))
++        print(json.dumps(_safe({'output':str(out/'ablation_results.csv'),'country':args.country,'model_level':args.model_level,'rows':len(df)}), indent=2))
+     else:
+-        r=backtest_2008(args.country, seed=args.seeds[0]); out=Path(args.output_dir); out.mkdir(parents=True, exist_ok=True)
++        r=backtest_2008(args.country, seed=args.seeds[0], model_level=args.model_level); out=Path(args.output_dir); out.mkdir(parents=True, exist_ok=True)
+         r['best_metrics'].to_csv(out/'backtest_2008_summary.csv', index=False)
+-        print(json.dumps(_safe({'output':str(out/'backtest_2008_summary.csv'),'country':args.country,'mean_RMSE':float(r['best_metrics']['RMSE'].mean())}), indent=2))
++        print(json.dumps(_safe({'output':str(out/'backtest_2008_summary.csv'),'country':args.country,'model_level':args.model_level,'mean_RMSE':float(r['best_metrics']['RMSE'].mean())}), indent=2))
+ if __name__=='__main__':
+     main()
+diff --git a/src/acmf.egg-info/PKG-INFO b/src/acmf.egg-info/PKG-INFO
+deleted file mode 100644
+index 2fa5b80..0000000
+--- a/src/acmf.egg-info/PKG-INFO
++++ /dev/null
+@@ -1,11 +0,0 @@
+-Metadata-Version: 2.4
+-Name: acmf
+-Version: 3.3.1.10
+-Summary: ACMF clean empirical validation research platform package
+-Requires-Python: >=3.10
+-Requires-Dist: numpy
+-Requires-Dist: pandas
+-Requires-Dist: scipy
+-Requires-Dist: flask
+-Requires-Dist: pyyaml
+-Requires-Dist: requests
+diff --git a/src/acmf.egg-info/SOURCES.txt b/src/acmf.egg-info/SOURCES.txt
+deleted file mode 100644
+index d74e8f7..0000000
+--- a/src/acmf.egg-info/SOURCES.txt
++++ /dev/null
+@@ -1,59 +0,0 @@
+-README.md
+-pyproject.toml
+-src/acmf/__init__.py
+-src/acmf/adaptive_dynamics.py
+-src/acmf/aging_transition_matrix.py
+-src/acmf/calibration.py
+-src/acmf/config.py
+-src/acmf/core.py
+-src/acmf/data_cube.py
+-src/acmf/data_quality.py
+-src/acmf/demography_age_structured.py
+-src/acmf/empirical.py
+-src/acmf/empirical_validation.py
+-src/acmf/enkf.py
+-src/acmf/exceptions.py
+-src/acmf/hypothesis_ladder.py
+-src/acmf/identifiability.py
+-src/acmf/multiscale.py
+-src/acmf/observation_designer.py
+-src/acmf/panel_builder.py
+-src/acmf/provenance.py
+-src/acmf/real_identifiability.py
+-src/acmf/smoothing.py
+-src/acmf/solver.py
+-src/acmf/task_runner.py
+-src/acmf/validation_metrics.py
+-src/acmf/world_panel.py
+-src/acmf.egg-info/PKG-INFO
+-src/acmf.egg-info/SOURCES.txt
+-src/acmf.egg-info/dependency_links.txt
+-src/acmf.egg-info/requires.txt
+-src/acmf.egg-info/top_level.txt
+-src/acmf/data/__init__.py
+-src/acmf/data_fetchers/__init__.py
+-src/acmf/data_fetchers/innovation.py
+-src/acmf/data_fetchers/manual_sources.py
+-src/acmf/data_fetchers/resilience.py
+-src/acmf/data_fetchers/wgi.py
+-src/acmf/data_fetchers/world_bank.py
+-src/acmf/data_fetchers/world_values.py
+-tests/test_adaptive.py
+-tests/test_core.py
+-tests/test_data_cube.py
+-tests/test_data_fetchers.py
+-tests/test_empirical.py
+-tests/test_empirical_validation.py
+-tests/test_hypothesis_ladder.py
+-tests/test_identifiability.py
+-tests/test_multiscale.py
+-tests/test_no_stubs.py
+-tests/test_observation_designer.py
+-tests/test_panel_builder.py
+-tests/test_quality_hardening.py
+-tests/test_real_identifiability.py
+-tests/test_v2_1_package.py
+-tests/test_v2_4_2_trace_audit.py
+-tests/test_v2_4_3_real_aging_reestimation.py
+-tests/test_v2_4_9_quebec_70_74_alpha_sensitivity.py
+-tests/test_world_panel.py
+\ No newline at end of file
+diff --git a/src/acmf.egg-info/dependency_links.txt b/src/acmf.egg-info/dependency_links.txt
+deleted file mode 100644
+index 8b13789..0000000
+--- a/src/acmf.egg-info/dependency_links.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-
+diff --git a/src/acmf.egg-info/requires.txt b/src/acmf.egg-info/requires.txt
+deleted file mode 100644
+index 24c6a56..0000000
+--- a/src/acmf.egg-info/requires.txt
++++ /dev/null
+@@ -1,6 +0,0 @@
+-numpy
+-pandas
+-scipy
+-flask
+-pyyaml
+-requests
+diff --git a/src/acmf.egg-info/top_level.txt b/src/acmf.egg-info/top_level.txt
+deleted file mode 100644
+index fae0576..0000000
+--- a/src/acmf.egg-info/top_level.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-acmf
+diff --git a/src/acmf/__init__.py b/src/acmf/__init__.py
+index f5a6383..2fcd131 100644
+--- a/src/acmf/__init__.py
++++ b/src/acmf/__init__.py
+@@ -1,4 +1,4 @@
+-"""ACMF 3.3.1.10 clean empirical-validation package."""
++"""ACMF 4.0.0 stable baseline package."""
+ from .core import ACMFParams, default_params, rhs, algebraic_layer, STATE_NAMES
+ from .solver import simulate, rk4_step
+ from .calibration import calibrate_country_proxy, predict_from_theta, CALIBRATION_PARAMS, LossConfig
+@@ -10,4 +10,7 @@ from .config import load_calibration_profile, load_parameter_config
+ from .exceptions import ACMFError, ManualDownloadRequired, SourceUnavailableError
+ from .aging_transition_matrix import transition_matrix, apply_transition
+ from .demography_age_structured import cohort_label, aggregate_age_counts
+-__version__ = "3.3.1.10-clean-empirical-validation"
++__version__ = "4.0.0-stable-baseline"
++
++from .model_levels import MODEL_LEVELS, available_model_levels, get_model_level, observed_vars_for_level
++from .world_panel import TrainFittedScaler
+diff --git a/src/acmf/calibration.py b/src/acmf/calibration.py
+index 96b9a3b..826aa18 100644
+--- a/src/acmf/calibration.py
++++ b/src/acmf/calibration.py
+@@ -130,10 +130,6 @@ def default_prior_specs(theta_names=None):
+         'q3': PriorSpec('beta', a=2, b=2, weight=0.05),
+         'alpha1': PriorSpec('lognormal', mu=np.log(0.4), sigma=0.8, weight=0.2),
+         'b1': PriorSpec('lognormal', mu=np.log(0.04), sigma=0.8, weight=0.2),
+-        'Ch0': PriorSpec('beta', a=2, b=2, weight=0.05),
+-        'M0': PriorSpec('beta', a=2, b=2, weight=0.05),
+-        'G0': PriorSpec('beta', a=2, b=2, weight=0.05),
+-        'R0': PriorSpec('beta', a=2, b=2, weight=0.05),
+     }
+     return {k: v for k, v in priors.items() if theta_names is None or k in theta_names}
+ 
+@@ -149,8 +145,15 @@ class LossConfig:
+ 
+ 
+ class ACMFObjective:
+-    THETA_NAMES = ['alpha7', 'K_g', 'beta_neg', 'NaturalDecay', 'q1', 'q3', 'alpha1', 'b1', 'Ch0', 'M0', 'G0', 'R0']
+-    BOUNDS = [(0.05, 2.0), (0.1, 0.9), (0.05, 0.5), (0.01, 0.20), (0, 1), (0, 1), (0.05, 1.0), (0, 0.1), (0, 1), (0, 1), (0, 1), (0, 1)]
++    """Objective for practical identifiability and observation-design checks.
++
++    V4 uses observed/measured initial conditions from the proxy panel. Initial
++    states are no longer free parameters. This avoids hidden trajectory fitting
++    via Ch0/M0/G0/R0 and keeps calibration focused on dynamic parameters.
++    """
++    THETA_NAMES = CALIBRATION_PARAMS.copy()
++    BOUNDS = list(zip(LOWER.tolist(), UPPER.tolist()))
++    REQUIRED_INITIAL_STATES = ['A', 'Prod', 'Ch', 'M', 'G', 'V', 'Inst', 'R', 'F', 'P']
+ 
+     def __init__(self, data, config=None):
+         self.t = np.asarray(data['t'], dtype=float)
+@@ -159,6 +162,7 @@ class ACMFObjective:
+         if not self.config.priors:
+             self.config.priors = default_prior_specs(self.THETA_NAMES)
+         self.var_scale = {v: (float(np.std(self.data[v])) if v in self.data and np.std(self.data[v]) > 1e-12 else 1.0) for v in self.config.observed_vars}
++        self.initial_state_source = self._initial_state_source()
+ 
+     def _theta_to_params(self, theta):
+         p = default_params()
+@@ -166,10 +170,16 @@ class ACMFObjective:
+         p.q1, p.q3, p.alpha1, p.b1 = theta[4], theta[5], theta[6], theta[7]
+         return p
+ 
+-    def _initial_state(self, theta):
++    def _initial_state_source(self):
++        missing = [v for v in self.REQUIRED_INITIAL_STATES if v not in self.data]
++        if missing:
++            raise ValueError(f'Missing observed/measured initial state variables: {missing}')
++        return {v: 'observed_proxy_t0' for v in self.REQUIRED_INITIAL_STATES}
++
++    def _initial_state(self):
+         return np.array([
+-            self.data.get('A', [0.3])[0], self.data.get('Prod', [0.4])[0], theta[8], theta[9], theta[10], 0.3,
+-            self.data.get('Inst', [0.6])[0], theta[11], self.data.get('F', [2.0])[0], self.data.get('P', [500.0])[0],
++            self.data['A'][0], self.data['Prod'][0], self.data['Ch'][0], self.data['M'][0], self.data['G'][0], self.data['V'][0],
++            self.data['Inst'][0], self.data['R'][0], self.data['F'][0], self.data['P'][0],
+         ], dtype=float)
+ 
+     @staticmethod
+@@ -182,7 +192,7 @@ class ACMFObjective:
+ 
+     def _integrate(self, theta):
+         p = self._theta_to_params(theta)
+-        x0 = self._project(self._initial_state(theta))
++        x0 = self._project(self._initial_state())
+         t0, tf = float(self.t[0]), float(self.t[-1])
+         dt = min(0.5, (tf - t0) / max(len(self.t) * 2, 10))
+         n = int(np.ceil((tf - t0) / dt)) + 1
+diff --git a/src/acmf/empirical_validation.py b/src/acmf/empirical_validation.py
+index 18e1d1e..fbab624 100644
+--- a/src/acmf/empirical_validation.py
++++ b/src/acmf/empirical_validation.py
+@@ -4,6 +4,7 @@ import json
+ import numpy as np
+ import pandas as pd
+ from .world_panel import load_world_panel, make_acmf_proxy_panel, OBSERVED_CORE, ALL_OBSERVABLES
++from .model_levels import observed_vars_for_level
+ from .calibration import calibrate_country_proxy, predict_from_theta, CALIBRATION_PARAMS
+ from .validation_metrics import metrics_dataframe
+ from .identifiability import simple_fim_diagnostics as fim_diagnostics
+@@ -47,10 +48,10 @@ def forecast_validation(data_full, theta, validation_start, validation_end, vari
+             yearly.append({'Year':int(y),'variable':v,'observed':float(obs[v][i]),'predicted':float(pred[v][i]),'error':float(pred[v][i]-obs[v][i])})
+     return metrics, pd.DataFrame(yearly), pred
+ 
+-def run_country_validation(country: str, train_start=1995, train_end=2015, validation_start=2016, validation_end=2024, seeds=(0,1,2), variables=None, max_nfev=60, data_path=None):
+-    variables=list(variables or OBSERVED_CORE)
++def run_country_validation(country: str, train_start=1995, train_end=2015, validation_start=2016, validation_end=2024, seeds=(0,1,2), variables=None, max_nfev=60, data_path=None, model_level: str='R5'):
++    variables=list(variables or observed_vars_for_level(model_level))
+     panel=load_world_panel(data_path)
+-    full=make_acmf_proxy_panel(panel,country,train_start, validation_end)
++    full=make_acmf_proxy_panel(panel,country,train_start, validation_end, fit_end_year=train_end)
+     train=_subset_by_year(full, train_start, train_end)
+     runs=[]
+     for seed in seeds:
+@@ -100,21 +101,21 @@ def identifiability_map(runs_df: pd.DataFrame):
+         rows.append({'country':country,'rank':int(best['rank']),'condition_number':float(best['condition_number']),'stable_parameters':int(stable),'weak_parameters':int(weak),'non_identifiable_parameters':int(non)})
+     return pd.DataFrame(rows)
+ 
+-def indicator_ablation_study(country='Canada', variables=None, train_start=1995, train_end=2015, validation_start=2016, validation_end=2024, seed=0):
+-    variables=list(variables or OBSERVED_CORE)
++def indicator_ablation_study(country='Canada', variables=None, train_start=1995, train_end=2015, validation_start=2016, validation_end=2024, seed=0, model_level: str='R5'):
++    variables=list(variables or observed_vars_for_level(model_level))
+     base=run_country_validation(country,train_start,train_end,validation_start,validation_end,seeds=(seed,),variables=variables,max_nfev=40)
+     base_rmse=float(base['best_metrics']['RMSE'].mean()); base_cond=float(base['runs'].iloc[0]['condition_number'])
+     rows=[]
+     for removed in variables:
+         keep=[v for v in variables if v!=removed]
+         if not keep: continue
+-        rep=run_country_validation(country,train_start,train_end,validation_start,validation_end,seeds=(seed,),variables=keep,max_nfev=40)
++        rep=run_country_validation(country,train_start,train_end,validation_start,validation_end,seeds=(seed,),variables=keep,max_nfev=40, model_level=model_level)
+         rmse=float(rep['best_metrics']['RMSE'].mean()); cond=float(rep['runs'].iloc[0]['condition_number'])
+         rows.append({'country':country,'removed_indicator':removed,'baseline_rmse':base_rmse,'ablation_rmse':rmse,'delta_rmse_pct':100*(rmse-base_rmse)/max(base_rmse,1e-12),'baseline_condition_number':base_cond,'ablation_condition_number':cond,'delta_condition_number_pct':100*(cond-base_cond)/max(base_cond,1e-12)})
+     return pd.DataFrame(rows)
+ 
+-def backtest_2008(country='Canada', seed=0):
+-    return run_country_validation(country,train_start=1995,train_end=2007,validation_start=2008,validation_end=2015,seeds=(seed,),variables=OBSERVED_CORE,max_nfev=50)
++def backtest_2008(country='Canada', seed=0, model_level: str='R5'):
++    return run_country_validation(country,train_start=1995,train_end=2007,validation_start=2008,validation_end=2015,seeds=(seed,),variables=observed_vars_for_level(model_level),max_nfev=50, model_level=model_level)
+ 
+ def write_validation_outputs(report: dict, output_dir='output/empirical_validation'):
+     out=Path(output_dir); out.mkdir(parents=True, exist_ok=True)
+diff --git a/src/acmf/identifiability.py b/src/acmf/identifiability.py
+index 3a93f9f..4811290 100644
+--- a/src/acmf/identifiability.py
++++ b/src/acmf/identifiability.py
+@@ -19,6 +19,8 @@ def _flat(traj,t,obs,time_mask=None):
+     return np.concatenate(vals), labels
+ def parameter_sensitivity_matrix(data:Dict[str,np.ndarray], theta:Sequence[float], observables:Sequence[str], config:LossConfig|None=None, rel_step=1e-4, abs_step=1e-6, time_mask=None):
+     theta=np.asarray(theta,dtype=float); obj=ACMFObjective(data,config); t=obj.t
++    if len(theta) != len(obj.BOUNDS):
++        raise ValueError(f'theta length {len(theta)} does not match objective dimension {len(obj.BOUNDS)}')
+     if time_mask is not None: time_mask=np.asarray(time_mask,dtype=bool)
+     y0,labels=_flat(obj._integrate(theta),t,observables,time_mask); S=np.zeros((len(y0),len(theta)))
+     for j,(lo,hi) in enumerate(obj.BOUNDS):
+diff --git a/src/acmf/model_levels.py b/src/acmf/model_levels.py
+new file mode 100644
+index 0000000..d1a9c82
+--- /dev/null
++++ b/src/acmf/model_levels.py
+@@ -0,0 +1,28 @@
++from __future__ import annotations
++from dataclasses import dataclass
++
++@dataclass(frozen=True)
++class ModelLevel:
++    name: str
++    observed_vars: tuple[str, ...]
++    state_count: int
++    description: str
++
++MODEL_LEVELS: dict[str, ModelLevel] = {
++    'R3': ModelLevel('R3', ('P', 'Prod', 'Inst'), 3, 'Reduced macro core: population, production, institutions.'),
++    'R5': ModelLevel('R5', ('P', 'Prod', 'A', 'Inst', 'F'), 5, 'Reduced core used for stable local empirical validation.'),
++    'R7': ModelLevel('R7', ('P', 'Prod', 'A', 'Inst', 'F', 'M', 'R'), 7, 'Reduced core plus economic pressure/resilience.'),
++    'FULL10': ModelLevel('FULL10', ('P', 'Prod', 'A', 'Inst', 'F', 'Ch', 'M', 'G', 'V', 'R'), 10, 'Full observation set; use only after identifiability checks.'),
++}
++
++def available_model_levels() -> list[str]:
++    return list(MODEL_LEVELS)
++
++def get_model_level(name: str | None = None) -> ModelLevel:
++    key = (name or 'R5').upper()
++    if key not in MODEL_LEVELS:
++        raise ValueError(f'Unknown model level {name!r}. Available: {available_model_levels()}')
++    return MODEL_LEVELS[key]
++
++def observed_vars_for_level(name: str | None = None) -> list[str]:
++    return list(get_model_level(name).observed_vars)
+diff --git a/src/acmf/observation_designer.py b/src/acmf/observation_designer.py
+index f0ce94e..b73480e 100644
+--- a/src/acmf/observation_designer.py
++++ b/src/acmf/observation_designer.py
+@@ -5,7 +5,7 @@ import math
+ import numpy as np
+ import pandas as pd
+ 
+-from .calibration import LossConfig
++from .calibration import LossConfig, DEFAULT_THETA as CALIBRATION_DEFAULT_THETA
+ from .identifiability import (
+     parameter_sensitivity_matrix,
+     fisher_information_matrix,
+@@ -15,7 +15,7 @@ from .identifiability import (
+ )
+ from .world_panel import load_world_panel, make_acmf_proxy_panel
+ 
+-DEFAULT_THETA = np.array([0.8, 0.5, 0.3, 0.08, 0.2, 0.4, 0.6, 0.03, 0.5, 0.5, 0.5, 0.5])
++DEFAULT_THETA = CALIBRATION_DEFAULT_THETA.copy()
+ DEFAULT_BASE_OBSERVABLES = ["P", "Prod", "A", "Inst", "F"]
+ DEFAULT_CANDIDATE_OBSERVABLES = ["Ch", "M", "G", "V", "R"]
+ 
+diff --git a/src/acmf/world_panel.py b/src/acmf/world_panel.py
+index ecf91a4..2e00c82 100644
+--- a/src/acmf/world_panel.py
++++ b/src/acmf/world_panel.py
+@@ -1,4 +1,5 @@
+ from __future__ import annotations
++from dataclasses import dataclass
+ from pathlib import Path
+ import numpy as np
+ import pandas as pd
+@@ -6,6 +7,38 @@ import pandas as pd
+ STATE_INDEX = {'A':0,'Prod':1,'Ch':2,'M':3,'G':4,'V':5,'Inst':6,'R':7,'F':8,'P':9}
+ OBSERVED_CORE = ['P','Prod','A','Inst','F']
+ ALL_OBSERVABLES = ['P','Prod','A','Inst','F','Ch','M','G','V','R']
++ID_COLUMNS = ['country_name', 'country_code', 'Year']
++
++@dataclass(frozen=True)
++class TrainFittedScaler:
++    """Min-max scaler fitted on train data only to prevent validation leakage."""
++    minimum: float
++    maximum: float
++    invert: bool = False
++    default: float = 0.5
++
++    @classmethod
++    def fit(cls, s: pd.Series, invert: bool=False, default: float=0.5) -> 'TrainFittedScaler':
++        x = pd.to_numeric(s, errors='coerce').astype(float)
++        if x.notna().sum() == 0:
++            return cls(default, default, invert=invert, default=default)
++        x = x.interpolate(limit_direction='both').fillna(x.median())
++        return cls(float(x.min()), float(x.max()), invert=invert, default=default)
++
++    def transform(self, s: pd.Series) -> np.ndarray:
++        x = pd.to_numeric(s, errors='coerce').astype(float)
++        if x.notna().sum() == 0:
++            arr = np.full(len(x), self.default)
++        else:
++            x = x.interpolate(limit_direction='both').fillna(x.median())
++            if abs(self.maximum - self.minimum) < 1e-12:
++                arr = np.full(len(x), self.default)
++            else:
++                arr = ((x - self.minimum) / (self.maximum - self.minimum)).to_numpy(dtype=float)
++        if self.invert:
++            arr = 1.0 - arr
++        return np.clip(arr, 0.0, 1.0)
++
+ 
+ def load_world_panel(path: str | Path | None = None) -> pd.DataFrame:
+     p = Path(path) if path else Path(__file__).resolve().parents[2] / 'data' / 'world_data_level1_1995_2025.csv'
+@@ -13,49 +46,64 @@ def load_world_panel(path: str | Path | None = None) -> pd.DataFrame:
+     df['Year'] = df['Year'].astype(int)
+     return df.sort_values(['country_name','Year']).reset_index(drop=True)
+ 
+-def _norm(s: pd.Series, invert: bool=False, default: float=0.5) -> np.ndarray:
+-    x = pd.to_numeric(s, errors='coerce').astype(float)
+-    if x.notna().sum() == 0:
+-        arr = np.full(len(x), default)
+-    else:
+-        x = x.interpolate(limit_direction='both').fillna(x.median())
+-        lo, hi = float(x.min()), float(x.max())
+-        if abs(hi-lo) < 1e-12:
+-            arr = np.full(len(x), default)
+-        else:
+-            arr = ((x-lo)/(hi-lo)).to_numpy(dtype=float)
+-    if invert:
+-        arr = 1.0 - arr
+-    return np.clip(arr, 0.0, 1.0)
+ 
+-def make_acmf_proxy_panel(df: pd.DataFrame, country: str, start_year: int=1995, end_year: int=2024) -> dict:
++def _fit_scaler(g: pd.DataFrame, column: str, fit_end_year: int, invert: bool=False, default: float=0.5) -> TrainFittedScaler:
++    if column not in g.columns:
++        raise KeyError(f'Missing required indicator column: {column}')
++    train = g[g['Year'] <= fit_end_year]
++    if train.empty:
++        raise ValueError(f'Cannot fit scaler for {column}: no training rows at or before {fit_end_year}')
++    return TrainFittedScaler.fit(train[column], invert=invert, default=default)
++
++
++def _scaled(g: pd.DataFrame, column: str, fit_end_year: int, invert: bool=False, fallback_column: str|None=None, default: float=0.5) -> np.ndarray:
++    actual = column if column in g.columns else fallback_column
++    if actual is None or actual not in g.columns:
++        raise KeyError(f'Missing required indicator column: {column}')
++    return _fit_scaler(g, actual, fit_end_year, invert=invert, default=default).transform(g[actual])
++
++
++def _population_proxy(g: pd.DataFrame, fit_end_year: int, scale: float=500.0) -> np.ndarray:
++    if 'Population' not in g.columns:
++        raise KeyError('Missing required indicator column: Population')
++    pop = pd.to_numeric(g['Population'], errors='coerce').interpolate(limit_direction='both')
++    train = pop[g['Year'] <= fit_end_year]
++    if train.dropna().empty:
++        raise ValueError(f'Cannot fit population proxy: no training population at or before {fit_end_year}')
++    base = float(train.dropna().iloc[0])
++    if base <= 0:
++        raise ValueError(f'Population base must be positive, got {base}')
++    return (pop / base * scale).fillna(scale).clip(lower=1.0).to_numpy(float)
++
++
++def make_acmf_proxy_panel(df: pd.DataFrame, country: str, start_year: int=1995, end_year: int=2024, fit_end_year: int|None=None) -> dict:
++    """Build ACMF proxy panel for one country.
++
++    `fit_end_year` is the last year used to estimate scaling parameters. Pass
++    the training end year during validation to avoid train/validation leakage.
++    If omitted, scalers are fit through end_year for backwards-compatible demos.
++    """
+     g = df[(df.country_name == country) & (df.Year.between(start_year, end_year))].copy()
+     if g.empty:
+         raise ValueError(f'No rows for country={country} years={start_year}:{end_year}')
+     g = g.sort_values('Year').reset_index(drop=True)
+-    pop = pd.to_numeric(g['Population'], errors='coerce').interpolate(limit_direction='both')
+-    base = float(pop.dropna().iloc[0]) if pop.notna().any() else 1.0
+-    p_proxy = (pop / base * 500.0).fillna(500.0).clip(lower=1.0).to_numpy(float)
+-    data = {
++    fit_end = int(fit_end_year if fit_end_year is not None else end_year)
++    return {
+         't': g['Year'].to_numpy(int),
+-        'P': p_proxy,
+-        'Prod': _norm(g['GDP_per_capita']),
+-        'A': _norm(g['Internet_penetration']),
+-        'Inst': _norm(g['Life_expectancy']),
+-        'F': 4.0 * _norm(g['Birth_rate']),
+-        'Ch': _norm(g['Patent_activity'] if 'Patent_activity' in g else g['Internet_penetration']),
+-        'M': _norm(g['Unemployment'], invert=True),
+-        'G': _norm(g['Primary_school_enrollment'] if 'Primary_school_enrollment' in g else g['Life_expectancy']),
+-        'V': _norm(g['Inflation']),
+-        'R': _norm(g['Electricity_access'] if 'Electricity_access' in g else g['Life_expectancy']),
++        'P': _population_proxy(g, fit_end),
++        'Prod': _scaled(g, 'GDP_per_capita', fit_end),
++        'A': _scaled(g, 'Internet_penetration', fit_end),
++        'Inst': _scaled(g, 'Life_expectancy', fit_end),
++        'F': 4.0 * _scaled(g, 'Birth_rate', fit_end),
++        'Ch': _scaled(g, 'Patent_activity', fit_end, fallback_column='Internet_penetration'),
++        'M': _scaled(g, 'Unemployment', fit_end, invert=True),
++        'G': _scaled(g, 'Primary_school_enrollment', fit_end, fallback_column='Life_expectancy'),
++        'V': _scaled(g, 'Inflation', fit_end),
++        'R': _scaled(g, 'Electricity_access', fit_end, fallback_column='Life_expectancy'),
+     }
+-    return data
+-
+-ID_COLUMNS = ['country_name', 'country_code', 'Year']
+ 
+ 
+ def world_panel_profile(df: pd.DataFrame) -> dict:
+-    """Summarize indicator coverage and per-country coverage for a world panel."""
+     ind = [c for c in df.columns if c not in ID_COLUMNS]
+     cov = [{'indicator': c, 'non_null': int(df[c].notna().sum()), 'coverage_pct': float(df[c].notna().mean() * 100)} for c in ind]
+     country_coverage = []
+@@ -78,7 +126,6 @@ def world_panel_profile(df: pd.DataFrame) -> dict:
+ 
+ 
+ def top_countries_by_coverage(df: pd.DataFrame, n: int = 10, min_years: int = 20) -> list[str]:
+-    """Return up to n country names with at least min_years of data, ranked by indicator coverage."""
+     out = []
+     for item in world_panel_profile(df)['country_coverage']:
+         if item['years'] >= min_years:
+diff --git a/tests/README.md b/tests/README.md
+new file mode 100644
+index 0000000..ef23544
+--- /dev/null
++++ b/tests/README.md
+@@ -0,0 +1,11 @@
++# Test layout
++
++Default `pytest -q` runs the fast/local suite only. Slow scientific checks are marked `slow` and excluded by `pytest.ini`.
++
++The `test_v2_*` files are retained as historical package/report compatibility artifacts. They currently do not define executable pytest functions and should not be treated as green scientific validation.
++
++Run heavy checks explicitly:
++
++```bash
++pytest -q -m slow --override-ini='addopts='
++```
+diff --git a/tests/test_empirical_validation.py b/tests/test_empirical_validation.py
+index 5efbd1b..53d0c0c 100644
+--- a/tests/test_empirical_validation.py
++++ b/tests/test_empirical_validation.py
+@@ -1,3 +1,5 @@
++import pytest
++pytestmark = pytest.mark.slow
+ import numpy as np
+ import pandas as pd
+ from acmf import __version__
+@@ -8,7 +10,7 @@ from acmf.enkf import enkf_assimilate
+ 
+ 
+ def test_version():
+-    assert __version__ == '3.3.1.10-clean-empirical-validation'
++    assert __version__ == '4.0.0-stable-baseline'
+ 
+ 
+ def test_world_panel_proxy():
+diff --git a/tests/test_identifiability.py b/tests/test_identifiability.py
+index 0dc98d5..ba98b6a 100644
+--- a/tests/test_identifiability.py
++++ b/tests/test_identifiability.py
+@@ -1,3 +1,5 @@
++import pytest
++pytestmark = pytest.mark.slow
+ import numpy as np
+ from acmf import default_params, simulate, LossConfig
+ from acmf.identifiability import parameter_sensitivity_matrix, fisher_information_matrix, fim_diagnostics, parameter_correlation_from_fim, top_correlated_pairs, observation_design_score, windowed_identifiability
+@@ -9,11 +11,11 @@ def synthetic_data():
+     for name,idx in [('P',9),('Prod',1),('A',0),('Inst',6),('F',8),('Ch',2),('M',3),('G',4),('V',5),('R',7)]: data[name]=tr[:,idx]
+     return data
+ 
+-def theta(): return np.array([0.8,0.5,0.3,0.08,0.2,0.4,0.6,0.03,0.5,0.5,0.5,0.5])
++def theta(): return np.array([0.8,0.5,0.3,0.08,0.2,0.4,0.6,0.03])
+ 
+ def test_sensitivity_fim_shapes():
+     data=synthetic_data(); obs=['P','Prod','A','Inst','F']; res=parameter_sensitivity_matrix(data,theta(),obs,LossConfig(observed_vars=obs,lambda_prior=0.0))
+-    assert res.S.shape == (len(data['t'])*len(obs), 12)
++    assert res.S.shape == (len(data['t'])*len(obs), 8)
+     diag=fim_diagnostics(fisher_information_matrix(res.S),res.parameter_names)
+     assert diag.rank >= 1 and len(diag.weak_directions) > 0
+ 
+diff --git a/tests/test_multiscale.py b/tests/test_multiscale.py
+index e8bc813..b41c313 100644
+--- a/tests/test_multiscale.py
++++ b/tests/test_multiscale.py
+@@ -11,7 +11,7 @@ from acmf.multiscale import (
+ 
+ 
+ def test_version_incremented_to_multiscale():
+-    assert __version__ == '3.3.1.10-clean-empirical-validation'
++    assert __version__ == '4.0.0-stable-baseline'
+ 
+ 
+ def test_build_country_multiscale_frame_validates():
+diff --git a/tests/test_observation_designer.py b/tests/test_observation_designer.py
+index 91a5fa9..3b22ad7 100644
+--- a/tests/test_observation_designer.py
++++ b/tests/test_observation_designer.py
+@@ -1,3 +1,5 @@
++import pytest
++pytestmark = pytest.mark.slow
+ import numpy as np
+ from acmf import default_params, simulate, __version__
+ from acmf.observation_designer import score_candidate_observables, greedy_observation_design, minimal_observation_set, DEFAULT_THETA, result_to_dict
+diff --git a/tests/test_quality_hardening.py b/tests/test_quality_hardening.py
+index d8fbaf6..7f4cd84 100644
+--- a/tests/test_quality_hardening.py
++++ b/tests/test_quality_hardening.py
+@@ -16,7 +16,7 @@ SRC = ROOT / 'src' / 'acmf'
+ 
+ 
+ def test_version_quality_hardening():
+-    assert __version__ == '3.3.1.10-clean-empirical-validation'
++    assert __version__ == '4.0.0-stable-baseline'
+ 
+ 
+ def test_config_profiles_are_valid():
+diff --git a/tests/test_real_identifiability.py b/tests/test_real_identifiability.py
+index ca24e30..15ede35 100644
+--- a/tests/test_real_identifiability.py
++++ b/tests/test_real_identifiability.py
+@@ -1,3 +1,5 @@
++import pytest
++pytestmark = pytest.mark.slow
+ from pathlib import Path
+ from acmf import __version__
+ from acmf.world_panel import load_world_panel
+diff --git a/tests/test_v4_baseline.py b/tests/test_v4_baseline.py
+new file mode 100644
+index 0000000..5b32d43
+--- /dev/null
++++ b/tests/test_v4_baseline.py
+@@ -0,0 +1,52 @@
++import numpy as np
++import pandas as pd
++import acmf
++from acmf.world_panel import TrainFittedScaler, load_world_panel, make_acmf_proxy_panel
++from acmf.calibration import ACMFObjective, DEFAULT_THETA
++from acmf.model_levels import available_model_levels, observed_vars_for_level
++
++
++def test_v4_version():
++    assert acmf.__version__ == '4.0.0-stable-baseline'
++
++
++def test_train_fitted_scaler_does_not_leak_validation_extreme():
++    train = pd.Series([1.0, 2.0, 3.0])
++    validation = pd.Series([1000000.0])
++    scaler = TrainFittedScaler.fit(train)
++    assert scaler.minimum == 1.0
++    assert scaler.maximum == 3.0
++    transformed = scaler.transform(validation)
++    assert transformed[0] == 1.0
++    # The extreme validation value is clipped after using train-fitted min/max;
++    # it must not change scaler.maximum to 1000000.
++    assert scaler.maximum == 3.0
++
++
++def test_proxy_panel_fits_scalers_on_train_end():
++    df = load_world_panel()
++    data = make_acmf_proxy_panel(df, 'Canada', 2010, 2014, fit_end_year=2012)
++    assert len(data['t']) == 5
++    assert {'P','Prod','A','Inst','F','Ch','M','G','V','R'}.issubset(data.keys())
++    assert np.all(np.isfinite(data['Prod']))
++
++
++def test_acmf_objective_uses_observed_initial_conditions():
++    df = load_world_panel()
++    data = make_acmf_proxy_panel(df, 'Canada', 2010, 2014, fit_end_year=2012)
++    obj = ACMFObjective(data)
++    assert obj.THETA_NAMES == ['alpha7','K_g','beta_neg','NaturalDecay','q1','q3','alpha1','b1']
++    assert len(obj.BOUNDS) == 8
++    x0 = obj._initial_state()
++    assert x0.shape == (10,)
++    assert np.isclose(x0[0], data['A'][0])
++    assert np.isclose(x0[2], data['Ch'][0])
++    assert np.isclose(x0[7], data['R'][0])
++    assert len(DEFAULT_THETA) == 8
++
++
++def test_reduced_model_levels_are_explicit():
++    assert available_model_levels() == ['R3','R5','R7','FULL10']
++    assert observed_vars_for_level('R3') == ['P','Prod','Inst']
++    assert observed_vars_for_level('R5') == ['P','Prod','A','Inst','F']
++    assert observed_vars_for_level('FULL10') == ['P','Prod','A','Inst','F','Ch','M','G','V','R']

@@ -1,3 +1,5 @@
+import pytest
+pytestmark = pytest.mark.slow
 from pathlib import Path
 from acmf import __version__
 from acmf.world_panel import load_world_panel

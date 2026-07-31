@@ -11,7 +11,7 @@ from acmf.multiscale import (
 
 
 def test_version_incremented_to_multiscale():
-    assert __version__ == '3.3.1.10-clean-empirical-validation'
+    assert __version__ == '4.0.0-stable-baseline'
 
 
 def test_build_country_multiscale_frame_validates():

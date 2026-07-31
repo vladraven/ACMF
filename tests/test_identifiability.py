@@ -1,3 +1,5 @@
+import pytest
+pytestmark = pytest.mark.slow
 import numpy as np
 from acmf import default_params, simulate, LossConfig
 from acmf.identifiability import parameter_sensitivity_matrix, fisher_information_matrix, fim_diagnostics, parameter_correlation_from_fim, top_correlated_pairs, observation_design_score, windowed_identifiability
@@ -9,11 +11,11 @@ def synthetic_data():
     for name,idx in [('P',9),('Prod',1),('A',0),('Inst',6),('F',8),('Ch',2),('M',3),('G',4),('V',5),('R',7)]: data[name]=tr[:,idx]
     return data
 
-def theta(): return np.array([0.8,0.5,0.3,0.08,0.2,0.4,0.6,0.03,0.5,0.5,0.5,0.5])
+def theta(): return np.array([0.8,0.5,0.3,0.08,0.2,0.4,0.6,0.03])
 
 def test_sensitivity_fim_shapes():
     data=synthetic_data(); obs=['P','Prod','A','Inst','F']; res=parameter_sensitivity_matrix(data,theta(),obs,LossConfig(observed_vars=obs,lambda_prior=0.0))
-    assert res.S.shape == (len(data['t'])*len(obs), 12)
+    assert res.S.shape == (len(data['t'])*len(obs), 8)
     diag=fim_diagnostics(fisher_information_matrix(res.S),res.parameter_names)
     assert diag.rank >= 1 and len(diag.weak_directions) > 0
 

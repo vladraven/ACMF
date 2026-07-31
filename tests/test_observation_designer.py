@@ -1,3 +1,5 @@
+import pytest
+pytestmark = pytest.mark.slow
 import numpy as np
 from acmf import default_params, simulate, __version__
 from acmf.observation_designer import score_candidate_observables, greedy_observation_design, minimal_observation_set, DEFAULT_THETA, result_to_dict

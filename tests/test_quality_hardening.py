@@ -16,7 +16,7 @@ SRC = ROOT / 'src' / 'acmf'
 
 
 def test_version_quality_hardening():
-    assert __version__ == '3.3.1.10-clean-empirical-validation'
+    assert __version__ == '4.0.0-stable-baseline'
 
 
 def test_config_profiles_are_valid():

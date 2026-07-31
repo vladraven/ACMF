@@ -1,4 +1,4 @@
-# ACMF 3.3.1.10-clean-empirical-validation
+# ACMF 4.0.0-stable-baseline
 
 This release withdraws the weak `3.3.1.8` line and ships a quality-hardening package focused on explicit contracts, configuration, anti-stub tests and safer task execution.
 
@@ -46,3 +46,24 @@ configs/calibration/research.yaml
 ```
 
 Smoke settings are for CI only and are not valid for scientific claims.
+
+## V4 stability policy
+
+Default `pytest -q` runs the fast/local suite only. Computationally expensive tests are marked `slow` and are excluded by default in `pytest.ini`.
+
+Run slow scientific checks explicitly:
+
+```bash
+pytest -q -m slow
+```
+
+The empirical validation pipeline now fits scaling parameters on the train window only by passing `fit_end_year=train_end` into `make_acmf_proxy_panel(...)`. Initial conditions for the identifiability objective are observed/measured proxy values at `t0`, not free calibration parameters.
+
+Reduced observation levels are available:
+
+```text
+R3      P, Prod, Inst
+R5      P, Prod, A, Inst, F
+R7      P, Prod, A, Inst, F, M, R
+FULL10  P, Prod, A, Inst, F, Ch, M, G, V, R
+```

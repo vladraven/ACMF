@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "acmf"
-version = "3.3.1.10"
-description = "ACMF clean empirical validation research platform package"
+version = "4.0.0"
+description = "ACMF stable baseline research platform package"
 requires-python = ">=3.10"
 dependencies = ["numpy", "pandas", "scipy", "flask", "pyyaml", "requests"]
 

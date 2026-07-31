@@ -1,4 +1,4 @@
-"""ACMF 3.3.1.10 clean empirical-validation package."""
+"""ACMF 4.0.0 stable baseline package."""
 from .core import ACMFParams, default_params, rhs, algebraic_layer, STATE_NAMES
 from .solver import simulate, rk4_step
 from .calibration import calibrate_country_proxy, predict_from_theta, CALIBRATION_PARAMS, LossConfig
@@ -10,4 +10,7 @@ from .config import load_calibration_profile, load_parameter_config
 from .exceptions import ACMFError, ManualDownloadRequired, SourceUnavailableError
 from .aging_transition_matrix import transition_matrix, apply_transition
 from .demography_age_structured import cohort_label, aggregate_age_counts
-__version__ = "3.3.1.10-clean-empirical-validation"
+__version__ = "4.0.0-stable-baseline"
+
+from .model_levels import MODEL_LEVELS, available_model_levels, get_model_level, observed_vars_for_level
+from .world_panel import TrainFittedScaler

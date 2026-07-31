@@ -19,6 +19,8 @@ def _flat(traj,t,obs,time_mask=None):
     return np.concatenate(vals), labels
 def parameter_sensitivity_matrix(data:Dict[str,np.ndarray], theta:Sequence[float], observables:Sequence[str], config:LossConfig|None=None, rel_step=1e-4, abs_step=1e-6, time_mask=None):
     theta=np.asarray(theta,dtype=float); obj=ACMFObjective(data,config); t=obj.t
+    if len(theta) != len(obj.BOUNDS):
+        raise ValueError(f'theta length {len(theta)} does not match objective dimension {len(obj.BOUNDS)}')
     if time_mask is not None: time_mask=np.asarray(time_mask,dtype=bool)
     y0,labels=_flat(obj._integrate(theta),t,observables,time_mask); S=np.zeros((len(y0),len(theta)))
     for j,(lo,hi) in enumerate(obj.BOUNDS):

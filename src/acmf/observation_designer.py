@@ -5,7 +5,7 @@ import math
 import numpy as np
 import pandas as pd
 
-from .calibration import LossConfig
+from .calibration import LossConfig, DEFAULT_THETA as CALIBRATION_DEFAULT_THETA
 from .identifiability import (
     parameter_sensitivity_matrix,
     fisher_information_matrix,
@@ -15,7 +15,7 @@ from .identifiability import (
 )
 from .world_panel import load_world_panel, make_acmf_proxy_panel
 
-DEFAULT_THETA = np.array([0.8, 0.5, 0.3, 0.08, 0.2, 0.4, 0.6, 0.03, 0.5, 0.5, 0.5, 0.5])
+DEFAULT_THETA = CALIBRATION_DEFAULT_THETA.copy()
 DEFAULT_BASE_OBSERVABLES = ["P", "Prod", "A", "Inst", "F"]
 DEFAULT_CANDIDATE_OBSERVABLES = ["Ch", "M", "G", "V", "R"]
 
