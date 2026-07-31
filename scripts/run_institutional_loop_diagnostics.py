@@ -41,7 +41,7 @@ def _decompose_inst(x: np.ndarray, p) -> dict:
         p.alpha_rec * a["RecoveryDriver"] * (recovery_bell + 0.2) * (1.0 - R)
         - p.beta_rec_stress * stress_overload * R
     )
-    recovery_mode_gate = float(smax(0.0, dx7) / (p.alpha_rec + EPSILON))
+    recovery_mode_gate = float(smax(0.0, dx7) * p.gate_amp / (p.alpha_rec + EPSILON))
 
     # Pull decomposition
     pull_resilience = float(p.alpha_pos * R * a["SocialCapital"] * (1.0 - Inst))
@@ -140,6 +140,41 @@ def run_institutional_decomposition(
 
     print(f"\nSaved: {outpath}")
     return df
+
+
+def recovery_gate_share_by_scenario(df: pd.DataFrame) -> dict[str, float]:
+    """Return pull_recovery_gate share of pull_total per scenario (mean over all steps)."""
+    result: dict[str, float] = {}
+    for scenario, grp in df.groupby("scenario"):
+        mean_gate = grp["pull_recovery_gate"].mean()
+        mean_pull = grp["pull_total"].mean()
+        result[str(scenario)] = float(mean_gate / (mean_pull + 1e-10))
+    return result
+
+
+def recovery_phase_stats(df: pd.DataFrame, scenario: str) -> dict:
+    """Return stats for the recovery phase in a level_shift_shock_recovery scenario.
+
+    Recovery phase is defined as steps where synthetic_stress < 0.5 AND t > 10
+    (i.e., after the shock has passed).
+    """
+    grp = df[df["scenario"] == scenario].copy()
+    if grp.empty:
+        return {}
+    recovery_phase = grp[(grp["t"] > 10.0) & (grp["synthetic_stress"] < 0.5)]
+    if recovery_phase.empty:
+        recovery_phase = grp[grp["t"] > grp["t"].max() * 0.5]  # fallback: second half
+    return {
+        "mean_dInst": float(recovery_phase["dInst"].mean()),
+        "pull_gt_drag_fraction": float((recovery_phase["pull_total"] > recovery_phase["drag_total"]).mean()),
+        "mean_gate_share": float(
+            recovery_phase["pull_recovery_gate"].mean()
+            / (recovery_phase["pull_total"].mean() + 1e-10)
+        ),
+        "min_drag_pull_ratio": float(
+            (recovery_phase["drag_total"] / (recovery_phase["pull_total"] + 1e-10)).min()
+        ),
+    }
 
 
 def main() -> int:

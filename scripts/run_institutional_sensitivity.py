@@ -235,11 +235,71 @@ def run_beta_sd_sensitivity(
     return df
 
 
+def run_gate_amp_sensitivity(
+    gate_amp_values: list[float] | None = None,
+    alpha_pos_fixed: float = 0.25,
+    beta_neg_fixed: float = 0.20,
+    beta_sd_fixed: float = 0.08,
+    output_dir: Path = Path("artifacts/diagnostics"),
+    steps: int = 120,
+) -> pd.DataFrame:
+    """Grid sensitivity over gate_amp with alpha_pos, beta_neg, beta_sd fixed.
+
+    Answers: at what gate_amp does recovery gate become functionally significant
+    (>=5% of pull) without triggering artificial growth?
+    """
+    if gate_amp_values is None:
+        gate_amp_values = [1.0, 3.0, 5.0, 10.0, 20.0]
+
+    output_dir = Path(output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    rows: list[dict] = []
+
+    for gate_amp in gate_amp_values:
+        p = default_params(
+            alpha_pos=alpha_pos_fixed,
+            beta_neg=beta_neg_fixed,
+            beta_sd=beta_sd_fixed,
+            gate_amp=gate_amp,
+        )
+        metrics_by_sc: dict[str, dict] = {}
+
+        for scenario in SENSITIVITY_SCENARIOS:
+            m = _run_scenario(scenario, p, steps)
+            metrics_by_sc[scenario] = m
+            rows.append({
+                "gate_amp": gate_amp,
+                "scenario": scenario,
+                **m,
+                "scenario_balance_score": None,
+            })
+
+        balance = _scenario_balance_score(metrics_by_sc)
+        for row in rows:
+            if row["gate_amp"] == gate_amp:
+                row["scenario_balance_score"] = balance
+
+    df = pd.DataFrame(rows)
+    outpath = output_dir / "institutional_gate_amp_sensitivity.csv"
+    df.to_csv(outpath, index=False)
+
+    print("\n" + "=" * 80)
+    print(f"gate_amp Sensitivity (alpha_pos={alpha_pos_fixed}, beta_neg={beta_neg_fixed}, beta_sd={beta_sd_fixed})")
+    print("=" * 80)
+    agg = df.groupby("gate_amp")[["mean_dInst", "recovery_detected", "artificial_growth", "scenario_balance_score"]].agg(
+        {"mean_dInst": "mean", "recovery_detected": "any", "artificial_growth": "any", "scenario_balance_score": "first"}
+    )
+    print(agg.to_string())
+    print(f"\nSaved: {outpath}")
+    return df
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Institutional sensitivity grid diagnostics")
     parser.add_argument("--steps", type=int, default=60)
     parser.add_argument("--output-dir", default="artifacts/diagnostics")
-    parser.add_argument("--mode", choices=["alpha_beta", "beta_sd", "all"], default="all")
+    parser.add_argument("--mode", choices=["alpha_beta", "beta_sd", "gate_amp", "all"], default="all")
     args = parser.parse_args()
 
     out = Path(args.output_dir)
@@ -247,6 +307,8 @@ def main() -> int:
         run_sensitivity_grid(output_dir=out, steps=args.steps)
     if args.mode in ("beta_sd", "all"):
         run_beta_sd_sensitivity(output_dir=out, steps=args.steps)
+    if args.mode in ("gate_amp", "all"):
+        run_gate_amp_sensitivity(output_dir=out, steps=args.steps)
     return 0
 
 

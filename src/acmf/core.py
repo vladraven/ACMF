@@ -59,6 +59,11 @@ class ACMFParams:
     beta_sd: float = 0.08
     beta_rec_stress: float = 0.2
     stress_overload_threshold: float = 0.65  # above this, stress suppresses recovery
+    # [4.2.2] gate_amp scales the recovery-mode gate signal.
+    # Without this, dx[7]/alpha_rec is typically 0.01-0.03, making the gate decorative.
+    # gate_amp=5.0 brings recovery gate contribution to ~5-15% of pull in shock scenarios.
+    # Expected range: 1.0 – 20.0. Status: diagnostic parameter, not yet empirically calibrated.
+    gate_amp: float = 5.0
     beta_fert_stress: float = 0.2
     beta_fert_inc: float = 0.2
 
@@ -250,8 +255,9 @@ def rhs(x, params: ACMFParams | None = None):
         - p.beta_rec_stress * stress_overload * R
     )
 
-    # 7. Inst — Institutions  [P3: recovery-mode gate | 4.2.1: separated corruption/structural-decay drag]
-    recovery_mode_gate = smax(0.0, dx[7]) / (p.alpha_rec + EPSILON)
+    # 7. Inst — Institutions  [P3: recovery-mode gate | 4.2.1: separated drag | 4.2.2: gate_amp]
+    # gate_amp rescales dx[7] so recovery-mode gate is functionally significant (~5-15% of pull)
+    recovery_mode_gate = smax(0.0, dx[7]) * p.gate_amp / (p.alpha_rec + EPSILON)
     inst_pull = p.alpha_pos * (R * a["SocialCapital"] * (1.0 + recovery_mode_gate) + p.gamma_inst * M * G) * (1.0 - Inst)
     inst_drag_corruption = p.beta_neg * a["Corruption"] * V * Inst
     inst_drag_structural = p.beta_sd * a["StructuralDecay"] * Inst

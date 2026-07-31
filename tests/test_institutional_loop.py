@@ -6,8 +6,17 @@ import pandas as pd
 import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from scripts.run_institutional_loop_diagnostics import run_institutional_decomposition, INST_SCENARIOS
-from scripts.run_institutional_sensitivity import run_sensitivity_grid, run_beta_sd_sensitivity
+from scripts.run_institutional_loop_diagnostics import (
+    run_institutional_decomposition,
+    recovery_gate_share_by_scenario,
+    recovery_phase_stats,
+    INST_SCENARIOS,
+)
+from scripts.run_institutional_sensitivity import (
+    run_sensitivity_grid,
+    run_beta_sd_sensitivity,
+    run_gate_amp_sensitivity,
+)
 
 
 def test_decomposition_exports_csv(tmp_path):
@@ -227,3 +236,51 @@ def test_low_stress_inst_stable_at_optimal_params(tmp_path):
     assert len(low_stress) > 0
     assert float(low_stress["mean_dInst"].values[0]) >= -0.002, \
         f"Low stress Inst should be stable at alpha_pos=0.5: mean_dInst={float(low_stress['mean_dInst'].values[0]):.4f}"
+
+# -- 4.2.2 Gate Tests -- Recovery Gate Activation -----------------------------------------------
+
+def test_422_gate1_recovery_gate_share_significant(tmp_path):
+    df = run_institutional_decomposition(output_dir=tmp_path, steps=60)
+    shares = recovery_gate_share_by_scenario(df)
+    shock_share = shares.get("level_shift_shock_recovery", 0.0)
+    assert shock_share >= 0.05, "Gate 1 FAIL: recovery gate share {:.1%} < 5%".format(shock_share)
+
+
+def test_422_gate2_no_artificial_growth(tmp_path):
+    run_gate_amp_sensitivity(gate_amp_values=[5.0], output_dir=tmp_path, steps=60)
+    df = pd.read_csv(tmp_path / "institutional_gate_amp_sensitivity.csv")
+    for _, row in df.iterrows():
+        assert not row["artificial_growth"], (
+            "Gate 2 FAIL: artificial_growth at gate_amp=5.0 scenario=" + str(row["scenario"])
+        )
+
+
+def test_422_gate3_recovery_phase_drag_pull(tmp_path):
+    df = run_institutional_decomposition(output_dir=tmp_path, steps=80)
+    stats = recovery_phase_stats(df, "level_shift_shock_recovery")
+    assert stats, "recovery_phase_stats returned empty"
+    ratio = stats["min_drag_pull_ratio"]
+    assert ratio < 1.1, "Gate 3 FAIL: min drag/pull = {:.3f}, expected below 1.1".format(ratio)
+
+
+def test_422_gate4_persistent_stress_degrades(tmp_path):
+    run_gate_amp_sensitivity(gate_amp_values=[5.0], output_dir=tmp_path, steps=60)
+    df = pd.read_csv(tmp_path / "institutional_gate_amp_sensitivity.csv")
+    regime = df[(df["scenario"] == "regime_change_stress") & (df["gate_amp"] == 5.0)]
+    val = float(regime["mean_dInst"].values[0])
+    assert val < 0.01, "Gate 4 FAIL: regime_change mean_dInst={:.4f}".format(val)
+
+
+def test_422_gate5_sd_balance_preserved(tmp_path):
+    df = run_institutional_decomposition(output_dir=tmp_path, steps=60)
+    sd_share = df["drag_structural_decay"].mean() / (df["drag_total"].mean() + 1e-10)
+    assert sd_share < 0.55, "Gate 5 FAIL: StructuralDecay share={:.1%} above 55%".format(sd_share)
+
+
+def test_422_gate_amp_csv_exports(tmp_path):
+    run_gate_amp_sensitivity(gate_amp_values=[1.0, 5.0], output_dir=tmp_path, steps=30)
+    df = pd.read_csv(tmp_path / "institutional_gate_amp_sensitivity.csv")
+    assert "gate_amp" in df.columns
+    assert "recovery_detected" in df.columns
+    assert set(df["gate_amp"].unique()) == {1.0, 5.0}
+
