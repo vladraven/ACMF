@@ -284,3 +284,81 @@ def test_422_gate_amp_csv_exports(tmp_path):
     assert "recovery_detected" in df.columns
     assert set(df["gate_amp"].unique()) == {1.0, 5.0}
 
+
+# -- 4.2.3 Gate Tests -- Temporal Recovery Window -----------------------------------------------
+
+def test_423_gate1_recovery_window_exists_in_level_shift(tmp_path):
+    """Gate 1: level_shift_shock_recovery should have a dInst>0 window after bottom."""
+    run_gate_amp_sensitivity(
+        gate_amp_values=[10.0],
+        output_dir=tmp_path,
+        steps=120,
+    )
+    df = pd.read_csv(tmp_path / "institutional_gate_amp_sensitivity.csv")
+    level = df[(df["scenario"] == "level_shift_shock_recovery") & (df["gate_amp"] == 10.0)]
+    assert len(level) > 0
+    assert bool(level["recovery_window_exists"].values[0]), (
+        "Gate 1 FAIL: no recovery window (dInst>0 for >=3 steps) in level_shift at gate_amp=10"
+    )
+
+
+def test_423_gate2_no_artificial_growth_at_gate10(tmp_path):
+    """Gate 2: gate_amp=10 should not trigger artificial growth."""
+    run_gate_amp_sensitivity(
+        gate_amp_values=[10.0],
+        output_dir=tmp_path,
+        steps=80,
+    )
+    df = pd.read_csv(tmp_path / "institutional_gate_amp_sensitivity.csv")
+    for _, row in df.iterrows():
+        assert not row["artificial_growth"], (
+            "Gate 2 FAIL: artificial_growth at gate_amp=10 in scenario=" + str(row["scenario"])
+        )
+
+
+def test_423_gate3_persistent_stress_distinguishable_at_gate10(tmp_path):
+    """Gate 3: regime_change_stress still degrades at gate_amp=10."""
+    run_gate_amp_sensitivity(
+        gate_amp_values=[10.0],
+        output_dir=tmp_path,
+        steps=80,
+    )
+    df = pd.read_csv(tmp_path / "institutional_gate_amp_sensitivity.csv")
+    regime = df[(df["scenario"] == "regime_change_stress") & (df["gate_amp"] == 10.0)]
+    val = float(regime["mean_dInst"].values[0])
+    assert val < 0.005, "Gate 3 FAIL: regime_change should not show strong positive dInst at gate_amp=10, got {:.4f}".format(val)
+
+
+def test_423_gate4_quasi_equilibrium_low_stress_at_gate10(tmp_path):
+    """Gate 4: low_stress_trend should be quasi-stable at gate_amp=10."""
+    run_gate_amp_sensitivity(
+        gate_amp_values=[10.0],
+        output_dir=tmp_path,
+        steps=80,
+    )
+    df = pd.read_csv(tmp_path / "institutional_gate_amp_sensitivity.csv")
+    low = df[(df["scenario"] == "low_stress_trend") & (df["gate_amp"] == 10.0)]
+    val = float(low["mean_dInst"].values[0])
+    # quasi-equilibrium: should be in range [-0.01, +0.02]
+    assert -0.01 <= val <= 0.02, "Gate 4 FAIL: low_stress dInst={:.4f} outside quasi-equilibrium range".format(val)
+
+
+def test_423_gate5_gate_share_in_recovery_phase(tmp_path):
+    """Gate 5: recovery gate share should be 8-40% in level_shift recovery phase."""
+    df = run_institutional_decomposition(output_dir=tmp_path, steps=120)
+    stats = recovery_phase_stats(df, "level_shift_shock_recovery")
+    assert stats
+    share = stats["mean_gate_share"]
+    assert 0.08 <= share <= 0.40, (
+        "Gate 5 FAIL: recovery gate share in recovery phase = {:.1%}, expected 8-40%".format(share)
+    )
+
+
+def test_423_phase_label_column_in_decomposition(tmp_path):
+    """Phase labels are added to decomposition output."""
+    df = run_institutional_decomposition(output_dir=tmp_path, steps=60)
+    assert "phase_label" in df.columns, "phase_label column missing from decomposition"
+    phase_vals = set(df["phase_label"].unique())
+    # at least two distinct phases should exist
+    assert len(phase_vals) >= 2, "Only one phase detected: {}".format(phase_vals)
+

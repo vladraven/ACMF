@@ -68,6 +68,21 @@ def _run_scenario(scenario: str, p, steps: int) -> dict:
                     recovery_detected = True
                     break
 
+    # recovery_window_exists: consecutive dInst > 0 in level_shift post-midpoint
+    recovery_window_exists = False
+    if scenario == "level_shift_shock_recovery":
+        mid = steps // 2
+        post_mid = dInst_arr[mid:]
+        count = 0
+        for v in post_mid:
+            if v > 0:
+                count += 1
+                if count >= 3:
+                    recovery_window_exists = True
+                    break
+            else:
+                count = 0
+
     # artificial_growth: Inst > 0.9 for >20% of steps
     artificial_growth = bool(np.mean(inst_arr > 0.9) > 0.20)
 
@@ -84,6 +99,7 @@ def _run_scenario(scenario: str, p, steps: int) -> dict:
         "inst_min": inst_min,
         "inst_max": inst_max,
         "recovery_detected": recovery_detected,
+        "recovery_window_exists": recovery_window_exists,
         "artificial_growth": artificial_growth,
         "persistent_deg": persistent_deg,
     }
@@ -92,26 +108,35 @@ def _run_scenario(scenario: str, p, steps: int) -> dict:
 def _scenario_balance_score(metrics_by_scenario: dict[str, dict]) -> int:
     """Compute scenario balance score.
 
-    +1  low_stress:      mean_dInst >= -0.001 (stable/growing)
-    +1  level_shift:     recovery_detected == True
-    +1  regime_change:   mean_dInst < 0 (responds to stress)
-    -1  ANY scenario:    artificial_growth == True
-    Range: -1 to +3
+    +1  low_stress:    mean_dInst in [-0.002, +0.01]  (quasi-equilibrium)
+    +2  level_shift:   recovery_window_exists (dInst > 0 for >=3 consecutive steps)
+    +1  regime_change: mean_dInst < -0.001 (persistent degradation works)
+    -1  ANY scenario:  artificial_growth == True
+    -1  ANY scenario:  unstable_oscillation (sign_flip_count > 30)
+    Range: -2 to +4
     """
     score = 0
     low = metrics_by_scenario.get("low_stress_trend", {})
     level = metrics_by_scenario.get("level_shift_shock_recovery", {})
     regime = metrics_by_scenario.get("regime_change_stress", {})
 
-    if low.get("mean_dInst", -1) >= -0.001:
+    low_dInst = low.get("mean_dInst", -1.0)
+    if -0.002 <= low_dInst <= 0.01:
         score += 1
-    if level.get("recovery_detected", False):
-        score += 1
-    if regime.get("mean_dInst", 0) < 0:
+
+    if level.get("recovery_window_exists", False):
+        score += 2
+
+    if regime.get("mean_dInst", 0) < -0.001:
         score += 1
 
     for sc_metrics in metrics_by_scenario.values():
         if sc_metrics.get("artificial_growth", False):
+            score -= 1
+            break
+
+    for sc_metrics in metrics_by_scenario.values():
+        if sc_metrics.get("sign_flip_count", 0) > 30:
             score -= 1
             break
 
@@ -287,8 +312,8 @@ def run_gate_amp_sensitivity(
     print("\n" + "=" * 80)
     print(f"gate_amp Sensitivity (alpha_pos={alpha_pos_fixed}, beta_neg={beta_neg_fixed}, beta_sd={beta_sd_fixed})")
     print("=" * 80)
-    agg = df.groupby("gate_amp")[["mean_dInst", "recovery_detected", "artificial_growth", "scenario_balance_score"]].agg(
-        {"mean_dInst": "mean", "recovery_detected": "any", "artificial_growth": "any", "scenario_balance_score": "first"}
+    agg = df.groupby("gate_amp")[["mean_dInst", "recovery_detected", "recovery_window_exists", "artificial_growth", "scenario_balance_score"]].agg(
+        {"mean_dInst": "mean", "recovery_detected": "any", "recovery_window_exists": "any", "artificial_growth": "any", "scenario_balance_score": "first"}
     )
     print(agg.to_string())
     print(f"\nSaved: {outpath}")

@@ -118,10 +118,19 @@ def run_institutional_decomposition(
             x[9] = max(float(x[9]), 0.0)
 
     df = pd.DataFrame(rows)
+
+    # Add phase labels per scenario
+    phase_labels: list[str] = []
+    for scenario in INST_SCENARIOS:
+        sc_df = df[df["scenario"] == scenario].copy()
+        labels = detect_phases(sc_df)
+        phase_labels.extend(labels.tolist())
+    df["phase_label"] = phase_labels
+
     outpath = output_dir / "institutional_loop_decomposition.csv"
     df.to_csv(outpath, index=False)
 
-    # Print summary table
+    # Print mean summary
     print("\n" + "=" * 80)
     print("Institutional Loop Decomposition -- Mean Values by Scenario")
     print("=" * 80)
@@ -137,6 +146,21 @@ def run_institutional_decomposition(
         dominant = max(drag_cols, key=lambda c: row[c])
         ratio = row["drag_total"] / (row["pull_total"] + 1e-12)
         print(f"  {sc:35s}: {dominant} (drag/pull ratio={ratio:.3f})")
+
+    # Print per-scenario phase summary
+    print("\n" + "=" * 80)
+    print("Phase-level decomposition (mean per phase)")
+    print("=" * 80)
+    ps = phase_summary(df)
+    print(ps.round(5).to_string(index=False))
+
+    # Print recovery window stats for level_shift
+    rw = recovery_window_stats(df, "level_shift_shock_recovery")
+    print("\n" + "=" * 80)
+    print("Recovery Window Stats — level_shift_shock_recovery")
+    print("=" * 80)
+    for k, v in rw.items():
+        print(f"  {k}: {v}")
 
     print(f"\nSaved: {outpath}")
     return df
@@ -175,6 +199,109 @@ def recovery_phase_stats(df: pd.DataFrame, scenario: str) -> dict:
             (recovery_phase["drag_total"] / (recovery_phase["pull_total"] + 1e-10)).min()
         ),
     }
+
+
+def detect_phases(df_scenario: pd.DataFrame) -> pd.Series:
+    """Assign a phase label to each row of a single-scenario DataFrame.
+
+    Columns expected: t, synthetic_stress, dInst, Inst.
+    Phase labels:
+      pre_shock        — early portion before stress peak
+      shock            — from pre_shock end to Inst bottom
+      recovery_window  — after Inst bottom, first half of remaining steps
+      stabilization    — remaining steps after recovery_window
+      quasi_equilibrium — for low-stress / saturation scenarios
+    """
+    if df_scenario.empty:
+        return pd.Series([], dtype=str)
+
+    stress = df_scenario["synthetic_stress"].values
+    inst = df_scenario["Inst"].values
+    t = df_scenario["t"].values
+
+    # Low-stress / saturation: stress never peaks above 0.4
+    if float(np.max(stress)) < 0.4:
+        return pd.Series(["quasi_equilibrium"] * len(df_scenario), index=df_scenario.index)
+
+    # Find t_stress_peak and t_inst_bottom
+    t_stress_peak = float(t[int(np.argmax(stress))])
+    # Look for Inst minimum after the stress peak if possible
+    peak_idx = int(np.argmax(stress))
+    post_peak_inst = inst[peak_idx:]
+    if len(post_peak_inst) > 0:
+        bottom_rel = int(np.argmin(post_peak_inst))
+        t_inst_bottom = float(t[peak_idx + bottom_rel])
+    else:
+        t_inst_bottom = float(t[int(np.argmin(inst))])
+
+    t_max = float(t[-1])
+    recovery_end = t_inst_bottom + (t_max - t_inst_bottom) * 0.5
+
+    labels = []
+    for ti in t:
+        if ti < t_stress_peak * 0.3:
+            labels.append("pre_shock")
+        elif ti <= t_inst_bottom:
+            labels.append("shock")
+        elif ti <= recovery_end:
+            labels.append("recovery_window")
+        else:
+            labels.append("stabilization")
+    return pd.Series(labels, index=df_scenario.index)
+
+
+def recovery_window_stats(df: pd.DataFrame, scenario: str) -> dict:
+    """Return recovery-window statistics for a specific scenario.
+
+    Requires phase_label column to be present in df.
+    """
+    grp = df[(df["scenario"] == scenario) & (df["phase_label"] == "recovery_window")].copy()
+    if grp.empty:
+        return {
+            "window_exists": False,
+            "window_length": 0,
+            "mean_dInst_in_window": float("nan"),
+            "pull_gt_drag_fraction": 0.0,
+            "gate_share_in_window": 0.0,
+            "inst_change": 0.0,
+        }
+
+    dInst_vals = grp["dInst"].values
+    # Count consecutive positive dInst steps
+    max_run = 0
+    cur_run = 0
+    for v in dInst_vals:
+        if v > 0:
+            cur_run += 1
+            max_run = max(max_run, cur_run)
+        else:
+            cur_run = 0
+
+    window_exists = max_run >= 3
+    window_length = int(np.sum(dInst_vals > 0))
+    mean_dInst_in_window = float(np.mean(dInst_vals))
+    pull_gt_drag = float(np.mean(grp["pull_total"].values > grp["drag_total"].values))
+    gate_share = float(
+        grp["pull_recovery_gate"].mean() / (grp["pull_total"].mean() + 1e-10)
+    )
+    inst_change = float(grp["Inst"].iloc[-1] - grp["Inst"].iloc[0])
+
+    return {
+        "window_exists": window_exists,
+        "window_length": window_length,
+        "mean_dInst_in_window": mean_dInst_in_window,
+        "pull_gt_drag_fraction": pull_gt_drag,
+        "gate_share_in_window": gate_share,
+        "inst_change": inst_change,
+    }
+
+
+def phase_summary(df: pd.DataFrame) -> pd.DataFrame:
+    """Group by (scenario, phase_label) and return means of key columns."""
+    cols = ["pull_total", "drag_total", "dInst", "pull_recovery_gate", "Inst"]
+    agg = df.groupby(["scenario", "phase_label"])[cols].mean().reset_index()
+    agg["gate_share"] = agg["pull_recovery_gate"] / (agg["pull_total"] + 1e-10)
+    return agg
 
 
 def main() -> int:

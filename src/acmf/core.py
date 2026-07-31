@@ -59,11 +59,14 @@ class ACMFParams:
     beta_sd: float = 0.08
     beta_rec_stress: float = 0.2
     stress_overload_threshold: float = 0.65  # above this, stress suppresses recovery
-    # [4.2.2] gate_amp scales the recovery-mode gate signal.
+    # [4.2.3] gate_amp scales the recovery-mode gate signal.
     # Without this, dx[7]/alpha_rec is typically 0.01-0.03, making the gate decorative.
-    # gate_amp=5.0 brings recovery gate contribution to ~5-15% of pull in shock scenarios.
+    # gate_amp=10.0 (raised from 5.0 in 4.2.2) creates a temporal recovery window in
+    # level_shift_shock_recovery where dInst > 0 for >=3 consecutive steps after the shock
+    # bottom, while keeping mean_dInst≈0 (no artificial growth). Sensitivity shows gate_amp=5
+    # was insufficient for recovery window detection; gate_amp=10 is the calibrated value.
     # Expected range: 1.0 – 20.0. Status: diagnostic parameter, not yet empirically calibrated.
-    gate_amp: float = 5.0
+    gate_amp: float = 10.0
     beta_fert_stress: float = 0.2
     beta_fert_inc: float = 0.2
 

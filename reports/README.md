@@ -41,3 +41,4 @@ acmf_421_structural_decay_fix_report.md
 | [acmf_420_institutional_loop_diagnostics_report.md](acmf_420_institutional_loop_diagnostics_report.md) | 4.2.0 | drag_structural_decay = root cause inst degradation |
 | [acmf_421_structural_decay_drag_separation_report.md](acmf_421_structural_decay_drag_separation_report.md) | 4.2.1 | beta_sd separated; drag/pull 1.20→1.015; SD share 63%→42% |
 | [acmf_422_recovery_gate_activation_report.md](acmf_422_recovery_gate_activation_report.md) | 4.2.2 | gate_amp=5: gate share 1%→6.5%; drag/pull 1.015→1.000 |
+| [acmf_423_temporal_recovery_window_report.md](acmf_423_temporal_recovery_window_report.md) | 4.2.3 | gate_amp=10: recovery window exists (28 steps dInst>0) without artificial growth |
