@@ -56,6 +56,46 @@ class ForecastBenchmark:
             stress = 1 - x
             dy = 0.7 * x + 0.02 + noise_level * self.rng.normal(size=len(t))
             
+        elif self.scenario_name == "level_shift_shock_recovery":
+            # Level shift with shock and recovery - should favor ACMF or recovery model
+            x = np.zeros(n_steps)
+            # First 60 steps: baseline
+            x[:60] = 0.5 + 0.02 * np.sin(t[:60] / 30.0)
+            # Steps 60-100: sudden drop (shock)
+            x[60:100] = 0.3 - 0.1 * np.exp(-(t[60:100] - 60) / 10.0)
+            # Steps 100+: recovery
+            x[100:] = 0.3 + 0.15 * (1 - np.exp(-(t[100:] - 100) / 20.0))
+            
+            z = 0.4 + 0.05 * np.sin(t / 40.0)
+            stress = np.maximum(0.3, 1 - x)
+            dy = 0.5 * x + 0.3 * stress + 0.02 + noise_level * self.rng.normal(size=len(t))
+            
+        elif self.scenario_name == "saturation_curve":
+            # Logistic/saturation curve - should favor ACMF or logistic baseline
+            x = 0.3 / (1.0 + 2.0 * np.exp(-0.02 * (t - 90)))
+            z = 0.2 / (1.0 + 2.5 * np.exp(-0.015 * (t - 80)))
+            stress = 1 - x
+            dy = 0.6 * x / (1.0 + 0.5 * x) + 0.01 + noise_level * self.rng.normal(size=len(t))
+            
+        elif self.scenario_name == "regime_change_stress":
+            # Regime change driven by stress dynamics - ACMF should excel if stress dynamics work
+            t_stress = 1 - 0.5 * np.sin(t / 40.0) - 0.3 * np.cos(t / 60.0)
+            t_stress = np.clip(t_stress, 0.2, 1.0)
+            
+            regime_switch_point = 90
+            x = np.zeros(n_steps)
+            x[:regime_switch_point] = 0.6 + 0.1 * np.sin(t[:regime_switch_point] / 20.0)
+            x[regime_switch_point:] = 0.3 - 0.15 * (1 - np.exp(-(t[regime_switch_point:] - regime_switch_point) / 30.0))
+            
+            z = 0.4 + 0.08 * np.cos(t / 25.0)
+            stress = t_stress
+            
+            dy = np.where(
+                stress > 0.7,
+                0.2 * x - 0.4 * (stress - 0.5),
+                0.7 * x - 0.1 * stress
+            ) + 0.01 + noise_level * self.rng.normal(size=len(t))
+            
         elif self.scenario_name == "regime_switch":
             x = 0.5 + 0.15 * np.sin(t / 25.0)
             z = 0.4 + 0.1 * np.cos(t / 30.0)
@@ -243,7 +283,8 @@ def main():
     parser = argparse.ArgumentParser(description="Synthetic Forecast Benchmark")
     parser.add_argument(
         "--scenario",
-        choices=["low_stress_trend", "high_volatility", "regime_switch", "nonlinear_transform"],
+        choices=["low_stress_trend", "high_volatility", "regime_switch", "nonlinear_transform", 
+                 "level_shift_shock_recovery", "saturation_curve", "regime_change_stress"],
         default="high_volatility",
         help="Synthetic scenario to benchmark",
     )
