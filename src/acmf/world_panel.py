@@ -51,5 +51,42 @@ def make_acmf_proxy_panel(df: pd.DataFrame, country: str, start_year: int=1995, 
     }
     return data
 
+ID_COLUMNS = ['country_name', 'country_code', 'Year']
+
+
+def world_panel_profile(df: pd.DataFrame) -> dict:
+    """Summarize indicator coverage and per-country coverage for a world panel."""
+    ind = [c for c in df.columns if c not in ID_COLUMNS]
+    cov = [{'indicator': c, 'non_null': int(df[c].notna().sum()), 'coverage_pct': float(df[c].notna().mean() * 100)} for c in ind]
+    country_coverage = []
+    for country, g in df.groupby('country_name'):
+        country_coverage.append({
+            'country': country,
+            'years': int(g['Year'].nunique()),
+            'avg_indicator_coverage_pct': float(g[ind].notna().mean().mean() * 100) if ind else 0.0,
+        })
+    return {
+        'rows': int(len(df)),
+        'countries_count': int(df['country_name'].nunique()),
+        'year_min': int(df['Year'].min()),
+        'year_max': int(df['Year'].max()),
+        'indicator_count': len(ind),
+        'indicators': ind,
+        'indicator_coverage': sorted(cov, key=lambda x: x['coverage_pct'], reverse=True),
+        'country_coverage': sorted(country_coverage, key=lambda x: x['avg_indicator_coverage_pct'], reverse=True),
+    }
+
+
+def top_countries_by_coverage(df: pd.DataFrame, n: int = 10, min_years: int = 20) -> list[str]:
+    """Return up to n country names with at least min_years of data, ranked by indicator coverage."""
+    out = []
+    for item in world_panel_profile(df)['country_coverage']:
+        if item['years'] >= min_years:
+            out.append(item['country'])
+        if len(out) >= n:
+            break
+    return out
+
+
 def state_from_proxy(data: dict, idx: int=0) -> np.ndarray:
     return np.array([data['A'][idx], data['Prod'][idx], data['Ch'][idx], data['M'][idx], data['G'][idx], data['V'][idx], data['Inst'][idx], data['R'][idx], data['F'][idx], data['P'][idx]], dtype=float)

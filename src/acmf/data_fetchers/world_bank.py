@@ -38,3 +38,34 @@ def fetch_world_bank_requests(years=(1995,None), countries=None, indicators=None
     if save_path:
         p=Path(save_path); p.parent.mkdir(parents=True, exist_ok=True); df.to_csv(p,index=False)
     return df
+
+def fetch_world_bank_wbdata(years=(1995,None), countries=None, indicators=None, save_path=None) -> pd.DataFrame:
+    start,end=years; end=complete_data_year() if end is None else int(end)
+    country_map=COUNTRIES if countries is None else {k:v for k,v in COUNTRIES.items() if k in countries or v in countries}
+    ind_map=WB_INDICATORS if indicators is None else {k:v for k,v in WB_INDICATORS.items() if k in indicators or v in indicators}
+    try:
+        import wbdata
+    except Exception as exc:
+        raise RuntimeError('wbdata backend requested but wbdata is not installed') from exc
+    df=wbdata.get_dataframe(ind_map, country=list(country_map.values()), date=(str(start), str(end)))
+    df=df.reset_index().rename(columns={'country':'country_name','date':'Year'})
+    df['Year']=df['Year'].astype(int)
+    if 'country_code' not in df.columns:
+        df['country_code']=''
+    df=df.sort_values(['country_name','Year']).reset_index(drop=True)
+    if save_path:
+        p=Path(save_path); p.parent.mkdir(parents=True, exist_ok=True); df.to_csv(p,index=False)
+    return df
+
+def fetch_world_bank(years=(1995,None), backend: str='requests', **kwargs) -> pd.DataFrame:
+    """Fetch World Bank panel with either backend='requests' or backend='wbdata'."""
+    if backend == 'requests':
+        return fetch_world_bank_requests(years=years, **kwargs)
+    if backend == 'wbdata':
+        return fetch_world_bank_wbdata(years=years, **kwargs)
+    if backend == 'auto':
+        try:
+            return fetch_world_bank_wbdata(years=years, **kwargs)
+        except Exception:
+            return fetch_world_bank_requests(years=years, **kwargs)
+    raise ValueError("backend must be 'requests', 'wbdata', or 'auto'")

@@ -1,6 +1,7 @@
 from __future__ import annotations
 from pathlib import Path
 import pandas as pd
+from ..exceptions import ManualDownloadRequired
 
 WGI_URL = 'http://info.worldbank.org/governance/wgi/Home/downLoadFile?fileName=wgidataset.xlsx'
 WGI_CODES = {'GE.EST':'GOVEFF','RL.EST':'RULELAW','PV.EST':'POLSTAB'}
@@ -10,8 +11,7 @@ def fetch_wgi_manual(filepath=None, raw_dir='data/raw/wgi') -> pd.DataFrame:
     if filepath is None:
         candidates = list(raw.glob('wgidataset*')) + list(raw.glob('wgi*')) + list(raw.glob('WGI*'))
         if not candidates:
-            print(f'[WGI] No local file found. Download manually from {WGI_URL}')
-            return pd.DataFrame()
+            raise ManualDownloadRequired('WGI', WGI_URL, str(raw))
         filepath = candidates[0]
     p = Path(filepath)
     if p.suffix.lower() in {'.xlsx','.xls'}:
@@ -34,5 +34,4 @@ def fetch_wgi_wbdata(years=(1995, None), countries=None) -> pd.DataFrame:
         df['Year'] = df['Year'].astype(int)
         return df[df['Year'].between(int(start), int(end))]
     except Exception as exc:
-        print(f'[WGI] wbdata failed: {exc}')
-        return pd.DataFrame()
+        raise ManualDownloadRequired('WGI (wbdata backend)', WGI_URL, 'data/raw/wgi') from exc

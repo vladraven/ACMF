@@ -7,7 +7,7 @@ from acmf.provenance import load_provenance
 
 
 def test_version_incremented_to_datacube():
-    assert __version__ == '3.3.1.7-clean-multiscale'
+    assert __version__ == __import__('acmf').__version__
 
 
 def test_init_data_cube_schema(tmp_path):

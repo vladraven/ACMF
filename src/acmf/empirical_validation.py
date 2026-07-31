@@ -6,8 +6,8 @@ import pandas as pd
 from .world_panel import load_world_panel, make_acmf_proxy_panel, OBSERVED_CORE, ALL_OBSERVABLES
 from .calibration import calibrate_country_proxy, predict_from_theta, CALIBRATION_PARAMS
 from .validation_metrics import metrics_dataframe
-from .identifiability import fim_diagnostics
-from .observation_designer import score_candidate_observables
+from .identifiability import simple_fim_diagnostics as fim_diagnostics
+from .observation_designer import score_candidate_observables_simple as score_candidate_observables
 
 CORE5 = ['Canada','Germany','Japan','Australia','Korea, Rep.']
 

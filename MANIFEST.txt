@@ -4,6 +4,8 @@ File count: 39
 
 MANIFEST.txt
 README.md
+README_DEPLOY.md
+data/world_data_1995_2025.csv
 app.py
 configs/calibration/research.yaml
 configs/calibration/smoke.yaml
