@@ -224,24 +224,24 @@ class TestBenchmarkIntegration:
             pytest.skip("Benchmark script not importable")
         
         benchmark = ForecastBenchmark("high_volatility", seed=42)
-        results = benchmark.run_benchmark(horizon=20)
+        results = benchmark.run_benchmark(horizon=20, mode="response")
         
         assert len(results) == 3, "Should have 3 models: trend, ar1, acmf"
         assert all(r.model in ["linear_trend", "ar1", "acmf"] for r in results)
 
     def test_benchmark_all_scenarios(self):
         """Benchmark runs for all scenarios"""
-        scenarios = ["low_stress_trend", "high_volatility", "regime_switch", "nonlinear_transform"]
-        
+        scenarios = [
+            "low_stress_trend", "high_volatility", "regime_switch", "nonlinear_transform",
+            "level_shift_shock_recovery", "saturation_curve", "regime_change_stress",
+        ]
         try:
             from scripts.run_synthetic_forecast_benchmark import ForecastBenchmark
         except ImportError:
             pytest.skip("Benchmark script not importable")
-        
         for scenario in scenarios:
             benchmark = ForecastBenchmark(scenario, seed=42)
-            results = benchmark.run_benchmark(horizon=15)
-            
+            results = benchmark.run_benchmark(horizon=15, mode="response")
             assert len(results) > 0, f"Benchmark failed for scenario: {scenario}"
             assert all(r.scenario == scenario for r in results)
 
@@ -253,7 +253,7 @@ class TestBenchmarkIntegration:
             pytest.skip("Benchmark script not importable")
         
         benchmark = ForecastBenchmark("high_volatility", seed=42)
-        results = benchmark.run_benchmark(horizon=20)
+        results = benchmark.run_benchmark(horizon=20, mode="response")
         
         for result in results:
             # Metrics should be reasonable values

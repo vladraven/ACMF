@@ -20,6 +20,8 @@ TASKS = {
     'synthetic_forecast_benchmark_trend': TaskSpec('synthetic_forecast_benchmark_trend', ('scripts/run_synthetic_forecast_benchmark.py','--scenario','low_stress_trend','--seed','42','--horizon','30')),
     'synthetic_forecast_benchmark_regime': TaskSpec('synthetic_forecast_benchmark_regime', ('scripts/run_synthetic_forecast_benchmark.py','--scenario','regime_switch','--seed','42','--horizon','30')),
     'synthetic_forecast_benchmark_nonlinear': TaskSpec('synthetic_forecast_benchmark_nonlinear', ('scripts/run_synthetic_forecast_benchmark.py','--scenario','nonlinear_transform','--seed','42','--horizon','30')),
+    'synthetic_forecast_benchmark_response': TaskSpec('synthetic_forecast_benchmark_response', ('scripts/run_synthetic_forecast_benchmark.py','--scenario','all_diagnostics','--mode','response','--seed','42','--horizon','30','--output-dir','artifacts/diagnostics')),
+    'dynamics_mechanism_diagnostics': TaskSpec('dynamics_mechanism_diagnostics', ('scripts/run_dynamics_mechanism_diagnostics.py','--steps','120','--dt','0.5','--output-dir','artifacts/diagnostics')),
 }
 
 def available_tasks():
