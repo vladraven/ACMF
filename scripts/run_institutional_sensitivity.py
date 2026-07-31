@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""ACMF 4.2.0 — Institutional sensitivity grid over alpha_pos × beta_neg."""
+"""ACMF 4.2.1 â€” Institutional sensitivity grid: alpha_pos x beta_neg x beta_sd."""
 from __future__ import annotations
 
 import argparse
@@ -28,7 +28,7 @@ DT = 0.5
 
 
 def _run_scenario(scenario: str, p, steps: int) -> dict:
-    """Integrate one scenario and return computed metrics."""
+    """Integrate one scenario and return computed behavioral metrics."""
     bench = ForecastBenchmark(scenario_name=scenario)
     synth_steps = max(200, steps + 20)
     data = bench.generate_synthetic_data(n_steps=synth_steps)
@@ -56,17 +56,14 @@ def _run_scenario(scenario: str, p, steps: int) -> dict:
     inst_min = float(np.min(inst_arr))
     inst_max = float(np.max(inst_arr))
 
-    # sign_flip_count: number of times dInst changes sign
     signs = np.sign(dInst_arr)
     sign_flip_count = int(np.sum(np.diff(signs) != 0))
 
-    # recovery_detected: Inst went up after a drop > 0.05 (for level_shift scenario)
     recovery_detected = False
     if scenario == "level_shift_shock_recovery":
         drop_threshold = 0.05
         for i in range(1, len(inst_arr) - 1):
             if inst_arr[i] < inst_arr[i - 1] - drop_threshold:
-                # check if Inst recovers after this point
                 if np.max(inst_arr[i:]) > inst_arr[i] + drop_threshold:
                     recovery_detected = True
                     break
@@ -93,7 +90,7 @@ def _run_scenario(scenario: str, p, steps: int) -> dict:
 
 
 def _scenario_balance_score(metrics_by_scenario: dict[str, dict]) -> int:
-    """Compute scenario balance score for one (alpha_pos, beta_neg) pair.
+    """Compute scenario balance score.
 
     +1  low_stress:      mean_dInst >= -0.001 (stable/growing)
     +1  level_shift:     recovery_detected == True
@@ -116,7 +113,7 @@ def _scenario_balance_score(metrics_by_scenario: dict[str, dict]) -> int:
     for sc_metrics in metrics_by_scenario.values():
         if sc_metrics.get("artificial_growth", False):
             score -= 1
-            break  # penalise once
+            break
 
     return score
 
@@ -124,10 +121,11 @@ def _scenario_balance_score(metrics_by_scenario: dict[str, dict]) -> int:
 def run_sensitivity_grid(
     alpha_pos_values: list[float] | None = None,
     beta_neg_values: list[float] | None = None,
+    beta_sd_fixed: float | None = None,
     output_dir: Path = Path("artifacts/diagnostics"),
     steps: int = 120,
 ) -> pd.DataFrame:
-    """Grid sensitivity over alpha_pos × beta_neg for all SENSITIVITY_SCENARIOS."""
+    """Grid sensitivity over alpha_pos x beta_neg (beta_sd fixed at default or beta_sd_fixed)."""
     if alpha_pos_values is None:
         alpha_pos_values = [0.10, 0.25, 0.50, 1.00]
     if beta_neg_values is None:
@@ -136,11 +134,15 @@ def run_sensitivity_grid(
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
 
+    overrides: dict = {}
+    if beta_sd_fixed is not None:
+        overrides["beta_sd"] = beta_sd_fixed
+
     rows: list[dict] = []
 
     for alpha_pos in alpha_pos_values:
         for beta_neg in beta_neg_values:
-            p = default_params(alpha_pos=alpha_pos, beta_neg=beta_neg)
+            p = default_params(alpha_pos=alpha_pos, beta_neg=beta_neg, **overrides)
             metrics_by_sc: dict[str, dict] = {}
 
             for scenario in SENSITIVITY_SCENARIOS:
@@ -149,13 +151,13 @@ def run_sensitivity_grid(
                 rows.append({
                     "alpha_pos": alpha_pos,
                     "beta_neg": beta_neg,
+                    "beta_sd": p.beta_sd,
                     "scenario": scenario,
                     **m,
-                    "scenario_balance_score": None,  # filled below
+                    "scenario_balance_score": None,
                 })
 
             balance = _scenario_balance_score(metrics_by_sc)
-            # Backfill balance score for all rows of this (alpha_pos, beta_neg) pair
             for row in rows:
                 if row["alpha_pos"] == alpha_pos and row["beta_neg"] == beta_neg:
                     row["scenario_balance_score"] = balance
@@ -164,7 +166,6 @@ def run_sensitivity_grid(
     outpath = output_dir / "institutional_sensitivity_grid.csv"
     df.to_csv(outpath, index=False)
 
-    # Print pivot table: alpha_pos × beta_neg → scenario_balance_score
     pivot = (
         df.drop_duplicates(subset=["alpha_pos", "beta_neg"])[["alpha_pos", "beta_neg", "scenario_balance_score"]]
         .pivot(index="alpha_pos", columns="beta_neg", values="scenario_balance_score")
@@ -174,10 +175,63 @@ def run_sensitivity_grid(
     print("=" * 80)
     print(pivot.to_string())
 
-    # Best combo
-    best_idx = df.drop_duplicates(subset=["alpha_pos", "beta_neg"]).set_index(["alpha_pos", "beta_neg"])["scenario_balance_score"].idxmax()
-    print(f"\nBest (alpha_pos={best_idx[0]}, beta_neg={best_idx[1]}): score={pivot.loc[best_idx[0], best_idx[1]]}")
+    best_row = df.drop_duplicates(subset=["alpha_pos", "beta_neg"]).sort_values("scenario_balance_score", ascending=False).iloc[0]
+    print(f"\nBest (alpha_pos={best_row['alpha_pos']}, beta_neg={best_row['beta_neg']}): score={int(best_row['scenario_balance_score'])}")
     print(f"Saved: {outpath}")
+    return df
+
+
+def run_beta_sd_sensitivity(
+    beta_sd_values: list[float] | None = None,
+    alpha_pos_fixed: float = 0.25,
+    beta_neg_fixed: float = 0.20,
+    output_dir: Path = Path("artifacts/diagnostics"),
+    steps: int = 120,
+) -> pd.DataFrame:
+    """Grid sensitivity over beta_sd with alpha_pos and beta_neg fixed.
+
+    Answers: is there a beta_sd range where recoverable_shock recovers
+    but persistent_degradation still works?
+    """
+    if beta_sd_values is None:
+        beta_sd_values = [0.03, 0.08, 0.15, 0.25]
+
+    output_dir = Path(output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    rows: list[dict] = []
+
+    for beta_sd in beta_sd_values:
+        p = default_params(alpha_pos=alpha_pos_fixed, beta_neg=beta_neg_fixed, beta_sd=beta_sd)
+        metrics_by_sc: dict[str, dict] = {}
+
+        for scenario in SENSITIVITY_SCENARIOS:
+            m = _run_scenario(scenario, p, steps)
+            metrics_by_sc[scenario] = m
+            rows.append({
+                "beta_sd": beta_sd,
+                "scenario": scenario,
+                **m,
+                "scenario_balance_score": None,
+            })
+
+        balance = _scenario_balance_score(metrics_by_sc)
+        for row in rows:
+            if row["beta_sd"] == beta_sd:
+                row["scenario_balance_score"] = balance
+
+    df = pd.DataFrame(rows)
+    outpath = output_dir / "institutional_beta_sd_sensitivity.csv"
+    df.to_csv(outpath, index=False)
+
+    print("\n" + "=" * 80)
+    print(f"beta_sd Sensitivity (alpha_pos={alpha_pos_fixed}, beta_neg={beta_neg_fixed})")
+    print("=" * 80)
+    agg = df.groupby("beta_sd")[["mean_dInst", "recovery_detected", "artificial_growth", "scenario_balance_score"]].agg(
+        {"mean_dInst": "mean", "recovery_detected": "any", "artificial_growth": "any", "scenario_balance_score": "first"}
+    )
+    print(agg.to_string())
+    print(f"\nSaved: {outpath}")
     return df
 
 
@@ -185,11 +239,14 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Institutional sensitivity grid diagnostics")
     parser.add_argument("--steps", type=int, default=60)
     parser.add_argument("--output-dir", default="artifacts/diagnostics")
+    parser.add_argument("--mode", choices=["alpha_beta", "beta_sd", "all"], default="all")
     args = parser.parse_args()
-    run_sensitivity_grid(
-        output_dir=Path(args.output_dir),
-        steps=args.steps,
-    )
+
+    out = Path(args.output_dir)
+    if args.mode in ("alpha_beta", "all"):
+        run_sensitivity_grid(output_dir=out, steps=args.steps)
+    if args.mode in ("beta_sd", "all"):
+        run_beta_sd_sensitivity(output_dir=out, steps=args.steps)
     return 0
 
 

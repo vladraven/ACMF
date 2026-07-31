@@ -51,6 +51,12 @@ class ACMFParams:
     beta12: float = 0.2
     NaturalDecay: float = 0.04
     beta_neg: float = 0.2
+    # [4.2.1] Structural decay drag — separated from beta_neg (corruption drag).
+    # beta_neg controls corruption/political institutional degradation.
+    # beta_sd controls structural/systemic decay pressure on institutions.
+    # Default: 0.08 (lower than beta_neg=0.20 by design — structural decay is slower).
+    # Expected range: 0.02–0.20. Status: diagnostic parameter, not yet empirically calibrated.
+    beta_sd: float = 0.08
     beta_rec_stress: float = 0.2
     stress_overload_threshold: float = 0.65  # above this, stress suppresses recovery
     beta_fert_stress: float = 0.2
@@ -244,10 +250,12 @@ def rhs(x, params: ACMFParams | None = None):
         - p.beta_rec_stress * stress_overload * R
     )
 
-    # 7. Inst — Institutions  [P3: recovery-mode gate]
+    # 7. Inst — Institutions  [P3: recovery-mode gate | 4.2.1: separated corruption/structural-decay drag]
     recovery_mode_gate = smax(0.0, dx[7]) / (p.alpha_rec + EPSILON)
     inst_pull = p.alpha_pos * (R * a["SocialCapital"] * (1.0 + recovery_mode_gate) + p.gamma_inst * M * G) * (1.0 - Inst)
-    dx[6] = inst_pull - (p.NaturalDecay + p.beta_neg * (a["Corruption"] * V + a["StructuralDecay"])) * Inst
+    inst_drag_corruption = p.beta_neg * a["Corruption"] * V * Inst
+    inst_drag_structural = p.beta_sd * a["StructuralDecay"] * Inst
+    dx[6] = inst_pull - (p.NaturalDecay * Inst + inst_drag_corruption + inst_drag_structural)
 
     # 9. F â€” Fertility
     dx[8] = (p.alpha_fert * M * G + p.alpha_fert_env * a["Env"]) * (4.0 - F) - (p.beta_fert_stress * a["S"] + p.beta_fert_inc * a["EI"]) * F

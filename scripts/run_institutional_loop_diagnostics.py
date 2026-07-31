@@ -49,10 +49,10 @@ def _decompose_inst(x: np.ndarray, p) -> dict:
     pull_mental_agency = float(p.alpha_pos * p.gamma_inst * M * G * (1.0 - Inst))
     pull_total = pull_resilience + pull_recovery_gate + pull_mental_agency
 
-    # Drag decomposition
+    # Drag decomposition  [4.2.1: structural decay now uses beta_sd, not beta_neg]
     drag_natural_decay = float(p.NaturalDecay * Inst)
     drag_corruption = float(p.beta_neg * a["Corruption"] * V * Inst)
-    drag_structural_decay = float(p.beta_neg * a["StructuralDecay"] * Inst)
+    drag_structural_decay = float(p.beta_sd * a["StructuralDecay"] * Inst)
     drag_total = drag_natural_decay + drag_corruption + drag_structural_decay
 
     return {
