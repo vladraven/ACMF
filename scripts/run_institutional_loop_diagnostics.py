@@ -1,0 +1,158 @@
+#!/usr/bin/env python3
+"""ACMF 4.2.0 — Institutional loop pull/drag decomposition diagnostics."""
+from __future__ import annotations
+
+import argparse
+import sys
+from pathlib import Path
+
+import numpy as np
+import pandas as pd
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(REPO_ROOT / "src"))
+sys.path.insert(0, str(REPO_ROOT))
+
+from acmf.core import algebraic_layer, default_params, rhs, STATE_NAMES
+from acmf.solver import rk4_step
+from acmf.smoothing import smax, smin, EPSILON
+from scripts.run_synthetic_forecast_benchmark import ForecastBenchmark
+
+INST_SCENARIOS = (
+    "level_shift_shock_recovery",
+    "saturation_curve",
+    "regime_change_stress",
+    "low_stress_trend",
+)
+
+DT = 0.5
+
+
+def _decompose_inst(x: np.ndarray, p) -> dict:
+    """Compute full pull/drag decomposition for the institutional equation at state x."""
+    A, Prod, Ch, M, G, V, Inst, R, F, P_ = x
+    a = algebraic_layer(x, p)
+
+    # Replicate dx[7] computation from core.rhs to get recovery_mode_gate
+    stress_signal = smin(1.0, smax(0.0, 0.5 * V + 0.5 * a["S"]))
+    recovery_bell = 4.0 * stress_signal * (1.0 - stress_signal)
+    stress_overload = smax(0.0, stress_signal - p.stress_overload_threshold)
+    dx7 = (
+        p.alpha_rec * a["RecoveryDriver"] * (recovery_bell + 0.2) * (1.0 - R)
+        - p.beta_rec_stress * stress_overload * R
+    )
+    recovery_mode_gate = float(smax(0.0, dx7) / (p.alpha_rec + EPSILON))
+
+    # Pull decomposition
+    pull_resilience = float(p.alpha_pos * R * a["SocialCapital"] * (1.0 - Inst))
+    pull_recovery_gate = float(p.alpha_pos * R * a["SocialCapital"] * recovery_mode_gate * (1.0 - Inst))
+    pull_mental_agency = float(p.alpha_pos * p.gamma_inst * M * G * (1.0 - Inst))
+    pull_total = pull_resilience + pull_recovery_gate + pull_mental_agency
+
+    # Drag decomposition
+    drag_natural_decay = float(p.NaturalDecay * Inst)
+    drag_corruption = float(p.beta_neg * a["Corruption"] * V * Inst)
+    drag_structural_decay = float(p.beta_neg * a["StructuralDecay"] * Inst)
+    drag_total = drag_natural_decay + drag_corruption + drag_structural_decay
+
+    return {
+        "pull_total": pull_total,
+        "pull_resilience": pull_resilience,
+        "pull_recovery_gate": pull_recovery_gate,
+        "pull_mental_agency": pull_mental_agency,
+        "drag_total": drag_total,
+        "drag_natural_decay": drag_natural_decay,
+        "drag_corruption": drag_corruption,
+        "drag_structural_decay": drag_structural_decay,
+        "net_dInst": pull_total - drag_total,
+        "Corruption": float(a["Corruption"]),
+        "StructuralDecay": float(a["StructuralDecay"]),
+        "SocialCapital": float(a["SocialCapital"]),
+        "recovery_mode_gate": recovery_mode_gate,
+    }
+
+
+def run_institutional_decomposition(
+    output_dir: Path = Path("artifacts/diagnostics"),
+    steps: int = 120,
+    params=None,
+) -> pd.DataFrame:
+    """Run per-step institutional decomposition for all INST_SCENARIOS."""
+    output_dir = Path(output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    p = params or default_params()
+    rows: list[dict] = []
+
+    for scenario in INST_SCENARIOS:
+        bench = ForecastBenchmark(scenario_name=scenario)
+        synth_steps = max(200, steps + 20)
+        data = bench.generate_synthetic_data(n_steps=synth_steps)
+
+        # Initial state from scenario's first data point
+        x = bench._build_state(data, 0)
+
+        for step in range(steps):
+            t = step * DT
+            A, Prod, Ch, M, G, V, Inst, R, F, P_ = x
+
+            decomp = _decompose_inst(x, p)
+            dx = rhs(x, p)
+            dInst = float(dx[6])
+
+            synth_idx = min(step, len(data["stress"]) - 1)
+            synthetic_stress = float(data["stress"][synth_idx])
+
+            rows.append({
+                "scenario": scenario,
+                "t": t,
+                "Inst": float(Inst),
+                "dInst": dInst,
+                **decomp,
+                "synthetic_stress": synthetic_stress,
+            })
+
+            # Advance state
+            x = rk4_step(x, DT, p)
+            x[:8] = np.clip(x[:8], 0.0, 1.0)
+            x[8] = np.clip(x[8], 0.0, 4.0)
+            x[9] = max(float(x[9]), 0.0)
+
+    df = pd.DataFrame(rows)
+    outpath = output_dir / "institutional_loop_decomposition.csv"
+    df.to_csv(outpath, index=False)
+
+    # Print summary table
+    print("\n" + "=" * 80)
+    print("Institutional Loop Decomposition -- Mean Values by Scenario")
+    print("=" * 80)
+    summary_cols = ["pull_total", "pull_resilience", "pull_recovery_gate",
+                    "pull_mental_agency", "drag_total", "drag_natural_decay",
+                    "drag_corruption", "drag_structural_decay"]
+    agg = df.groupby("scenario")[summary_cols].mean()
+    print(agg.round(5).to_string())
+
+    print("\nDominant drag term per scenario:")
+    drag_cols = ["drag_natural_decay", "drag_corruption", "drag_structural_decay"]
+    for sc, row in agg.iterrows():
+        dominant = max(drag_cols, key=lambda c: row[c])
+        ratio = row["drag_total"] / (row["pull_total"] + 1e-12)
+        print(f"  {sc:35s}: {dominant} (drag/pull ratio={ratio:.3f})")
+
+    print(f"\nSaved: {outpath}")
+    return df
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description="Institutional loop decomposition diagnostics")
+    parser.add_argument("--steps", type=int, default=120)
+    parser.add_argument("--output-dir", default="artifacts/diagnostics")
+    args = parser.parse_args()
+    run_institutional_decomposition(
+        output_dir=Path(args.output_dir),
+        steps=args.steps,
+    )
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

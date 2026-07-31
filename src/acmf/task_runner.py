@@ -22,6 +22,8 @@ TASKS = {
     'synthetic_forecast_benchmark_nonlinear': TaskSpec('synthetic_forecast_benchmark_nonlinear', ('scripts/run_synthetic_forecast_benchmark.py','--scenario','nonlinear_transform','--seed','42','--horizon','30')),
     'synthetic_forecast_benchmark_response': TaskSpec('synthetic_forecast_benchmark_response', ('scripts/run_synthetic_forecast_benchmark.py','--scenario','all_diagnostics','--mode','response','--seed','42','--horizon','30','--output-dir','artifacts/diagnostics')),
     'dynamics_mechanism_diagnostics': TaskSpec('dynamics_mechanism_diagnostics', ('scripts/run_dynamics_mechanism_diagnostics.py','--steps','120','--dt','0.5','--output-dir','artifacts/diagnostics')),
+    'institutional_loop_diagnostics': TaskSpec('institutional_loop_diagnostics', ('scripts/run_institutional_loop_diagnostics.py','--steps','120','--output-dir','artifacts/diagnostics'), timeout_seconds=120),
+    'institutional_sensitivity': TaskSpec('institutional_sensitivity', ('scripts/run_institutional_sensitivity.py','--steps','60','--output-dir','artifacts/diagnostics'), timeout_seconds=600),
 }
 
 def available_tasks():
